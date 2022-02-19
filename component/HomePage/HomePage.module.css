@@ -1,3 +1,27 @@
 .homeContainer {
-    background: red
+    color: #662d91;
+    text-align: center;
+    padding: 40px;
+}
+
+.background {
+    background: lightgrey;
+    height: 100vh;
+    padding: 40px;
+    border-radius: 10px 10px;
+}
+
+.btnSubmit {
+    color: #fff;
+    background: #662d91;
+    box-shadow: #662d91;
+    margin-top: 110px;
+}
+
+.numTitle {
+    margin-top: 113px;
+}
+
+.inputForm {
+    margin-top: 85px;
 }
