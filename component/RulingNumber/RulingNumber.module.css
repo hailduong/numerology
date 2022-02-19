@@ -1,0 +1,49 @@
+.rulTitle {
+    color: white;
+    background: #662d91;
+    padding: 15px 0 15px 20px;
+    font-weight: bold;
+    width: 100vw;
+}
+
+.rulContent{
+    margin: 60px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rulNumber {
+    font-size: 100px;
+    color: #662d91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rulBorder {
+    border-radius: 50%;
+    border: solid #662d91 1px;
+    width: 120px;
+    height: 120px;
+    margin-top: 85px;
+}
+
+.rulExplain {
+    margin-top: 60px;
+    padding: 0 40px 0 40px;
+    color: #662d91;
+}
+
+.rulNavigation {
+    display: flex;
+    background: #662d91;
+    width: 100vw;
+    color: #fff;
+    height: 65px;
+    position: relative;
+    top: 0;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
