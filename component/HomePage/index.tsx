@@ -1,18 +1,25 @@
 import s from './HomePage.module.css'
-import {useAppDispatch, useAppSelector} from '../../store/hooks'
-import {useEffect} from 'react'
+import {useAppDispatch} from '../../store/hooks'
+import {useState} from 'react'
 import {setUserInfo} from '../../store/slices/userSlice'
+import {useRouter} from "next/router";
 
 const HomePage = () => {
-    const name = useAppSelector((state) => state.user.name)
+
     const dispatch = useAppDispatch()
 
-    useEffect(() => {
+    const [nameUser, setNameUser] = useState('')
+    const [birthDate, setBirthDate] = useState('')
+
+    const router = useRouter()
+
+    const handleClick = () => {
         dispatch(setUserInfo({
-            name: 'hello',
-            birthDay: 'there'
+            name: nameUser,
+            birthDay: birthDate,
         }))
-    }, [])
+        router.push('/ruling-number')
+    }
 
     /* Render */
     return (
@@ -21,12 +28,13 @@ const HomePage = () => {
                 <h1 className={s.numTitle}>NUMEROLOGY</h1>
                 <form className={s.inputForm}>
                     <div className="input-group mb-3">
-                        <input type="date" className="form-control" placeholder="Recipient's username"/>
+                        <input type="date" className="form-control" onChange={(e) => setBirthDate(e.target.value)}/>
                     </div>
                     <div className="input-group mb-3">
-                        <input type="text" className="form-control" placeholder="Name..."/>
+                        <input type="text" value={nameUser} className="form-control" placeholder="Name..."
+                               onChange={(e) => setNameUser(e.target.value)}/>
                     </div>
-                    <a className={`btn ${s.btnSubmit}`} href="#" role="button">VIEW RESULTS {name}</a>
+                    <a className={`btn ${s.btnSubmit}`} href="#" role="button" onClick={handleClick}>VIEW RESULTS</a>
                 </form>
             </div>
         </main>
