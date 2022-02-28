@@ -1,7 +1,25 @@
 export const RULING_NUMBER_MEANING = [
     {
         number: 2,
-        meaning: 'Con Số 2 Chủ Đạo là những người trực quan, nhạy cảm, đáng tin cậy, siêng năng và giàu lòng nhân ái, lòng trắc ẩn.'
+        meaning: (
+            <div>
+                <h2>Đặc điểm nổi bật của Con số chủ đạo 2</h2>
+                <p>Theo trường phái Pitago, người Số 2 nhạy cảm, trực giác tốt, đáng tin cậy, tận tụy và giàu lòng
+                    trắc
+                    ẩn. Họ là những nhà hòa giải, đôi khi có thể tái cấu trúc một tổ chức, đây là một khả năng rất
+                    giá
+                    trị trong thời đại ngày nay. Người Số 2 ít bị “cái tôi” chi phối nhất so với những nhóm còn lại
+                    - họ
+                    thể hiện sự tinh tế với tinh thần không vị kỷ đáng quý khi có thể hòa nhập vào tinh thần chung
+                    khi
+                    cần.</p>
+                <p>Theo tiến sĩ David A.Phillips, trong thế kỷ 21, bản chất nhạy cảm của Số 2 sẽ không còn “khan
+                    hiếm”
+                    như ở thế kỷ 20. Điều này được kỳ vọng là sẽ góp phần mang đến một thế kỷ của sự phát triển về
+                    trực
+                    giác và hòa bình được tái lập tại nhiều nơi trên thế giới.</p>
+            </div>
+        )
     },
     {
         number: 3,
@@ -17,7 +35,25 @@ export const RULING_NUMBER_MEANING = [
     },
     {
         number: 6,
-        meaning: 'Con người Số 6 chủ đạo nổi bật lên với khả năng sáng tạo, họ thường phải gắn với những sứ mệnh tạo ra những giải pháp tốt đẹp cho cuộc sống này.'
+        meaning: (
+            <div>
+                <h2>Đặc điểm nổi bật của Con số chủ đạo 2</h2>
+                <p>Theo trường phái Pitago, người Số 2 nhạy cảm, trực giác tốt, đáng tin cậy, tận tụy và giàu lòng
+                    trắc
+                    ẩn. Họ là những nhà hòa giải, đôi khi có thể tái cấu trúc một tổ chức, đây là một khả năng rất
+                    giá
+                    trị trong thời đại ngày nay. Người Số 2 ít bị “cái tôi” chi phối nhất so với những nhóm còn lại
+                    - họ
+                    thể hiện sự tinh tế với tinh thần không vị kỷ đáng quý khi có thể hòa nhập vào tinh thần chung
+                    khi
+                    cần.</p>
+                <p>Theo tiến sĩ David A.Phillips, trong thế kỷ 21, bản chất nhạy cảm của Số 2 sẽ không còn “khan
+                    hiếm”
+                    như ở thế kỷ 20. Điều này được kỳ vọng là sẽ góp phần mang đến một thế kỷ của sự phát triển về
+                    trực
+                    giác và hòa bình được tái lập tại nhiều nơi trên thế giới.</p>
+            </div>
+        )
     },
     {
         number: 7,
