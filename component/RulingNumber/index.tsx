@@ -1,7 +1,7 @@
 import s from './RulingNumber.module.css'
 import {useAppSelector} from "../../store/hooks";
 import {useRouter} from "next/router";
-import {RULING_NUMBER_MEANING} from "../../store/slices/userSlice";
+import {RULING_NUMBER_MEANING} from '../../database/rulingNumber'
 
 const RulingNumberComponent = () => {
     const rulingNumber = useAppSelector((state) => state.user.rulingNumber)
