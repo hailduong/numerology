@@ -1,11 +1,12 @@
 .homeContainer {
-    color: #662d91;
+    background: rgb(236,0,140);
+    background: linear-gradient(135deg, rgba(236,0,140,1) 0%, rgba(146,39,143,1) 100%);
     text-align: center;
     padding: 40px;
 }
 
 .background {
-    background: lightgrey;
+    background: rgba(255,255,255, 0.9);
     height: 100vh;
     padding: 40px;
     border-radius: 10px 10px;
@@ -13,13 +14,19 @@
 
 .btnSubmit {
     color: #fff;
-    background: #662d91;
-    box-shadow: #662d91;
-    margin-top: 110px;
+    background: #92278f;
+    margin-top: 38px;
+    transition: box-shadow 0.3s
+}
+
+.btnSubmit:hover {
+    color: #fff;
+    box-shadow: 0 2px 12px 0 rgba(192, 80, 224, 0.75);
 }
 
 .numTitle {
-    margin-top: 113px;
+    margin-top: 8px;
+    color: #ec008c;
 }
 
 .inputForm {
