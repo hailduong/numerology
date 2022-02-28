@@ -39,7 +39,7 @@
 }
 
 .rulNavigation {
-    display: flex;
+    display: none;
     background: #662d91;
     width: 100vw;
     color: #fff;

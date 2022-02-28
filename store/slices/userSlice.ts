@@ -38,7 +38,6 @@ export const userSlice = createSlice({
                     }
                 })(birthDay)
 
-
             }
         },
 })
