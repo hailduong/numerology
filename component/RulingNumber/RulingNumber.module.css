@@ -1,6 +1,7 @@
 .rulTitle {
     color: white;
-    background: #662d91;
+    background: rgb(236,0,140);
+    background: linear-gradient(135deg, rgba(236,0,140,1) 0%, rgba(146,39,143,1) 100%);
     padding: 15px 0 15px 20px;
     font-weight: bold;
     width: 100vw;
@@ -9,38 +10,39 @@
     display: flex;
 }
 
+.rulWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+    z-index: -1;
+}
+
 .rulContent{
     margin: 60px 0 60px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
 }
 
 .rulNumber {
     font-size: 100px;
-    color: #662d91;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.rulBorder {
-    border-radius: 50%;
-    border: solid #662d91 1px;
-    width: 120px;
-    height: 120px;
-    margin-top: 85px;
+    color: #ec008c;
+    position: absolute;
 }
 
 .rulExplain {
     margin-top: 60px;
     padding: 0 40px 0 40px;
-    color: #662d91;
+    margin-bottom: 90px;
 }
 
 .rulNavigation {
-    display: none;
-    background: #662d91;
+    display: flex;
+    background: rgb(236,0,140);
+    background: linear-gradient(270deg, rgba(236,0,140,1) 0%, rgba(146,39,143,1) 100%);
     width: 100vw;
     color: #fff;
     height: 65px;
@@ -49,4 +51,13 @@
     padding-bottom: 10px;
     position: fixed;
     bottom: 0;
+}
+
+.rulBack {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:10px solid #fff;
+    margin-right: 10px;
 }

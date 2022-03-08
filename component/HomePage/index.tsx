@@ -27,7 +27,7 @@ const HomePage = () => {
         <main className={s.homeContainer}>
             <div className={s.background}>
                 <Image src={'/Home Main Image.png'} layout={"intrinsic"} width={233} height={233} alt={''}/>
-                <h1 className={s.numTitle}>NUMEROLOGY</h1>
+                <h1 className={s.numTitle}>NHÂN SỐ HỌC</h1>
                 <div>Hãy khám phá chính mình thông qua những con số với môn khoa học thần số học nhé!</div>
                 <form className={s.inputForm}>
                     <div className="input-group mb-3">

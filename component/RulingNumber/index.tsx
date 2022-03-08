@@ -2,6 +2,7 @@ import s from './RulingNumber.module.css'
 import {useAppSelector} from "../../store/hooks";
 import {useRouter} from "next/router";
 import {RULING_NUMBER_MEANING} from '../../database/rulingNumber'
+import Image from "next/image";
 
 const RulingNumberComponent = () => {
     const rulingNumber = useAppSelector((state) => state.user.rulingNumber)
@@ -12,21 +13,24 @@ const RulingNumberComponent = () => {
     return (
         <main>
             <header className={s.rulTitle}>
-                <button onClick={() => {
+                <a onClick={() => {
                     router?.push('/')
-                }}>{`<`}</button>
-                <div> Ruling Number</div>
+                }}>
+                    <div className={s.rulBack}> </div>
+                </a>
+                <div>CON SỐ CHỦ ĐẠO</div>
             </header>
-            <div className={s.rulContent}>
-                <div className={s.rulBorder}>
-                    <div className={s.rulNumber}>{rulingNumber}</div>
-                </div>
-                <div className={s.rulExplain}>{getRulingNumberMeaning}</div>
+            <div className={s.rulWrapper}>
+                <Image src={'/Star.png'} layout={"intrinsic"} width={200} height={200} className={s.rulContent} alt={''}/>
+                <div className={s.rulNumber}>{rulingNumber}</div>
+
             </div>
+            <div className={s.rulExplain}>{getRulingNumberMeaning}</div>
+
             <nav className={s.rulNavigation}>
-                <div>Ruling</div>
-                <div>BirthChart</div>
-                <div>Peaks</div>
+                {/*<div>Ruling</div>*/}
+                {/*<div>BirthChart</div>*/}
+                {/*<div>Peaks</div>*/}
             </nav>
         </main>
     )
