@@ -1,0 +1,46 @@
+.wrapper {
+    position: relative;
+    display: grid;
+    margin-top: 85px;
+    z-index: -1;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, auto);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.wrapper>* {
+    border: 1px solid #ec008c;
+    font-size: 50px;
+    padding: 10px 40px 10px 40px;
+    color: #ec008c;
+}
+
+.one {
+    border-radius: 0 0 0 30px;
+}
+
+.three {
+    border-radius: 30px 0 0 0;
+}
+
+.nine {
+    border-radius: 0 30px 0 0;
+}
+
+.seven {
+    border-radius: 0 0 30px 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.explainNumber {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 90px;
+}

@@ -21,16 +21,21 @@ const RulingNumberComponent = () => {
                 <div>CON SỐ CHỦ ĐẠO</div>
             </header>
             <div className={s.rulWrapper}>
-                <Image src={'/Star.png'} layout={"intrinsic"} width={200} height={200} className={s.rulContent} alt={''}/>
+                <Image src={'/Star.png'} layout={"intrinsic"} width={200} height={200} className={s.rulContent}
+                       alt={''}/>
                 <div className={s.rulNumber}>{rulingNumber}</div>
 
             </div>
             <div className={s.rulExplain}>{getRulingNumberMeaning}</div>
 
             <nav className={s.rulNavigation}>
-                {/*<div>Ruling</div>*/}
-                {/*<div>BirthChart</div>*/}
-                {/*<div>Peaks</div>*/}
+                <div>Ruling</div>
+                <a onClick={() => {
+                    router?.push('/birth-chart')
+                }}>
+                    <div> BirthChart</div>
+                </a>
+                <div>Peaks</div>
             </nav>
         </main>
     )
