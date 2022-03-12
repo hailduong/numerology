@@ -2,14 +2,15 @@
     background: rgb(236,0,140);
     background: linear-gradient(135deg, rgba(236,0,140,1) 0%, rgba(146,39,143,1) 100%);
     text-align: center;
-    padding: 40px;
+    padding: 24px;
+    height: 100vh;
 }
 
 .background {
     background: rgba(255,255,255, 0.9);
-    height: 100vh;
     padding: 40px;
     border-radius: 10px 10px;
+    height: 100%;
 }
 
 .btnSubmit {
@@ -25,10 +26,13 @@
 }
 
 .numTitle {
-    margin-top: 8px;
+    margin-top: 32px;
+    font-weight: 700;
     color: #ec008c;
 }
 
 .inputForm {
     margin-top: 85px;
+
+    input{ border-color: rgb(111 66 193)}
 }

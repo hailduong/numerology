@@ -1,4 +1,4 @@
-import s from './HomePage.module.css'
+import s from './HomePage.module.scss'
 import {useAppDispatch} from '../../store/hooks'
 import {useState} from 'react'
 import {setUserInfo} from '../../store/slices/userSlice'
