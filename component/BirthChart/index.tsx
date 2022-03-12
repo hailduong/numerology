@@ -1,15 +1,15 @@
 import s from './BirthChart.module.css'
-import {router} from "next/client";
+import {useRouter} from 'next/router'
 import a from '../RulingNumber/RulingNumber.module.css'
-import {BIRTH_DATE_NUMBER_MEANING} from "../../database/birthDateNumber";
-import {useAppSelector} from "../../store/hooks";
+import {BIRTH_DATE_NUMBER_MEANING} from '../../database/birthDateNumber'
+import {useAppSelector} from '../../store/hooks'
 
 const BirthChartComponent = () => {
     const dateNumbers = useAppSelector(state => state.user.dateNumbers)
 
     const numberForUI = []
 
-    for (let i = 1; i < 10; i++){
+    for (let i = 1; i < 10; i++) {
         numberForUI[i] = i.toString().repeat(dateNumbers[i])
     }
 
@@ -31,9 +31,9 @@ const BirthChartComponent = () => {
                 <h2>{value?.title}</h2>
                 <div>{value?.meaning}</div>
             </div>
-    )
+        )
     })
-    debugger
+    const router = useRouter()
 
     return (
         <main className={s.main}>
@@ -41,7 +41,7 @@ const BirthChartComponent = () => {
                 <a onClick={() => {
                     router?.push('/ruling-number')
                 }}>
-                    <div className={a.rulBack}> </div>
+                    <div className={a.rulBack}></div>
                 </a>
                 <div>BIỂU ĐỒ NGÀY SINH</div>
             </header>
