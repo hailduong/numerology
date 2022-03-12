@@ -1,7 +1,5 @@
-import BirthChartComponent from "../component/BirthChart";
+import BirthChartComponent from '../component/BirthChart'
 
-const BirthChartPage = () => {
-    return (<BirthChartComponent/>)
-}
+const BirthChartPage = () => <BirthChartComponent/>
 
 export default BirthChartPage

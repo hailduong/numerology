@@ -1,0 +1,51 @@
+.pageWrapper{
+    height: 100vh;
+    padding: 50px 40px 65px;
+    overflow: auto;
+}
+
+
+.birthChart {
+    position: relative;
+    display: grid;
+    margin-top: 40px;
+    z-index: -1;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    border: 3px solid #92278f;
+    border-radius: 20px;
+
+    > * {
+        font-size: 42px;
+        color: #ec008c;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        font-weight: 700;
+    }
+}
+
+
+.four, .five, .six{
+    border-left: 1px solid  #92278f;
+    border-right: 1px solid  #92278f;
+}
+
+.two, .five,.eight{
+    border-top: 1px solid  #92278f;
+    border-bottom: 1px solid  #92278f;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.numberExplanation {
+    margin-bottom: 90px;
+    text-align:justify;
+    h2 {text-transform: uppercase}
+}

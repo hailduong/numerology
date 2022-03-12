@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'Myriad Pro';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     src: local('Myriad Pro Regular'), url('/fonts/myriad-pro/MYRIADPRO-REGULAR.woff') format('woff');
 }
 
@@ -56,12 +56,12 @@
 /*}*/
 
 
-/*@font-face {*/
-/*    font-family: 'Myriad Pro';*/
-/*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*    src: local('Myriad Pro Bold'), url('/fonts/myriad-pro/MYRIADPRO-BOLD.woff') format('woff');*/
-/*}*/
+@font-face {
+    font-family: 'Myriad Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Myriad Pro Bold'), url('/fonts/myriad-pro/MYRIADPRO-BOLD.woff') format('woff');
+}
 
 
 /*@font-face {*/

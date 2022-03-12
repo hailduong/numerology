@@ -16,3 +16,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h1, h2, h3, h4, h5, h6{
+  color: #ec008c
+}
+
+h2{
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
