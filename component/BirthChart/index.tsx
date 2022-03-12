@@ -13,11 +13,11 @@ const BirthChartComponent = () => {
     for (let i = 1; i < 10; i++) {
         numberForUI[i] = i.toString().repeat(dateNumbers[i])
     }
-    console.log('numberForUI', numberForUI)
+
     let explanationNumbers = [
         {
-            title: 'abc',
-            meaning: 'abc'
+            title: '',
+            meaning: ''
         }
     ]
 

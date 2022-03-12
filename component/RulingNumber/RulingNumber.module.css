@@ -1,3 +1,10 @@
+.pageWrapper{
+    height: 100vh;
+    padding: 50px 40px 65px;
+    overflow: auto;
+}
+
+
 .rulTitle {
     color: white;
     background: rgb(236,0,140);
@@ -15,7 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 85px;
+    margin-top: 50px;
     z-index: -1;
 }
 
@@ -30,13 +37,15 @@
 .rulNumber {
     font-size: 100px;
     color: #ec008c;
+    font-weight: 700;
     position: absolute;
+    top: 45px;
 }
 
 .rulExplain {
-    margin-top: 60px;
-    padding: 0 40px 0 40px;
+    margin-top: 50px;
     margin-bottom: 90px;
+    text-align: justify;
 }
 
 .rulNavigation {

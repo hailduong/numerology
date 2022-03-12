@@ -1,9 +1,5 @@
 import RulingNumberComponent from "../component/RulingNumber";
 
-const RulingNumberPage = () => {
-    return (
-        <RulingNumberComponent/>
-    )
-}
+const RulingNumberPage = () => <RulingNumberComponent/>
 
 export default RulingNumberPage
