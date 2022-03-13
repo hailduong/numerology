@@ -3,6 +3,7 @@ import a from '../RulingNumber/RulingNumber.module.css'
 import s from './BirthChart.module.scss'
 import {BIRTH_DATE_NUMBER_MEANING} from '../../database/birthDateNumber'
 import {useAppSelector} from '../../store/hooks'
+import {ReactElement} from "react";
 
 const BirthChartComponent = () => {
 
@@ -14,7 +15,7 @@ const BirthChartComponent = () => {
         numberForUI[i] = i.toString().repeat(dateNumbers[i])
     }
 
-    let explanationNumbers = [
+    let explanationNumbers: {title: string, meaning: string | ReactElement}[] = [
         {
             title: '',
             meaning: ''
