@@ -1,0 +1,69 @@
+.peakMonthNumber {
+  position: absolute;
+  top: 250px;
+  left: 40px;
+}
+
+.peakDateNumber {
+  position: absolute;
+  top: 250px;
+  left: 140px;
+}
+
+.peakYearNumber {
+  position: absolute;
+  top: 250px;
+  left: 240px;
+}
+
+.peakNumber1 {
+  position: absolute;
+  top: 156px;
+  left: 89px;
+}
+
+.peakNumber2 {
+  position: absolute;
+  top: 156px;
+  left: 190px
+}
+
+.peakNumber3 {
+  position: absolute;
+  top: 68px;
+  left: 128px;
+}
+
+.peakNumber4 {
+  position: absolute;
+  top: 3px;
+  left: 128px;
+}
+
+.peakFigure {
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  z-index: -1;
+  font-size: 40px;
+  color: #ec008c;
+  font-weight: 700;
+}
+
+.peakDateNumber, .peakMonthNumber, .peakYearNumber, .peakNumber1, .peakNumber2, .peakNumber3, .peakNumber4 {
+  background: #fff;
+  display: block;
+}
+
+
+.peakWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.peakExplain {
+
+}

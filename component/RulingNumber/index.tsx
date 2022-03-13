@@ -31,13 +31,21 @@ const RulingNumberComponent = () => {
                 <div className={s.rulExplain}>{getRulingNumberMeaning}</div>
             </div>
             <nav className={s.rulNavigation}>
-                <div>Ruling</div>
+                <a onClick={() => {
+                    router?.push('/ruling-number')
+                }}>
+                    <div>Ruling</div>
+                </a>
                 <a onClick={() => {
                     router?.push('/birth-chart')
                 }}>
-                    <div> BirthChart</div>
+                    <div>BirthChart</div>
                 </a>
-                <div>Peaks</div>
+                <a onClick={() => {
+                    router?.push('/peaks')
+                }}>
+                    <div>Peaks</div>
+                </a>
             </nav>
         </main>
     )
