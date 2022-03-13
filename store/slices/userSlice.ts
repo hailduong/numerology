@@ -12,13 +12,19 @@ type TUserSlice = {
     birthDay: string,
     rulingNumber: number
     dateNumbers: number[]
+    peakNumbers: number[]
+    peakYearOld: number[]
+    peakYear: number[]
 }
 
 const initialData: TUserSlice = {
     name: 'fakeName',
-    birthDay: 'fakeBD',
+    birthDay: '2022-03-13',
     rulingNumber: 10,
-    dateNumbers: []
+    dateNumbers: [],
+    peakNumbers: [],
+    peakYearOld: [],
+    peakYear: []
 }
 
 export const userSlice = createSlice({
@@ -42,6 +48,28 @@ export const userSlice = createSlice({
             for (let i = 0; i < 10; i++) {
                 state.dateNumbers[i] = birthDay.match(new RegExp(i.toString(), 'g'))?.length || 0
             }
+            state.peakNumbers[2] = Number(birthDay[0]) + Number(birthDay[1]) + Number(birthDay[2]) + Number(birthDay[3])
+            state.peakNumbers[0] = Number(birthDay[5]) + Number(birthDay[6]) //Month
+            state.peakNumbers[1] = Number(birthDay[8]) + Number(birthDay[9]) //Date
+            state.peakNumbers[3] = state.peakNumbers[0] + state.peakNumbers[1] //Peak 1
+            state.peakNumbers[4] = state.peakNumbers[1] + state.peakNumbers[2] //Peak 2
+            state.peakNumbers[5] = state.peakNumbers[3] + state.peakNumbers[4] //Peak 3
+            state.peakNumbers[6] = state.peakNumbers[0] + state.peakNumbers[2] //Peak 4
+
+            for (let i = 0; i < state.peakNumbers.length; i ++) {
+                if ((i<5 && state.peakNumbers[i].toString().length !== 1) || (i>4 && state.peakNumbers[i] !== 10 && state.peakNumbers[i] !== 11)) {
+                    state.peakNumbers[i] = Number(state.peakNumbers[i].toString().charAt(0)) + Number(state.peakNumbers[i].toString().charAt(1))
+                }
+            }
+
+            state.peakYearOld[0] = 36 - state.rulingNumber
+            state.peakYearOld[1] = state.peakYearOld[0] + 9
+            state.peakYearOld[2] = state.peakYearOld[1] + 9
+            state.peakYearOld[3] = state.peakYearOld[2] + 9
+            state.peakYear[0] = Number(birthDay.substring(0,4)) + state.peakYearOld[0]
+            state.peakYear[1] = state.peakYear[0] + 9
+            state.peakYear[2] = state.peakYear[1] + 9
+            state.peakYear[3] = state.peakYear[2] + 9
         }
     },
 })
