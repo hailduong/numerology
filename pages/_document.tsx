@@ -15,6 +15,7 @@ export default function Document() {
 
                 <link rel="manifest" href="/manifest.json"/>
                 <link href="/ic_launcher.png" rel="icon" type="image/png" sizes="48x48"/>
+                <link rel="apple-touch-icon" href="/icon.png"/>
                 <meta name="theme-color" content="#92278f"/>
 
                 {/* Font */}

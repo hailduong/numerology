@@ -39,12 +39,6 @@ const PeaksComponent = () => {
             peakMean: peakMeaning[i] || undefined
         }
     }
-    // const peakAll: TPeakAll = [{
-    //     peakYear: peakYear[0],
-    //     peakYearOld: peakYearOld[0],
-    //     peakNumber: peakNumber[3],
-    //     meaning: peakMeaning[3]?.meaning
-    // }]
 
     const peakMeaningComponent = peakAll.map(value => {
         return (
@@ -54,7 +48,8 @@ const PeaksComponent = () => {
             </div>
         )
     })
-    debugger
+
+    /* Render */
     return (
         <main>
             <header className={s.rulTitle}>
