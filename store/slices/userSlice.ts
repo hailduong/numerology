@@ -1,4 +1,5 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit'
+import {debug} from "util";
 
 /* 1. Slice */
 
@@ -75,10 +76,13 @@ export const userSlice = createSlice({
                 const isYearMonthDayPeaks = i < 5
                 const isPeakNumberMultipleDigits = state.peakNumbers[i].toString().length > 1
                 const isLastTwoPeaks = i > 4
-                const isPeakNot10or11 = state.peakNumbers[i] !== 10 && state.peakNumbers[i] !== 11
+                const isPeakNot10 = state.peakNumbers[i] !== 10
+                const isPeakNot11 = state.peakNumbers[i] !== 11
 
-                if ((isYearMonthDayPeaks && isPeakNumberMultipleDigits) || (isLastTwoPeaks && isPeakNot10or11)) {
-                    state.peakNumbers[i] = calculateSumOfDigits(state.peakNumbers[i])
+                if (isYearMonthDayPeaks && isPeakNumberMultipleDigits) {
+                    state.peakNumbers[i] = calculateSumOfDigitsPeak1And2(state.peakNumbers[i])
+                } else if (isLastTwoPeaks && isPeakNot10 && isPeakNot11) {
+                    state.peakNumbers[i] = calculateSumOfDigitsPeak3And4(state.peakNumbers[i])
                 }
             }
 
@@ -98,7 +102,7 @@ export const userSlice = createSlice({
 export const {setUserInfo} = userSlice.actions
 export default userSlice.reducer
 
-const calculateSumOfDigits = (number: number | string): number => {
+const calculateSumOfDigitsPeak1And2 = (number: number | string): number => {
     if (typeof number !== 'string') {
         number = number.toString()
     }
@@ -109,6 +113,24 @@ const calculateSumOfDigits = (number: number | string): number => {
         let sum: number = 0
         for (let i = 0; i < stringNumber.length; i++) {
            sum = sum + Number(stringNumber[i])
+        }
+        stringNumber = sum.toString()
+    }
+
+    return Number(stringNumber)
+}
+
+const calculateSumOfDigitsPeak3And4 = (number: number | string): number => {
+    if (typeof number !== 'string') {
+        number = number.toString()
+    }
+
+    let stringNumber: string = number
+
+    while (stringNumber.length > 1 && stringNumber !== '10' && stringNumber !== '11') {
+        let sum: number = 0
+        for (let i = 0; i < stringNumber.length; i++) {
+            sum = sum + Number(stringNumber[i])
         }
         stringNumber = sum.toString()
     }
