@@ -44,7 +44,7 @@ const PeaksComponent = () => {
         return (
             <div key={value.peakYearOld}>
                 <h2>ĐỈNH CAO SỐ {value.peakNumber} ({value.peakYear} - năm {value.peakYearOld} tuổi)</h2>
-                <div>{value.peakMean}</div>
+                <div className={a.peakExplain}>{value.peakMean}</div>
             </div>
         )
     })

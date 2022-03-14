@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const RulingNumberComponent = () => {
     const rulingNumber = useAppSelector((state) => state.user.rulingNumber)
-    const getRulingNumberMeaning = RULING_NUMBER_MEANING.find(({number}) => number === rulingNumber)?.meaning
+    const rulingNumberMeaning = RULING_NUMBER_MEANING.find(({number}) => number === rulingNumber)?.meaning
 
     const router = useRouter()
 
@@ -28,7 +28,7 @@ const RulingNumberComponent = () => {
                     <div className={s.rulNumber}>{rulingNumber}</div>
 
                 </div>
-                <div className={s.rulExplain}>{getRulingNumberMeaning}</div>
+                <div className={s.rulExplain}>{rulingNumberMeaning}</div>
             </div>
             <nav className={s.rulNavigation}>
                 <a onClick={() => {

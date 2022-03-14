@@ -19,7 +19,7 @@ export enum BIRTH_DATE_NUMBER_SUBSECTION {
     SEVEN = ' số 7',
     EIGHT = ' số 8',
     NINE = ' số 9',
-    ZERO = ' số 0'
+    // ZERO = ' số 0'
 }
 
 type TBirthDateNumberMeaning = {
@@ -34,524 +34,716 @@ type TBirthDateNumberMeaning = {
 export const BIRTH_DATE_NUMBER_MEANING: TBirthDateNumberMeaning = {
     1: {
         1: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.ONE,
-            meaning: 'Những người có Biểu đồ ngày sinh có một số 1 thường gặp một chút khó khăn trong việc thể hiện bản thân qua ngôn ngữ. Điều này không có nghĩa là họ không thể nói chuyện một cách suôn sẻ, mà là họ khó diễn đạt được cảm xúc nội tâm của mình.\n' + '\n' + 'Họ có thể nói rất lưu loát và đầy thuyết phục về các đề tài không liên quan đến diễn đạt cảm xúc cá nhân, nhưng thường không biết cách biểu đạt bản thân hoặc diễn tả những gì mình đang cảm thấy. Chỉ khi nào họ học được cách làm chủ bản thân - kết quả của quá trình trưởng thành và thấu hiểu - thì điều này mới được cải thiện. Đôi khi họ sẽ cố ý nói ra những lời hoàn toàn trái ngược với suy nghĩ thật sự của mình như một kiểu phản ứng tự vệ - tức là họ Cố ý làm tổn thương hoặc xúc phạm người khác để tự bảo vệ bản thân mình. Điều này khiến vấn đề ban đầu trở nên nghiêm trọng hơn và gây ra những cuộc tranh cãi gay gắt. Họ cần tập suy nghĩ cẩn trọng trước khi phát biểu, và họ có thể làm được điều ấy bằng cách học kiểm soát phản ứng của bản thân trước các ý kiến, lời phê bình, vì những lời nói đã nói ra thì không thể thu hồi và cảm giác tổn thương rất khó được chữa lành. Để cải thiện hạn chế này, hãy lấy một quyển số trắng và ghi ngày tháng hiện tại. Sau đó, vào buổi tối, trước khi đi ngủ, hãy dành vài phút viết ra những suy nghĩ và cảm nhận của bạn về ngày hôm nay. Nhớ ghi rõ cả những việc bạn vốn dĩ muốn làm, những lời bạn vốn dĩ muốn nói, nhưng rốt cuộc đã không thực hiện được và những điều bạn đã nói hay lỡ làm mà bạn ước gì bạn đã không làm hay nói. Buổi sáng hôm sau, bạn hãy đọc to toàn bộ nội dung đó trước một tấm gương lớn và quan sát ngôn ngữ cơ thể bạn.\n' +
-                '\n' + 'Hãy làm điều này thường xuyên và bạn sẽ nhìn thấy sự tự tin trong việc diễn đạt bản thân được cải thiện thấy rõ, về cuộc sống, những người có một số 1 thường cảm thấy thiếu một điều gì đó trong cuộc sống, mặc dù thoạt nhìn họ rất đủ đầy ở một số mặt.',
-
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.ONE,
+            meaning: <div>
+                <p><strong><em>Những người có Biểu đồ ngày sinh có một số 1 thường gặp một chút khó khăn trong việc thể
+                    hiện bản thân qua ngôn ngữ. Điều này không có nghĩa là họ không thể nói chuyện một cách suôn sẻ, mà
+                    là họ khó diễn đạt được cảm xúc nội tâm của mình.</em></strong></p>
+                <p>Họ có thể nói rất lưu loát và đầy thuyết phục về các đề tài không liên quan đến diễn đạt cảm xúc cá
+                    nhân, nhưng thường không biết cách biểu đạt bản thân hoặc diễn tả những gì mình đang cảm
+                    thấy. <strong><em>Chỉ
+                        khi nào họ học được cách làm chủ bản thân - kết quả của quá trình trưởng thành và thấu hiểu -
+                        thì điều này mới
+                        được cải thiện. </em></strong>Đôi khi họ sẽ cố ý nói ra những lời hoàn toàn trái ngược với suy
+                    nghĩ thật
+                    sự của mình như một kiểu phản ứng tự vệ - tức là họ Cố ý làm tổn thương hoặc xúc phạm người khác để
+                    tự bảo vệ bản
+                    thân mình. Điều này khiến vấn đề&nbsp;ban đầu trở nên nghiêm trọng hơn và gây ra những cuộc tranh
+                    cãi gay
+                    gắt. <em><strong>Họ cần tập suy nghĩ cẩn trọng trước khi phát biểu, và họ có thể làm được điều ấy
+                        bằng cách học kiểm
+                        soát phản ứng của bản thân trước các ý kiến, lời phê bình, vì những lời nói đã nói ra thì không
+                        thể thu hồi và cảm
+                        giác tổn thương rất khó được chữa lành.&nbsp;</strong></em>Để cải thiện hạn chế này, hãy lấy một
+                    quyển số trắng
+                    và ghi ngày tháng hiện tại. Sau đó, vào buổi tối, trước khi đi ngủ, hãy dành vài phút viết ra những
+                    suy nghĩ và
+                    cảm nhận của bạn về ngày hôm nay. Nhớ ghi rõ cả những việc bạn vốn dĩ muốn làm, những lời bạn vốn dĩ
+                    muốn nói, nhưng
+                    rốt cuộc đã không thực hiện được và những điều bạn đã nói hay lỡ làm mà bạn ước gì bạn đã không làm
+                    hay nói.
+                    Buổi sáng hôm sau, bạn hãy đọc to toàn bộ nội dung đó trước một tấm gương lớn và quan sát ngôn ngữ
+                    cơ thể bạn.</p>
+                <p><em><strong>Hãy làm điều này thường xuyên và bạn sẽ nhìn thấy sự tự tin trong việc diễn đạt bản thân
+                    được cải thiện thấy rõ, về cuộc sống, những người có một số 1 thường cảm thấy thiếu một điều gì đó
+                    trong cuộc sống, mặc dù thoạt nhìn họ rất đủ đầy ở một số mặt.</strong></em></p>
+            </div>
         },
         2: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.ONE,
-            meaning: 'Người có hai số 1 (11) trong Biểu đồ ngày sinh là người may mắn nhất trong cả nhóm, bởi sự cân bằng trời cho trong việc diễn đạt nội tâm. Đây là một đặc điểm nên được sử dụng một cách khôn ngoan - không bao giờ lạm dụng nó cho mục đích thao túng người khác. (Đồng thời hãy nhớ đừng mất kiên nhẫn với những người không may mắn không có hai số 1 giống bạn, đặc biệt nếu đó là người yêu hoặc người bạn đời của bạn.) Người có hai số 1 thường có khả năng nhìn nhận các vấn đề hay các cuộc tranh luận theo cả hai mặt, và vì vậy họ hoàn toàn có khả năng chuyển sang hướng đối lập trong một cuộc thảo luận nếu quan điểm của bên đó có vẻ có giá trị hơn. Điều này giúp họ không bị sa vào tư duy bảo thủ, thứ khiến tầm hiểu biết bị giới hạn một chiều, và vì thế bản thân họ cũng thường ít khi bắt bẻ những “ lỗi sai ” của người khác. Có thể nói người có hai số 1 trong biểu đồ thường dễ có cuộc sống cân bằng, an vui, bất kể cuộc sống có diễn ra thế nào. Về nhận định này, tôi có hai điều muốn chia sẻ kỹ hơn : Một Biểu đồ ngày sinh sẽ bao gồm rất nhiều yếu tố chi tiết bên trong, yếu tố này hòa quyện với yếu tố kia, hay yếu tố này mâu thuẫn với yếu tố kia, làm giảm giá trị của yếu tố kia.\n' +
-                '\n' + 'Ví dụ, nếu một người có được hai số 1 nhưng lại trống hoàn toàn cột giữa (4-5-6 - mang ý nghĩa Mũi tên uất giận, vì họ mãi không đạt được điều mình khát khao muốn có) , và đặc biệt nếu có thêm số 7 (hay 77, hay 777) thì người đó rất dễ gặp phải một trong những điều bất ý lớn trong các khía cạnh: sức khỏe, tiền tài, tình yêu, sự nghiệp ... Nhưng nhờ sức mạnh của hai số 1, người đó vẫn hay dùng lòng tin để tiếp thu cái mới, từ đó khiến bản thân gặp nhiều thiệt thòi. Tuy nhiên, nhờ trong Biểu đồ ngày sinh của tôi có hai số 1 (11) nên tôi có được một đặc điểm (như đã đề cập ở trên) : dễ dàng nhìn được hai mặt của một vấn đề, chịu thay đổi quan điểm một khi thấy các quan điểm khác cũng đúng hoặc có giá trị. Điều này đặc biệt ý nghĩa với các vấn đề mang tính trực giác, đòi hỏi sự hiểu biết sâu xa hơn những gì mắt thường nhìn thấy. Cho nên hiện giờ tôi đã thôi không còn dùng khái niệm “ thấy mới tin ” nữa, mà bắt đầu lắng tâm mình hơn, mỗi ngày một phát huy trực giác (còn gọi là “ con mắt ” bên trong) để cảm mọi việc, nhờ vậy tôi có thể tiếp thu nhiều cái mới mẻ hơn, rộng lớn hơn. Như vậy, hai số 1 (11) đã giúp tôi hóa giải bớt tính “ cứng đầu ” của Mũi tên 1-4-7 đó.\n' +
-                '\n' + 'Trở lại với những đặc điểm nổi bật của hai số 1 (11) :\n' + '\n' + 'Chính nhờ những yếu tố tích cực, dung hòa và cân bằng này mà người có hai số 1 trong biểu đồ dễ trở thành các chính trị gia thành công hoặc người của công chúng, người nổi tiếng. Yếu tố hai số 1 làm nổi bật nhận thức về con người, cũng như cách biểu đạt bản thân và khả năng nhìn nhận vấn đề một cách đa chiều, không phiến diện, giúp giảm thiểu khả năng bị hiểu lầm.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.ONE,
+            meaning: <div>
+                <p><strong><em>Người có hai số 1 (11) trong Biểu đồ ngày sinh là người may mắn nhất trong cả nhóm, bởi
+                    sự cân bằng trời cho trong việc diễn đạt nội tâm.</em></strong> Đây là một đặc điểm nên được sử dụng
+                    một cách khôn ngoan - <strong><em>không bao giờ lạm dụng nó cho mục đích thao túng người
+                        khác</em></strong>. (Đồng thời hãy nhớ đừng mất kiên nhẫn với những người không may mắn có hai
+                    số 1 giống bạn, đặc biệt nếu đó là người yêu hoặc người bạn đời của bạn.) Người có hai số 1 thường
+                    có khả năng nhìn nhận các vấn đề hay các cuộc tranh luận theo cả hai mặt, và vì vậy họ hoàn toàn có
+                    khả năng chuyển sang hướng đối lập trong một cuộc thảo luận nếu quan điểm của bên đó có vẻ có giá
+                    trị hơn. Điều này giúp họ không bị sa vào tư duy bảo thủ, thứ khiến tầm hiểu biết bị giới hạn một
+                    chiều, và vì thế bản thân họ cũng thường ít khi bắt bẻ những “ lỗi sai ” của người
+                    khác. <strong><em>Có thể nói người có hai số 1 trong biểu đồ thường dễ có cuộc sống cân bằng, an
+                        vui, bất kể cuộc sống có diễn ra thế nào.</em></strong> Về nhận định này, tôi có hai điều muốn
+                    chia sẻ kỹ hơn : Một Biểu đồ ngày sinh sẽ bao gồm rất nhiều yếu tố chi tiết bên trong, yếu tố này
+                    hòa quyện với yếu tố kia, hay yếu tố này mâu thuẫn với yếu tố kia, làm giảm giá trị của yếu tố kia.
+                </p>
+                <p><strong><em>Ví dụ,</em></strong> nếu một người có được hai số 1 nhưng lại trống hoàn toàn cột giữa
+                    (4-5-6 - mang ý nghĩa Mũi tên uất giận, vì họ mãi không đạt được điều mình khát khao muốn có) , và
+                    đặc biệt nếu có thêm số 7 (hay 77, hay 777) thì người đó rất dễ gặp phải một trong những điều bất ý
+                    lớn trong các khía cạnh: sức khỏe, tiền tài, tình yêu, sự nghiệp ...&nbsp;<em><strong>Nhưng nhờ sức
+                        mạnh của hai số 1, người đó vẫn hay dùng lòng tin để tiếp thu cái mới, từ đó khiến bản thân gặp
+                        nhiều thiệt thòi. </strong></em>Tuy nhiên, nhờ trong Biểu đồ ngày sinh của tôi có hai số 1 (11)
+                    nên tôi có được một đặc điểm (như đã đề cập ở trên) : dễ dàng nhìn được hai mặt của một vấn đề, chịu
+                    thay đổi quan điểm một khi thấy các quan điểm khác cũng đúng hoặc có giá trị. Điều này đặc biệt ý
+                    nghĩa với các vấn đề mang tính trực giác, đòi hỏi sự hiểu biết sâu xa hơn những gì mắt thường nhìn
+                    thấy. Cho nên hiện giờ tôi đã thôi không còn dùng khái niệm “ thấy mới tin&nbsp;” nữa, mà bắt đầu
+                    lắng tâm mình hơn, mỗi ngày một phát huy trực giác (còn gọi là “ con mắt ” bên trong) để cảm mọi
+                    việc, nhờ vậy tôi có thể tiếp thu nhiều cái mới mẻ hơn, rộng lớn hơn. Như vậy, hai số 1 (11) đã giúp
+                    tôi hóa giải bớt tính “ cứng đầu ” của Mũi tên 1-4-7 đó.</p>
+                <p>Trở lại với những đặc điểm nổi bật của hai số 1 (11) :</p>
+                <p><strong><em>Chính nhờ những yếu tố tích cực, dung hòa và cân bằng này mà người có hai số 1 trong biểu
+                    đồ dễ trở thành các chính trị gia thành công hoặc người của công chúng, người nổi tiếng. Yếu tố hai
+                    số 1 làm nổi bật nhận thức về con người, cũng như cách biểu đạt bản thân và khả năng nhìn nhận vấn
+                    đề một cách đa chiều, không phiến diện, giúp giảm thiểu khả năng bị hiểu lầm.</em></strong></p>
+            </div>
         },
         3: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.ONE,
-            meaning: 'Với những người có ba số 1 trong Biểu đồ ngày sinh, có hai khả năng khá đối lập xảy ra trong thực tế. Khả năng thường gặp nhất là những người này thuộc dạng nói rất nhiều, thường có mặt trong rất nhiều cuộc trò chuyện sôi nổi mà trong đó họ trở nên nổi bật và thú vị. Nhìn chung họ thấy cuộc sống dễ chịu và thường cố gắng chia sẻ điều đó với những người xung quanh, Nhóm thứ hai là những người cũng có ba số 1 nhưng lại không có số nào ở Trục ngang Tinh thần (tức là không có các số 2-5-8) . Những người này khá im lặng, hướng nội, bẽn lẽn, đặc biệt là với người lạ. Tuy nhiên, họ có thể hoạt bát và nói nhiều khi trò chuyện với bạn bè thân thiết hoặc người thân trong nhà - đó là những lúc họ cảm thấy thoải mái. Những người này thường dễ diễn đạt cảm xúc hay nội tâm của mình bằng cách viết, vì khi đó dòng suy nghĩ của họ liền mạch hơn, không bị cản trở bởi sự nhạy cảm quá mức của họ. Nếu bạn thuộc nhóm này mà chưa biết sức mạnh khả năng viết lách của mình, hãy thử xem sao. Hãy xem viết lách là một cách để tập diễn đạt bản thân cho trôi chảy, khơi thông những cảm xúc rối rắm tắc nghẽn trong lòng, cũng như là một cách để tự chữa lành. Ngoài ra, còn một khả năng nữa ở những người có ba số 1 mà bản thân tôi quan sát thấy, đó là tâm trạng lúc vui lúc buồn. Tùy theo những yếu tố khác trong Biểu đồ ngày sinh mà tỷ lệ vui buồn sẽ gia giảm khác nhau, tốt nhất thì được 5/5, còn không thì 4/6, không nữa thì 3/7, lúc vui họ có xu hướng nói rất nhiều, lúc buồn thì ngồi im, không quan tâm tới ai.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.ONE,
+            meaning: <div>
+                <p><strong><em>Với những người có ba số 1 trong Biểu đồ ngày sinh, có hai khả năng khá đối lập xảy ra
+                    trong thực tế.&nbsp;</em></strong>Khả năng thường gặp nhất là những người này thuộc dạng nói rất
+                    nhiều, thường có mặt trong rất nhiều cuộc trò chuyện sôi nổi mà trong đó họ trở nên nổi bật và thú
+                    vị. Nhìn chung họ thấy cuộc sống dễ chịu và thường cố gắng chia sẻ điều đó với những người xung
+                    quanh, Nhóm thứ hai là những người cũng có ba số 1 nhưng lại không có số nào ở Trục ngang Tinh thần
+                    (tức là không có các số 2-5-8) . Những người này khá im lặng, hướng nội, bẽn lẽn, đặc biệt là với
+                    người lạ. Tuy nhiên, họ có thể hoạt bát và nói nhiều khi trò chuyện với bạn bè thân thiết hoặc người
+                    thân trong nhà - đó là những lúc họ cảm thấy thoải mái.&nbsp;<strong><em>Những người này thường dễ
+                        diễn đạt cảm xúc hay nội tâm của mình bằng cách viết, vì khi đó dòng suy nghĩ của họ liền mạch
+                        hơn, không bị cản trở bởi sự nhạy cảm quá&nbsp;mức của họ.</em></strong>&nbsp;Nếu bạn thuộc nhóm
+                    này mà chưa biết sức mạnh khả năng viết lách của mình, hãy thử xem sao. Hãy xem viết lách là một
+                    cách để tập diễn đạt bản thân cho trôi chảy, khơi thông những cảm xúc rối rắm tắc nghẽn trong lòng,
+                    cũng như là một cách để tự chữa lành.&nbsp;<em><strong>Ngoài ra, còn một khả năng nữa ở những người
+                        có ba số 1 mà bản thân tôi quan sát thấy, đó là tâm trạng lúc vui lúc buồn.&nbsp;</strong></em>Tùy
+                    theo những yếu tố khác trong Biểu đồ ngày sinh mà tỷ lệ vui buồn sẽ gia giảm khác nhau, tốt nhất thì
+                    được 5/5, còn không thì 4/6, không nữa thì 3/7, lúc vui họ có xu hướng nói rất nhiều, lúc buồn thì
+                    ngồi im, không quan tâm tới ai</p>
+            </div>
         },
         4: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.ONE,
-            meaning: 'Người có bốn số 1 trong ngày sinh thường gặp trục trặc với vấn đề diễn đạt bằng lời, và vì vậy, rất dễ bị người khác hiểu lầm. Nhưng cuộc sống nhanh chóng dạy họ giấu đi những cảm xúc rối rắm bằng một nụ cười, cho dù họ có khuynh hướng dẫn tiếp tục chịu đựng bên trong cho đến khi tự có ý thức giải tỏa những cảm xúc đó và sống lẹ làng hơn. Nói một cách dễ hiểu, những người có bốn số 1 thường tự làm mình khổ tâm. Số 1 mang đặc tính về “ cái tôi ” của mỗi người, vậy nên hãy tưởng tượng một người có đến bốn lần “ cái tôi ” như vậy sẽ như thế nào. Họ có “ cái tôi rất mạnh, nhưng rất khó diễn đạt những cảm giác sâu đậm như vậy về bản thân mình. Vì vậy, Thầy David khuyên: vì hạnh phúc của chính mình và của những người thân, những người có bốn số 1 phải học cách kiểm soát cảm xúc của mình. Khi họ thả lỏng hơn, bớt căng thẳng, bớt thiếu tự tin (đôi khi họ không nhận ra điều này, mà trái lại, họ có thể cảm thấy mình quá tự tin là đằng khác), họ sẽ cảm thấy ít bị cản trở hơn và diễn đạt cảm xúc của mình một cách thoải mái hơn, thay vì cứ đè nén những sầu muộn, rối rắm trong nội tâm của mình.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.ONE,
+            meaning: <div><p><em><strong>Người có bốn số 1 trong ngày sinh thường gặp trục trặc với vấn đề diễn đạt bằng
+                lời, và vì vậy, rất dễ bị người khác hiểu lầm.&nbsp;</strong></em>Nhưng cuộc sống nhanh chóng dạy họ
+                giấu đi những cảm xúc rối rắm bằng một nụ cười, cho dù họ có khuynh hướng dẫn tiếp tục chịu đựng bên
+                trong cho đến khi tự có ý thức giải tỏa những cảm xúc đó và sống lẹ làng hơn.&nbsp;<strong><em>Nói một
+                    cách dễ hiểu, những người có bốn số 1 thường tự làm mình khổ tâm</em></strong>. Số 1 mang đặc tính
+                về “ cái tôi ” của mỗi người, vậy nên hãy tưởng tượng một người có đến bốn lần “ cái tôi ” như vậy sẽ
+                như thế nào. Họ có “ cái tôi rất mạnh, nhưng rất khó diễn đạt những cảm giác sâu đậm như vậy về bản thân
+                mình.<em><strong>&nbsp;Vì vậy, Thầy David khuyên: vì hạnh phúc của chính mình và của những người thân,
+                    những người có bốn số 1 phải học cách kiểm soát cảm xúc của mình.</strong></em>&nbsp;Khi họ thả lỏng
+                hơn, bớt căng thẳng, bớt thiếu tự tin (đôi khi họ không nhận ra điều này, mà trái lại, họ có thể cảm
+                thấy mình quá tự tin là đằng khác), họ sẽ cảm thấy ít bị cản trở hơn và diễn đạt cảm xúc của mình một
+                cách thoải mái hơn, thay vì cứ đè nén những sầu muộn, rối rắm trong nội tâm của mình.</p></div>
         },
         5: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.ONE,
-            meaning: 'Với năm hay sáu số 1 trên Biểu đồ ngày sinh, “ cái tôi ” thường bị đè nén để giảm bớt các khó khăn trong việc diễn đạt cảm xúc cá nhân. Những người trẻ tuổi thuộc nhóm này thường cảm thấy buồn vì bị mọi người xung quanh hiểu lầm. Điều này dẫn đến sự tách rời, từ đó gây gia sự cô độc. Họ có thể phát triển theo hướng bị ám ảnh với ngoại hình và hành động của mình, cũng như thường gắn rất nhiều gương trong nhà nhưng lại có xu hướng giấu chúng đi để tránh người khác nghĩ họ quá tự tôn. Nhưng họ vẫn bí mật ngắm mình trong gương mỗi khi có dịp. Tính vị kỷ và “ tự lừa mình ” này có thể gây ra sự mất cân bằng về tâm thần, chúng ta có thể giúp trẻ thuộc nhóm có quá nhiều số 1 gia tăng nhận thức bằng cách cho chúng tham gia nhiều hoạt động nghệ thuật khác nhau, như viết lách, làm thơ, vẽ, làm đồ gốm,... Điều này có thể áp dụng được cho trẻ mọi lứa tuổi.'
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.ONE,
+            meaning: <div>
+                <p><strong><em>Với năm hay sáu số 1 trên Biểu đồ ngày sinh, “ cái tôi ” thường bị đè nén để giảm bớt các
+                    khó khăn trong việc diễn đạt cảm xúc cá nhân. </em></strong>Những người trẻ tuổi thuộc nhóm này
+                    thường cảm thấy buồn vì bị mọi người xung quanh hiểu lầm. Điều này dẫn đến sự tách rời, từ đó gây
+                    gia sự cô độc. Họ có thể phát triển theo hướng bị ám ảnh với ngoại hình và hành động của mình, cũng
+                    như thường gắn rất nhiều gương trong nhà nhưng lại có xu hướng giấu chúng đi để tránh người khác
+                    nghĩ họ quá tự tôn. Nhưng họ vẫn bí mật ngắm mình trong gương mỗi khi có dịp.<strong><em> Tính vị kỷ
+                        và “ tự lừa mình ” này có thể gây ra sự mất cân bằng về tâm thần, chúng ta có thể giúp trẻ thuộc
+                        nhóm có quá nhiều số 1 gia tăng nhận thức bằng cách cho chúng tham gia nhiều hoạt động nghệ
+                        thuật khác nhau, như viết lách, làm thơ, vẽ, làm đồ gốm,... Điều này có thể áp dụng được cho trẻ
+                        mọi lứa tuổi.</em></strong></p>
+            </div>
         }
     },
     2: {
-        0: {
-            title: '',
-            meaning: <div>
-                Về cơ bản như đã nêu trên thì những con người mang số 2 có trong biểu đồ ngày sinh là sự nhạy cảm, có
-                trực giác tốt. Tuy nhiên, tùy vào từng tần số xuất hiện của con số 2 mà chúng mang những ý nghĩa cụ thể
-                riêng như sau:
-            </div>
-        },
         1: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.TWO,
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.TWO,
             meaning: <div>
-                <p>Những con người có số 2 trong biểu đồ ngày sinh chỉ xuất hiện một lần thì họ luôn có trực giác ở mức
-                    cơ bản nhất. Họ cũng có những đặc điểm riêng về thế mạnh và những điểm hạn chế của mình.</p>
-                <h3>Đặc điểm</h3>
-                <p>Sở hữu một trực giác ở mức cơ bản không thể đủ trong một xã hội mà tính cạnh tranh đang rất cao đặc
-                    biệt đối với phái nam. Xã hội hiện nay của chúng ta rất muôn hình muôn vẻ và đang hướng đến những
-                    giá trị nhân đạo cao cả nhất.</p>
-
-                <p>Vì vậy, mỗi con người cần phải tự chuyển mình để có thể hòa chung với guồng quay của xã hội. Như vậy
-                    mới có được những thành công như mong đợi.</p>
-
-                <p>Và điều này lại khó khăn cho những con người có số 2 trong biểu đồ ngày sinh chỉ xuất hiện 1 lần.
-                    Bởi, chúng đòi hỏi một độ nhạy cảm cao mà con người này họ không có được.</p>
-
-                <p>Nếu không thể cân bằng được thì họ rất dễ bị tổn thương và thường đưa ra những phản ứng chưa thật sự
-                    khôn ngoan. Đây là tình trạng mà nam nhi dễ gặp phải nhiều hơn phụ nữ.</p>
-
-                <p>Những người sở hữu chỉ có một con số 2 trong biểu đồ ngày sinh chúng cung cấp một nền tảng giá trị
-                    lớn cho việc phát triển sự nhạy cảm. Với phái nữ thì một con số 2 vẫn rất ổn thời sinh ra phái nữ
-                    luôn có sẵn trong mình sự nhạy cảm nhất định. Còn đối với nam dù sự nhạy cảm còn yếu nhưng cần phải
-                    tích cực trau dồi.</p>
-                <h3>Cần cải thiện</h3>
-                <p>Để có thể cải thiện được sự nhạy cảm của mình thì những con người này cần phải có nhiều thời gian để
-                    thư giãn, tránh xa những môi trường cạnh tranh và áp lực. Như vậy, mới tạo ra một con người mới hoàn
-                    toàn nổi bật và đầy cuốn hút.</p>
+                <p><strong><em>Biểu đồ có một số 2 cho thấy mức độ trực giác Cơ bản, nhưng không phải lúc nào cũng đủ
+                    trong thế giới đầy tính cạnh tranh này, đặc biệt là đối với đàn ông.&nbsp;</em></strong>Với các giá
+                    trị “ nhân tạo ” trong muôn mặt của xã hội, mỗi cá nhân cần phải tự điều chỉnh, tự khớp mình vào
+                    guồng quay chung để có thể cạnh tranh thành công. Và điều này không thể đạt được nếu không có sự
+                    nhạy cảm ở mức cân bằng cao độ.&nbsp;<em><strong>Nếu thiếu sự cân bằng này, những người mang bản
+                        tính nhạy cảm sẽ dễ bị tổn thương, dẫn đến những phản ứng thiếu khôn ngoan.&nbsp;</strong></em>Nam
+                    giới thường bị tình trạng này nhiều hơn nữ giới. Một số 2 trong ngày sinh có thể cung cấp nền tảng
+                    giá trị cho việc phát triển tính nhạy cảm cân bằng&nbsp;<em><strong>nhưng lý tưởng nhất vẫn là cặp
+                        đôi “ cân bằng ” 22&nbsp;</strong></em>(Có hai số 2 trong biểu đồ).&nbsp;<strong><em>Phái nữ có
+                        một số 2 thì vẫn ổn, bởi trời sinh họ đã... đủ nhạy cảm rồi.</em></strong>&nbsp;Nhìn chung,
+                    người có một số 2 trong Biểu đồ ngày sinh thường cảm thấy cần nhiều thời gian để thư giãn, ở ngoài
+                    thiên nhiên và tránh xa môi trường cạnh tranh căng thẳng. Con số chủ đạo sẽ là chỉ dẫn đáng tin cậy
+                    để giúp bạn đạt được điều này.</p>
             </div>
         },
         2: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.TWO,
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.TWO,
             meaning: <div>
-                <p>Những con người có số 2 trong biểu đồ ngày sinh xuất hiện tới 2 lần là khá phổ biến. Đây được xem là
-                    con số rất đẹp và có lợi thế to lớn trong việc phát triển độ nhạy cảm cùng trực giác của họ.
-                </p>
-                <h3>Đặc điểm</h3>
-                <p>Dù là một con người có độ nhạy cảm và phát triển trực giác tốt nhưng họ cần phải biết sử dụng đúng
-                    nơi đúng chỗ. Đừng nên để những lợi thế của mình mãi sâu thẳm trong tâm hồn mà không đưa ra. Với con
-                    người nếu sử dụng một cách linh hoạt độ trực giác cùng độ nhạy cảm thì họ đạt được trí thông minh và
-                    khả năng thấu hiểu người khác cũng như những tình huống có thể xảy ra.
-                </p>
-                <p>Với người có số 2 xuất hiện hai lần trong biểu đồ sinh thì trực giác của họ đáng tin cậy ở mức kinh
-                    ngạc. Tất cả những ai đối với họ như thế nào dù tốt hay xấu, dù chân thành hay lừa dối thì họ đều có
-                    thể nhận ra ngay được. Nhưng để phát huy được những lợi thế của mình những con người này thường phải
-                    tránh xa cái tôi của mình.
-                </p>
-                <p>Chính sự nhạy cảm tuyệt vời của con người này mà họ luôn đạt được rất nhiều những điều mong muốn. Họ
-                    luôn xử lý mọi công việc và tình huống rất suôn sẻ và thành công. Tuy nhiên, đừng quá liên quan và
-                    bất cứ việc gì mà chỉ làm những điều mà bạn cảm thấy nên làm.
-                </p>
-                <h3>Cần cải thiện</h3>
-                <p>Những con người này thường lao vào công việc hay những đam mê của riêng mình mà quên đi gia đình. Vì
-                    vậy, họ cần phải giữ cân bằng giữa cuộc sống và gia đình để trở nên thành công hơn nữa.
-                </p>
+                <p><strong><em>Cặp số 22 trong Biểu đồ ngày sinh là một lợi thế to lớn để một người phát triển trực giác
+                    và độ nhạy cảm. Nhưng người sở hữu cặp số 22 cần có ý thức sử dụng lợi thế này, nếu không nó sẽ bị
+                    mai một.</em></strong> Trực giác và độ nhạy cảm lý tưởng này giúp người có cặp số 22 đạt được trí
+                    thông minh trên mức trung bình, dựa trên khả năng thấu hiểu trời cho đối với con người và sự việc.
+                    Khi nói đến việc đánh giá người khác qua ấn tượng đầu tiên, trực giác của những người này cực đáng
+                    tin cậy, với độ chính xác và nhanh chóng đáng kinh ngạc. Họ gần như lập tức nhận ra người khác đối
+                    với họ có&nbsp;chân thành hay không, <em><strong>miễn là họ không để “ cái tôi ” hay trí tưởng tượng
+                        của mình nhảy vào và làm biến màu trực giác nguyên thủy mà họ có. </strong></em>Nếu được biểu
+                    đạt theo cách tích cực, trực giác nhạy bén và cân bằng này sẽ thu hút họ vào nhiều khía cạnh của đời
+                    sống con người. Thông thường họ sẽ xử lý những việc này rất suôn sẻ và thành công, nhưng họ cũng cần
+                    chú ý để tránh bị lôi kéo vào quá nhiều vụ việc. Điều đó có thể làm tổn hại hạnh phúc gia đình của
+                    họ. <strong><em>Cần nhớ rằng cân bằng mới là chìa khóa mở cửa thành công.</em></strong></p>
             </div>
         },
         3: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.TWO,
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.TWO,
             meaning: <div>
-                <p>Nếu như số 2 xuất hiện 1 lần được xem ở mức cơ bản, số 2 xuất hiện 2 lần ở mức cân bằng thì số 2 nếu
-                    có 3 lần trong biểu đồ sinh thì gọi là mức vượt ngưỡng cân bằng hay còn gọi là mức quá đà. Những đối
-                    tượng này họ thường chịu một sự nhạy cảm không cân bằng.
-                </p>
-                <h3>Đặc điểm</h3>
-                <p>Chính sự mất cân bằng về sự nhạy cảm của mình nên họ luôn có một tâm lý bất ổn và thường sẽ bị tác
-                    động với tâm lý của những người khác. Từ đó, rất dễ bị lôi kéo vào những vấn đề rắc rối của mọi
-                    người. Những người có con số 2 trong biểu đồ ngày sinh xuất hiện 3 lần thì họ thường hay chìm đắm
-                    trong thế giới của riêng mình và có thể dần dần phát triển thành sự cô độc và không muốn ai can
-                    thiệp vào thế giới của mình.
-                </p>
-                <p>Những con người này nên làm trong ngành giải trí thì dễ dàng chạm tới thành công. Đôi khi họ lại bị
-                    tổn thương vì quá nhập tâm vào công việc. Tuy nhiên, họ luôn bao giờ làm tổn thương người khác và
-                    cũng tìm cách để bảo vệ chính mình.
-                </p>
-                <h3>Cần cải thiện</h3>
-                <p>Nếu là các bé có 3 con số 2 xuất hiện trong biểu đồ sinh thì chúng có một bản năng tự nhiên rất giỏi.
-                    Tuy nhiên, cha mẹ cũng cần phải quan sát, hướng dẫn và theo dõi con cẩn thận. Hãy hướng cho bé đến
-                    sự phát triển cảm xúc một cách cân bằng nhất để tạo ra sự nền tảng và định hướng cho đường đời của
-                    bé.
-                </p>
+                <p><strong><em>Một khi “ vượt ngưỡng cân bằng ”, chúng ta sẽ bị quá đà. Người có ba số 2 trong Biểu đồ
+                    ngày sinh thường có sự nhạy cảm quá mức, đến mức có thể phát triển thành một dạng gánh nặng tâm lý
+                    khó. </em></strong>Những người này rất dễ bị tác động bởi cảm xúc của người khác, từ đó rất dễ bị
+                    lún sâu vào vấn đề của người khác.</p>
+                <p><em><strong>Để bảo vệ sự nhạy cảm của bản thân, những người này thường dành phần lớn thời gian chìm
+                    đắm trong thế giới riêng, do đó có thái độ cách biệt với xã hội và có thể phát triển thành sự cô
+                    độc. </strong></em>Nhiều người trong nhóm ba số 2 làm việc trong ngành giải trí sẽ có được thành
+                    công vượt trội vì họ có khả năng khắc họa một cách tinh tế tính cách của nhiều nhân vật khác nhau.
+                    Tuy nhiên, đôi khi quá nhập tâm nên họ khó thoát ra khỏi vai diễn và khiến bản thân tổn thương. Họ
+                    cũng gặp khó khăn trong việc biểu đạt những cảm xúc sâu sắc mà chỉ những người vô cùng nhạy cảm như
+                    họ mới có, và dễ tổn thương vì điều này. Do đó, họ thường có phản ứng tự vệ thái quá hoặc cố tình
+                    nói những lời làm tổn thương người khác như một cách để bảo vệ bản thân. Trẻ có ba số 2 trong ngày
+                    sinh thường rất giỏi bắt chước, và chúng luôn có bản năng muốn chia sẻ những cảm giác của người
+                    khác. Tuy nhiên, việc cảm xúc trồi sụt theo những vui buồn của người khác khiến chúng mệt mỏi và mất
+                    cân bằng, nên các bậc cha mẹ cần quan sát và hướng dẫn những đứa trẻ này cẩn thận. <strong><em>Nhiệm
+                        vụ quan trọng của các bậc cha mẹ là giúp con có được nền tảng vững chắc về sự tự tin, cùng với
+                        định hướng đường đời theo Con số chủ đạo của con.</em></strong></p>
             </div>
         },
         4: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.TWO,
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.TWO,
             meaning: <div>
-                <p>Sự xuất hiện 4 lần con số 2 trong biểu đồ ngày sinh thể hiện một con người mà tính nhạy cảm cực cao.
-                    Họ có những đặc điểm mà khiến cho không ít người phải lo lắng. Theo nghiên cứu của những nhà thần
-                    học thì những người rơi vào trường hợp này là rất nhỏ.
-                </p>
-                <h3>Đặc điểm</h3>
-                <p>Chính sự nhạy cảm cao của họ mà không được kiểm soát thì rất nguy hiểm có thể dẫn đến sự nóng giận
-                    hay một thói mỉa mai và sân si với người khác. Những con người có số 2 xuất hiện tới 4 lần trong
-                    biểu đồ ngày sinh thường thiếu kiên nhẫn. Đặc biệt trực giác của họ không đáng tin cậy khiến cho họ
-                    luôn rơi vào tình trạng đặt lòng tin nhầm người.
-                </p>
-                <p>Những con người này họ thường có sự phản ứng thái quá khi gặp bất cứ tình huống nào. Họ thường hay
-                    nhẹ dạ và không biết cân bằng cảm xúc. Những con người này thường rất ít bạn bè.
-                </p>
-                <p>Dù số lượng người có số 2 trong biểu đồ ngày sinh là nhỏ nhưng họ lại chiếm phần lớn tới những người
-                    mà hôn nhân không êm ấm, những người phá sản, hay những người không ổn định về thần kinh. Điều này
-                    đã được nhà thần học David Philip chỉ ra rõ ràng trong những nghiên cứu của ông.
-                </p>
-                <h3>Cần cải thiện</h3>
-                <p>Những con người này họ thường bị ảnh hưởng bởi gia đình nhiều vì vậy, để giúp họ thoát ra khỏi những
-                    điều đen tối của cuộc sống thì gia đình luôn bên họ. Giúp cho họ luôn kiểm soát chặt chẽ bản thân
-                    mình về những vấn đề liên quan đến cảm xúc. Những lúc thư giãn nên ngồi thiền và đừng chấp nhận cuộc
-                    sống theo một cách tự nhiên mà hãy vươn lên với nghịch cảnh của cuộc sống.
+                <p><strong><em>Sự nhạy cảm cao độ đến nhường này cần được theo dõi và kiểm soát cẩn thận, nếu không nó
+                    rất dễ biến thành những suy diễn sai lầm, đi kèm theo tính nóng giận, thói&nbsp;hay mỉa mai và sân
+                    si. </em></strong>Những người này thường vô cùng thiếu kiên nhẫn. <strong><em>Trực giác của họ trở
+                    nên kém tin cậy vì họ suy diễn quá nhiều, và họ có khuynh hướng đặt lòng tin nhầm
+                    người. </em></strong>Họ thường có nhiều phản ứng thái quá, khá nhẹ dạ và không cân bằng về mặt cảm
+                    xúc. Gia đình và bạn bè của những người có bốn số 2 cần cực kỳ kiên nhẫn và thấu hiểu, đặc biệt là
+                    khi họ có khá ít bạn bè.</p>
+                <p>Theo nghiên cứu và quan sát trong hơn bốn mươi năm của mình, Thầy David cho rằng mặc dù người có bốn
+                    số 2 chiếm tỷ lệ rất nhỏ trong tổng dân số, nhưng họ lại thường xuyên góp mặt trong nhóm những người
+                    có hôn nhân tan vỡ, phá sản hoặc phải lưu trú trong các viện tâm thần tại Mỹ. Họ hiếm khi leo lên
+                    được vị trí cao nơi công sở, nhưng khi đạt được vị thế đó thì họ thường cảm thấy rất khó khăn trong
+                    việc khiến người khác tin tưởng. Do đó, khi lên chậm bao nhiêu thì họ lại tụt xuống đáy nhanh bấy
+                    nhiêu, trừ khi họ có “ gia đình quyền lực ” với những mối quan hệ đặc dụng. Cuộc sống của những
+                    người có bốn số 2 thường rất cô đơn, và nhiều người mượn rượu chè, chất kích thích hoặc các thói gây
+                    nghiện khác để khỏa lấp sự trống trải trong tâm hồn. <span><strong><em>Họ có thể tránh được sự xa cách về mặt cảm xúc này nếu chịu mở lòng đón nhận những lời khuyên phù hợp và khôn ngoan. Họ cần phải học cách tự kiểm soát bản thân thật chặt chẽ khi có điều gì liên quan đến bày tỏ cảm xúc, học cách thư giãn và thiền mỗi khi có thể, cũng như xuôi theo dòng chảy của cuộc sống thay vì cứ đi ngược lại nó.</em></strong></span>
                 </p>
             </div>
         },
         5: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.TWO,
-            meaning:
-                <div>
-                    <p>Đây là một trường hợp cực hiếm và chỉ những người sinh ngày 22/02/2002 và những bé sinh ngày
-                        22/02/2020. Đây là những con người sẽ có sự phản ứng mạnh mẽ với sự nhạy cảm đặc biệt của mình.
-                        Họ luôn cần đến sự quan tâm, hướng dẫn từ gia đình thầy cô khi con nhỏ. Để lớn hơn những con
-                        người này luôn đi được đúng hướng hơn.
-                    </p>
-                    <p>Không có những con số 2 trong biểu đồ ngày sinh xuất hiện từ 1 đến 5 lần mà trong tương lai sẽ
-                        xuất hiện 6, 7 lần và đây đều là những đám trẻ hỏi rất nhiều sự dặt dìu của gia đình. Không nên
-                        để bé tự phát triển với sự cảm nhận quá mức. Với những chia sẻ trên hy vọng giúp đỡ mọi người
-                        hoặc các cha mẹ biết được những điểm đặc biệt để từ đó hướng dẫn con mình, hay chính bản thân
-                        mình đi theo hướng tốt nhất.
-                    </p></div>
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.TWO,
+            meaning: <div>
+                <p><strong><em>Đây là trường hợp cực kỳ hiếm. Những người có ngày sinh mang năm số 2 rất dễ phản ứng với
+                    sự nhạy cảm đặc biệt của mình. Họ rất cần sự quan tâm và hướng dẫn cực kỳ tập trung, tận tâm từ cha
+                    mẹ, thầy cô, đặc biệt khi họ còn rất nhỏ, và họ thường thử thách lòng kiên nhẫn của những người khác
+                    tới tận cùng.</em></strong></p>
+                <p><strong>Lưu ý:</strong> Trong những thập niên tới đây, chúng ta sẽ có dịp nhìn thấy những biểu đồ
+                    ngày sinh có sáu số 2, như trong ngày sinh của người sinh ra vào 22/2/2022; hoặc thậm chí là bảy số
+                    2, như trong ngày sinh 22/2/2222 và 22/12/2222. <strong><em>Các bậc phụ huynh có con sinh vào những
+                        ngày này cần đặc biệt lưu ý để dìu dắt và kiên nhẫn với con ngay từ khi rất nhỏ, để hỗ trợ Con
+                        trong việc bày tỏ cảm xúc. </em></strong>Nhiều số 2 được lặp lại đồng nghĩa với việc Biểu đồ
+                    ngày sinh bị trống nhiều con số ở những vị trí khác. Điều này tạo thành những Mũi tên trống, cho
+                    thấy một số đặc điểm tương đối bất lợi cho người mang nhiều số 2. <em><strong>Tuy nhiên, hãy nhớ
+                        rằng những gì được thể hiện trên Biểu đồ ngày sinh chỉ mới là “ số vốn ban đầu ” của mỗi người
+                        khi vào đời. Khi nhận thức rõ điều này, chúng ta sẽ có cơ hội và khả năng điều chỉnh bản thân,
+                        từ đó tác động đến cuộc đời mình, bằng cách phát triển một số kỹ năng, </strong></em>tham gia
+                    các hoạt động mang tính chất của những con số không có mặt trên biểu đồ, đặc biệt là con số nằm ở vị
+                    trí trung tâm như số 5, hay các số nằm giữa các trục ngang, trục dọc khác.</p>
+            </div>
         }
     },
     3: {
-        0: {
-            title: '',
-            meaning: <div>
-                <p>Số 3 xuất hiện trong biểu đồ ngày sinh nằm ở trục trí não ngay ỏ vị trí cổng vào. Đặc biệt, số 3 là
-                    một con số cũng rất quan trọng trong nhóm các con số về tâm trí chúng phụ trách trí nhớ của mỗi con
-                    người . Nếu như số 1, số 2 cân bằng cho cá tính và trực giác của mỗi con người thì số 3 mỗi vị trí
-                    đứng của nó mang đến sức mạnh lý tưởng nhất.</p>
-
-                <p>Số 3 trong biểu đồ sinh còn hỗ trợ cho nhiều cá tính khác của con người thông qua Mũi tên chỉ cá tính
-                    trong biểu đồ. Hiểu một cách cơ bản nhất người có số 3 xuất hiện trong biểu đồ sinh là một con người
-                    có sức mạnh, có lý tưởng, có trí trong cuộc sống. Nói như vậy, không hẳn những người không có số 3
-                    không có những sức mạnh đó. Mà họ cần phải cố gắng nhiều hơn nữa trong việc phát triển tâm trí của
-                    mình.</p>
-
-                <p>Những con người không có số 3 thường có khuynh hướng lười biếng. Vì vậy, cần phải điều chỉnh ngay từ
-                    khi con bé. Nếu không sẽ gặp phải rất nhiều khó khăn sau này. Trong số 3 thì mỗi lần xuất hiện đều
-                    mang những tính cách riêng biệt khác nhau. Chúng ta cùng tìm hiểu qua phần tiếp theo đây.</p>
-            </div>
-        },
         1: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.THREE,
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.THREE,
             meaning: <div>
-                <p>Nếu bạn có con số 3 xuất hiện duy nhất một lần trong biểu đồ sinh thể hiện một con người có trí nhớ
-                    tốt và rất lâu dài. Nhưng trí nhớ này cần phải mang ra sử dụng vì nếu không dùng tới dần dần chúng
-                    teo lại và không còn giá trị gì. Con số 3 trong biểu đồ thể hiện sự nhanh nhạy trong trí não của họ.
-                </p>
-                <p> Nếu các em nhỏ có một con số 3 trong biểu đồ sinh chắc chắn là một bé học tập rất thông minh bởi trí
-                    nhớ tốt. Lớn lên sẽ rất ham học hỏi và luôn chủ động quan tâm đến mọi vấn đề trong cuộc sống.
-                </p>
-                <p>Không chỉ vậy, những con người sở hữu duy nhất một con số 3 trong biểu đồ sinh cũng rất linh hoạt họ
-                    tích cực trong lối sống, trong công việc.
-                </p>
-                <p>Vì vậy, họ luôn đạt được những gì mà mình mong muốn. Những con người này luôn có được sự tự tin cao
-                    và cũng góp phần không nhỏ đến thành công trong tương lai của họ.
+                <p><strong><em>Được ví như mỏ neo của trí nhớ, số 3 duy nhất trên Biểu đồ ngày sinh cho thấy người sở
+                    hữu nó có trí nhớ rất tốt và lâu dài, miễn là nó được sử dụng thường xuyên </em></strong>(bất kỳ khả
+                    năng nào không được mài giũa thường xuyên sẽ dần dần mất đi độ sắc bén). Người có một số 3 trong
+                    ngày sinh thường giữ được sự nhanh nhạy trong hoạt động trí não. <strong><em>Những bạn trẻ có một số
+                        3 sẽ rất có lợi thế trong việc học tập, cả trong trường học lẫn trường đời.</em></strong> Họ sẽ
+                    chủ động quan tâm tới cuộc sống và môi trường xung quanh. Người có một số 3 cũng rất linh hoạt và
+                    thường sống khá tích cực. Họ mang năng lượng tích cực này vào hầu hết những công việc mà họ làm. Họ
+                    cũng có sự tự tin trên mức trung bình, thứ góp phần không nhỏ vào thành công của họ trong cuộc sống.
                 </p>
             </div>
         },
         2: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.THREE,
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.THREE,
             meaning: <div>
-                <p>Nếu như người có một số 3 trong biểu đồ ngày sinh thì có sự linh hoạt và khả năng ghi nhớ tốt. Thì
-                    những con người có 2 lần xuất hiện số 3 thì độ linh hoạt và trí não của họ tăng lên gấp đôi. Họ là
-                    những con người rất giàu trí tưởng tượng và có một khả năng về văn chương cực đỉnh.
-                </p>
-                <p>Tuy nhiên, những con người này cần phải luôn được theo dõi chặt chẽ và phát triển những lợi thế của
-                    mình theo hướng tích cực và cân bằng nhất. Tránh tình trạng đi theo những tiêu cực xấu ảnh hưởng tới
-                    xã hội, gia đình và chính bản thân mỗi người.
-                </p>
-                <p>Những con người này cần phải có được sự tự kỷ luật cho bản thân và cần có sự những không gian tĩnh
-                    tâm để luyện tập trí nhớ của mình. Vì vậy, bạn có thể luyện những bài phát triển trí não bằng cách
-                    thiền hoặc những bài tập chuyên dụng. Tuy nhiên, cũng nên phải nhớ rằng nếu mọi người nuông chiều
-                    trí tưởng tượng của mình sẽ khiến mất đi luôn tính thực tế cần thiết.
-                </p>
-                <p>Những con người mang số 3 trong biểu đồ sinh thường có khả năng viết lách rất tốt. Nếu họ được khích
-                    lệ và làm việc theo sự đam mê của mình chắc chắn việc viết lách sẽ đem về một khoản thu nhập không
-                    hề nhỏ cho họ.
-                </p>
+                <p><strong><em>Nhân đôi độ nhạy về phần trí não, người có hai số 3 trong Biểu đồ ngày sinh thường giàu
+                    trí tưởng tượng và có khả năng văn chương.</em></strong> Tuy nhiên, những thế mạnh này cần được theo
+                    dõi chặt chẽ để có thể phát triển theo hướng tích cực và cân bằng nhất, tránh khả năng đi theo hướng
+                    tiêu cực vì sẽ dễ phát sinh những hành vi phản xã hội (có hành vì phản kháng xã hội hoặc từ chối
+                    giao lưu / giao tiếp) . <strong><em>Để hỗ trợ rèn luyện tinh thần kỷ luật bản thân, người có hai số
+                        3 nên thực hành thiền tĩnh tâm mỗi khi có thể cùng với những bài tập luyện trí nhớ và phát triển
+                        trực giác. </em></strong>Những hoạt động này có thể giúp “kéo” họ về với thực tế, với những ý
+                    tưởng mang tính xây dựng và tích cực hơn. Nếu không, trí tưởng tượng quá phong phú của họ sẽ làm
+                    hỏng cái nhìn khách quan hay sự hiểu biết toàn diện. <em><strong>Khi nuông chiều&nbsp;trí tưởng
+                        tượng và suy diễn của mình, họ có thể từ từ mất luôn tính thực tế. </strong></em>Người có hai
+                    hay ba số 3 trong Biểu đồ ngày sinh thường có khả năng viết lách đáng nể. Nếu được khích lệ, họ có
+                    khả năng viết rất mạch lạc, khai thác được nhiều nguồn cảm hứng dồi dào và hoàn toàn có khả năng
+                    biến kỹ năng này thành một công việc có thu nhập đáng kể.</p>
             </div>
         },
         3: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.THREE,
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.THREE,
             meaning: <div>
-                <p>Trường hợp tiếp theo là con số 3 trong biểu đồ ngày sinh xuất hiện 3 lần. Đây là con số thể hiện mức
-                    độ nhạy bén rất mạnh mẽ và mãnh liệt. Tuy nhiên, chính điều này lại khiến cho họ mất sự liên kết với
-                    thực tế. Cuộc sống sẽ ngày càng trở nên đơn độc.
-                </p>
-                <p>Những con người này họ thường độc lập trung suy nghĩ, không nghe ai cũng không chịu nhìn nhận theo
-                    thực tế. Chính điều này khiến cho họ càng trở nên đơn độc hơn bao giờ hết. Họ luôn thể hiện trí
-                    tưởng tượng về một tương lại rất xa và mường tượng ra một cảnh tượng phi thực tế và hết sức lạ lùng.
-                    Những con người này họ không bao giờ tập trung vào hiện tại mà chỉ lo đến tương lai và không tập
-                    trung vào những mối quan hệ đang có với người xung quanh.
-                </p>
-                <p>Với sự suy nghĩ như vậy nên họ ít khi tin tưởng người khác không chịu thư giãn. Con người này họ
-                    không cảm thấy sự hạnh phúc. Đôi khi lại bị đắm chìm vào trong những viễn du của tương lai mà quên
-                    mất thực tại của mình. Những điều này không hề tốt cho họ khiến họ mất đi một góc nhìn cuộc sống
-                    chân thực hơn. Càng có suy nghĩ như vậy thì họ càng đơn độc hơn trong cuộc sống.
-                </p>
-                <p>Với những con người này để thay đổi thì cần phải có người thấu hiểu và hết sức kiên nhẫn đem đến
-                    những sự yêu thương cần thiết, những định hướng thận trọng trong tương lai. Cần phải có người dạy họ
-                    về tính thực tế chỉ cần sử dụng những ngôn ngữ khéo léo họ sẽ nghe theo và dần dần thay đổi theo
-                    những hướng tích cực và tốt đẹp hơn.
-
+                <p><strong><em>Ba số 3 đưa mức độ nhạy của tâm trí chạy quá xa về phía tưởng tượng, khiến những người sở
+                    hữu chúng thường mất liên kết với thực tế, từ đó gây ra sự cách biệt, thứ có nguy cơ kéo theo sự cô
+                    đơn.</em></strong> Họ tự tạo ra một “ thực tế ” của riêng mình, nhưng thật đáng tiếc là không ai
+                    khác có thể nhìn thực tế theo cách họ nhìn, vì vậy đơn độc lại càng thêm đơn độc.<strong><em> Trí
+                        tưởng tượng phong phú của họ thường tập trung vào những sự kiện chưa xảy ra và tạo ra những cảnh
+                        tượng lạ lùng đến mức họ thường khó tập trung vào hiện tại và kết nối với những người xung
+                        quanh. </em></strong>Với sự mất cân bằng như vậy, những người này thường cảm thấy khó tin tưởng
+                    người khác, hiếm khi được thư giãn và có thể nghiện một số loại thuốc chống căng thẳng.</p>
+                <p>Họ khó có bạn thân và hầu như không cảm thấy hạnh phúc. Đôi khi họ quá đắm chìm trong những cuộc viễn
+                    du trong tâm tưởng đến nỗi quên mất hiện tại, xao lãng luôn người đang nói chuyện với mình. Sự tập
+                    trung mất cân bằng như vậy không giúp ích gì cho họ trong việc nhìn nhận sự việc một cách chân thực.
+                    Càng như vậy, họ càng thu mình vào trong vỏ ốc nội tâm, và điều này lại khiến họ càng thêm mất lòng
+                    tin nơi người khác, gây ra nhiều sự mâu thuẫn và tranh cãi. Nếu Có người thân thuộc nhóm này, bạn
+                    cần hết sức kiên nhẫn, thấu hiểu và quan tâm, yêu thương, định hướng thận trọng. <span><em><strong>Cách tốt nhất để hỗ trợ họ là hãy khuyến khích họ chú ý vào thực tại. Họ cần được dạy tính thực tế thông qua những hoạt động sử dụng sự khéo léo của đôi tay và nhận diện cảm xúc từ trái tim, thường là qua các hoạt động hay hình thức mang tính nghệ thuật. Sự kiên nhẫn và cảm thông từ người hướng dẫn là cực kỳ quan trọng.</strong></em></span>
                 </p>
             </div>
         },
         4: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.THREE,
-            meaning: <div>
-                <p>Trường hợp số 3 trong biểu đồ ngày sinh xuất hiện 4 lần thì đây là một trường hợp rất đặc biệt thậm
-                    chí là rất hiếm. Chúng chỉ xảy ra duy nhất ở một tháng trong một thế kỷ đó là ngày 31/3/1993.
-                </p>
-                <p>Còn trong tương lại thì chúng có thể xảy ra ở những người sinh ngày 3/3/2033. Những con người càng
-                    nhiều số 3 này thì trí tưởng tưởng ngày dày hơn và kéo theo đó là những khó khăn của họ cần phải
-                    trải qua cũng rất nhiều.
-                </p>
-                <p>Số 3 xuất hiện 4 lần trong biểu đồ ngày sinh là rất hiếm gặp
-                </p>
-                <p>Như vậy, con số 3 trong biểu đồ ngày sinh là một trong những con số thể hiện trí tưởng tượng của con
-                    người. Nếu tần số xuất hiện càng nhiều thì trí tưởng tượng càng phong phú. Tuy nhiên, sự phong phú
-                    đó lại khiến cho con người rời xa thực tế, đây là điều không tốt. Những con người này cần phải nắm
-                    bắt được những hạn chế của mình. Từ đó có được sự khắc phục nếu một trí tưởng tượng phong phú đi
-                    liền với thực tế thì chắc chắn bạn sẽ thành công.
-                </p>
-            </div>
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.THREE,
+            meaning: <div><p>Trường hợp hiếm này chỉ có thể xảy ra vào một tháng duy nhất ở mỗi thế kỷ. Ở thế kỷ 20,
+                trường hợp cuối cùng là vào ngày 31/3/1933, nghĩa là người này nếu còn sống thì cũng khá lớn tuổi rồi.
+                Còn ở thế kỷ 21, mãi tới ngày 3/3/2033 mới có Biểu đồ ngày sinh gồm bốn số 3. Vậy nên tôi sẽ không bàn
+                nhiều về trường hợp này. Chúng ta chỉ cần hiểu rằng càng nhiều số 3 trong biểu đồ thì mức độ tưởng tượng
+                càng đậm, vì vậy, khó khăn càng dày.</p></div>
         }
     },
     4: {
-        0: {
-            title: '',
-            meaning:
-                <div>
-                    <p>Với những người hiểu về nhân số học thì có lẽ đều biết con số 4 chính là con số nằm ở giữa của
-                        trục ngang thể chất. Đặc biệt, chúng thể hiện cho con số vuông vắn và theo nghiên cứu của những
-                        nhà thần học thì những con người có số 4 này thường là người rất thực tế, gọn ghẽ và đặc biệt có
-                        óc tổ chức.
-                    </p>
-                    <p> Song, không phải những người không có số 4 trong biểu đồ ngày sinh là người không thực tế mà họ
-                        chỉ là những con người thiếu đi sự kiên nhẫn ở một lĩnh vực nào đó. Cụ thể, nếu người nào đó
-                        không có số 4 nhưng có đủ các số như 3,6,9 ở mũi tên trí nhớ thì họ là đối tượng mà không kiên
-                        nhẫn được với những ai chậm hiểu.
-                    </p>
-                    <p>Nhưng nếu người vắng số 4 nhưng lại có đủ các số là 2,5,8 là các mũi tên về cân bằng cảm xúc. Thì
-                        họ chính là những người không kiên nhẫn được với đối tượng không kiểm soát được cảm xúc riêng
-                        của chính mình. Tuy nhiên, những con người thiếu đi sự kiên nhẫn vẫn có thể được cải thiện khi
-                        nhận biết được điểm yếu của mình và quyết tâm thay đổi. Hãy dùng sự yêu thương, quan tâm của
-                        mình để có thể hóa giải những tính cách khó chịu của bản thân.
-                    </p>
-                </div>
-        },
         1: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.FOUR,
-            meaning:
-                <div>
-                    <p>Phổ biến nhất là những con người mà trên biểu đồ sinh của họ chỉ xuất hiện 1 lần con số 4. Đây là
-                        mẫu người rất chủ động trong mọi việc, họ luôn hăng hái thực tế trong công việc. Đặc biệt, những
-                        con người này thường tích cực trong những hoạt động liên quan đến tài chính, kỹ thuật hay tổ
-                        chức….
-                    </p>
-                    <p>Những người có con số 4 trong biểu đồ ngày sinh thì thường bị con số chủ đạo lấn át. Vì vậy, để
-                        thể hiện rõ nhất ý nghĩa của con số 4 này thì cần phải biết được con số chủ đạo của người đó.
-                        Ghép hai đặc trên lại sẽ nói lên tất cả về con người này.
-                    </p>
-                    <p>Ngoài ra, những con người số 4 có trong biểu đồ sinh họ thích bắt tay làm ngay những việc thực tế
-                        hơn là ngồi suy ngẫm về các hệ thống lý luận. Đặc biệt, họ rất dễ hoài nghi với những sự việc mơ
-                        hồ không đi sát vào thực tế. Con người này thích sự thực tế hơn lý thuyết và không kiên nhẫn với
-                        những người hay trễ hẹn. Đây chính là một đặc điểm bất di bất dịch ở con người có 1 số 4 trong
-                        biểu đồ sinh.
-                    </p>
-                    <p>Tuy nhiên, nếu những người này quan tâm nhiều đến thể chất thì khiến cho họ đang thiên về vật
-                        chất. Đây chính là một khía cạnh tiêu cực của con người số 4. Song, điều này lại là một cách để
-                        thử thách lòng kiên nhẫn của chính họ. Thông qua vấn đề này sẽ giúp cho con người có 1 số 4 xuất
-                        hiện trong biểu đồ sinh sẽ biết cách quan tâm và yêu thương người khác nhiều hơn.
-                    </p>
-                </div>
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.FOUR,
+            meaning: <div>
+                <p><strong><em>Người có một số 4 trong Biểu đồ ngày sinh là những người rất chủ động, làm việc gì cũng
+                    hăng hái và thực tế, bao gồm các hoạt động liên quan đến lĩnh vực tổ chức, kỹ thuật, tài chính hoặc
+                    hoạt động thể chất như làm vườn, các hình thức nghệ thuật tạo hình từ đôi tay, xây
+                    dựng,... </em></strong>Hoạt động mà họ lựa chọn theo đuổi và có khả năng thành thạo nhất thường được
+                    thể hiện qua con số chủ đạo. Ví dụ, tôi có Con số chủ đạo là 9, trong đó có định hướng ngành nghề
+                    phù hợp là “ không giỏi tính toán, đừng làm ăn kinh doanh vì không giỏi tài chính ”. Đồng thời tôi
+                    cũng có một số 4 trong Biểu đồ ngày sinh, trong đó có yếu tố khá tài chính.&nbsp;&nbsp;So sánh sức
+                    ảnh hưởng của hai bên thì con số chủ đạo có ảnh hưởng lớn hơn, nên yếu tố “ không giỏi tài chính ”
+                    vẫn trội hơn, nhưng nhờ có được một số 4 nên vẫn có thể lên ý tưởng, làm nội dung, định hướng cho
+                    kinh doanh, miễn là đừng tham gia vào các hoạt động sổ sách, kế toán là được.</p>
+                <p><strong><em>Những người có một số 4 sẽ thích bắt tay vào việc thực tế hơn là ngồi nghiền ngẫm lý
+                    thuyết suông, và đặc biệt, họ thường hoài nghi, không tin vào những điều có vẻ quá mơ hồ, trừu
+                    tượng. </em></strong>Họ thích thực tế hơn lý thuyết và dễ mất kiên nhẫn với những ai hẹn lần hẹn lữa
+                    hay cứ dời hạn đã hẹn. Họ thích xúc tiến công việc ngay lập tức, và điều này gần như trở thành quy
+                    tắc “ bất di bất dịch ” đối với họ, đặc biệt là khi họ có thêm một số 7 nữa trong ngày
+                    sinh. <strong><em>Nếu quan tâm quá nhiều đến khía cạnh vật chất, những người có một số 4 thường có
+                        xu hướng thực dụng.</em></strong> Điều này có thể là một khía cạnh tiêu cực của số 4 nói chung,
+                    mục đích là để dạy cho những người sở hữu Con số này biết vận dụng lòng kiên nhẫn vốn có của mình để
+                    tránh chạy theo chủ nghĩa vật chất. Cách tốt nhất để làm được điều đó là học cách nhẫn nại và quan
+                    tâm đến những người xung quanh nhiều hơn. <strong><em>Nói cách khác, càng quan tâm và thương yêu
+                        người khác nhiều thì từ từ bạn sẽ càng không còn màng đến những giá trị vật chất quanh mình nữa.
+                        Và bằng cách này, bạn sẽ đạt được tình bạn và hạnh phúc lâu dài.</em></strong></p>
+            </div>
         },
         2: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.FOUR,
-            meaning:
-                <div>
-                    <p>Nếu người có số 4 xuất hiện 1 lần là người thực tế thì sự xuất hiện 2 lần con số 4 trong biểu đồ
-                        ngày sinh sẽ giúp cho mọi người có cái nhìn không cân bằng về cuộc sống. Họ luôn quy mọi vấn đề,
-                        mọi thứ về giá trị vật chất. Do đó, những con người này cần phải học cách cân bằng và hài hòa
-                        giữ tinh thần, vật chất và trí não. Có được như vậy họ mới sống cảm xúc và luôn tư duy hơn.
-                    </p>
-                    <p>Với trường hợp này nếu con số chủ đạo của họ là một trong số trục Tâm hồn như các số 2,5,8 hay
-                        3,6,9 của trục trí não thì họ là những người có cảm nhận về tinh thần và trí não cao hơn người
-                        bình thường. Khi người càng nhiều số 4 xuất hiện trong biểu đồ sinh thì cần phải học cách cần
-                        đối giữa trí não – tinh thần – vật chất.
-                    </p>
-                    <p>Cần tránh xa những bạn bè xấu tác động tiêu cực đến bạn. Nhưng nếu là những người bạn tốt biết
-                        trân trọng chính bạn hay những nền văn hóa, thẩm mỹ đạo đức trong cuộc sống thì như vậy sẽ giúp
-                        cho bạn trở nên cân bằng và hướng tới nhiều điều tốt đẹp hơn.
-                    </p>
-                </div>
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.FOUR,
+            meaning: <div>
+                <p><em><strong>Nhân đôi số 4 có thể dẫn tới cái nhìn không cân bằng về cuộc sống, mà trong đó mọi thứ
+                    đều được quy về giá trị thực tế và vật chất. Vậy điều mà người có hai số 4 cần học là cách cân bằng
+                    giữa ba khía cạnh: thể chất / vật chất, tinh thần và trí não. Như vậy họ sẽ sống thoải mái, hài hòa
+                    hơn với cảm xúc và tư duy của chính mình.</strong></em></p>
+                <p>Nếu những người này có con số chủ đạo thuộc Trục ngang Tinh thần (số 2 , 5 , 8) hoặc Trục ngang Trí
+                    não (số 3 , 6 , 9) , thì họ có khả năng bẩm sinh trong lĩnh vực tinh thần hay trí não cao hơn những
+                    người cũng thuộc nhóm này nhưng có con số chủ đạo thuộc Trục ngang Thể chất (các số 4,7). Nói chung,
+                    càng có nhiều số 4 trong Biểu đồ ngày sinh thì chúng ta càng cần phải học cách cân đối ba lĩnh vực
+                    nói trên, và khi chọn bạn bè, cần phải lưu ý tránh xa những người có khả năng tác động tiêu cực đến
+                    mình. Ngược lại, nếu chọn được những người bạn biết trân trọng giá trị thẩm mỹ, văn hóa, đạo đức,
+                    thì cuộc đời chúng ta cũng sẽ cân bằng theo hướng tốt đẹp.</p>
+            </div>
         },
         3: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.FOUR,
-            meaning:
-                <div>
-                    <p>Trường hợp cuối cùng chính là con số 4 xuất hiện tới 3 lần trong biểu đồ sinh. Đây là cấp độ thể
-                        hiện mãnh liệt hơn của những con người có số 4 xuất hiện 2 lần. Cụ thể, những con người này
-                        thường bị cột chặt vào những giá trị vật chất. Dù họ có ý thức để thoát ra nhưng giá trị của vật
-                        chất quá lớn sẽ lôi kéo họ quay trở lại.
-                    </p>
-                    <p>Phải những con người có ý thực cực cao mới có thể thoát ra khỏi những điều đó. Đồng thời, những
-                        con người này cần phải luôn luôn trau dồi về mặt trí não, tinh thần. Đặc biệt rất cần đến sự
-                        định hướng, dẫn dắt của một người đáng tin cậy. Người có nhiều số 4 thường là những người đam mê
-                        vật chất luôn lao động cực nhọc và làm việc không ngừng nghỉ.
-                    </p>
-                    <p>Họ không nắm được giá trị, niềm vui của công việc đó mang đến mà chỉ vùi đầu làm đầy tớ của công
-                        việc sao cho có được nhiều tiền nhất. Dù họ nhận ra được điều này nhưng không hề đơn giản để có
-                        thể thoát khỏi ra được. Với con người này việc cân bằng trí não – tinh thần – thể chất càng cần
-                        thiết và cấp bách hơn bao giờ hết.
-                    </p>
-                    <p>Điểm đặc biệt của con số 4 trong biểu đồ sinh so với những con số khác đó chính là không có
-                        trường hợp con số đơn độc nằm ở các góc như những con số khác. Vì vậy, khó có thể nhận được sự
-                        hỗ trợ từ những con số nào khác.
-                    </p>
-
-                    <p>Người có con số 4 trong biểu đồ ngày sinh là những con người thiên về thực tế và vật chất. Điều
-                        này không hề xấu tuy nhiên họ cần phải hiểu rõ được và cân bằng mọi vấn đề. Như vậy, cuộc sống
-                        của họ mới trở nên đơn giản và cân bằng thoải mái hơn. Hãy tạo niềm vui trong công việc đừng coi
-                        nó là “ông chủ” của mình cần phải cung phụng thay vào đó hãy coi đó là phương tiện để đạt được
-                        mục đích sống.
-                    </p>
-                </div>
-        }
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.FOUR,
+            meaning: <div><p><strong><em>Tất cả những đặc điểm của hai số 4 đều được thể hiện trong Biểu đồ ba số 4,
+                nhưng với cấp độ mãnh liệt hơn, vì những người sở hữu biểu đồ này bị cột chặt vào những giá trị vật
+                chất, đến mức mỗi khi họ có ý thức muốn thoát ra để hướng tới những giá trị cao hơn thì họ lại dễ bị các
+                giá trị vật chất lôi kéo trở lại.</em></strong> Những người nhận thức được sức hút này của chủ nghĩa vật
+                chất phải có ý chí mạnh mẽ và thái độ sẵn sàng tiếp nhận sự chỉ dẫn tận tình thì mới có thể phát triển
+                thêm về mặt trí não, tinh thần hoặc tâm linh. Nhiều người có ba số 4 thường lao vào kiếm tiền đến mức
+                kiệt quệ mà không nhận ra bài học của họ là kiểm soát công việc để hiểu những giá trị mà công việc đó
+                mang đến, chứ không phải vùi đầu làm tôi tớ cho nó. Khi nhận ra điều này và có ý thức thoát khỏi nó, họ
+                sẽ có khả năng cân bằng hơn ở ba khía cạnh thể chất - tinh thần - trí não. Bên cạnh đó, Thầy David, còn
+                thấy rằng những người có ba số 4 có khuynh hướng bị yếu hai chân, do họ thường đặt quá nhiều trọng tâm
+                lên phần chi dưới. Họ cần quan tâm đặc biệt đến đầu gối, cổ chân và bàn chân.</p></div>
+        },
+        // 4: {
+        //     title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.FOUR,
+        //     meaning: <div></div>
+        // },
+        // 5: {
+        //     title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.FOUR,
+        //     meaning: <div></div>
+        // }
     },
     5: {
         1: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.FIVE,
-            meaning: 'Những người có Biểu đồ ngày sinh có một số 1 thường gặp một chút khó khăn trong việc thể hiện bản thân qua ngôn ngữ. Điều này không có nghĩa là họ không thể nói chuyện một cách suôn sẻ, mà là họ khó diễn đạt được cảm xúc nội tâm của mình.\n' + '\n' + 'Họ có thể nói rất lưu loát và đầy thuyết phục về các đề tài không liên quan đến diễn đạt cảm xúc cá nhân, nhưng thường không biết cách biểu đạt bản thân hoặc diễn tả những gì mình đang cảm thấy. Chỉ khi nào họ học được cách làm chủ bản thân - kết quả của quá trình trưởng thành và thấu hiểu - thì điều này mới được cải thiện. Đôi khi họ sẽ cố ý nói ra những lời hoàn toàn trái ngược với suy nghĩ thật sự của mình như một kiểu phản ứng tự vệ - tức là họ Cố ý làm tổn thương hoặc xúc phạm người khác để tự bảo vệ bản thân mình. Điều này khiến vấn đề ban đầu trở nên nghiêm trọng hơn và gây ra những cuộc tranh cãi gay gắt. Họ cần tập suy nghĩ cẩn trọng trước khi phát biểu, và họ có thể làm được điều ấy bằng cách học kiểm soát phản ứng của bản thân trước các ý kiến, lời phê bình, vì những lời nói đã nói ra thì không thể thu hồi và cảm giác tổn thương rất khó được chữa lành. Để cải thiện hạn chế này, hãy lấy một quyển số trắng và ghi ngày tháng hiện tại. Sau đó, vào buổi tối, trước khi đi ngủ, hãy dành vài phút viết ra những suy nghĩ và cảm nhận của bạn về ngày hôm nay. Nhớ ghi rõ cả những việc bạn vốn dĩ muốn làm, những lời bạn vốn dĩ muốn nói, nhưng rốt cuộc đã không thực hiện được và những điều bạn đã nói hay lỡ làm mà bạn ước gì bạn đã không làm hay nói. Buổi sáng hôm sau, bạn hãy đọc to toàn bộ nội dung đó trước một tấm gương lớn và quan sát ngôn ngữ cơ thể bạn.\n' +
-                '\n' + 'Hãy làm điều này thường xuyên và bạn sẽ nhìn thấy sự tự tin trong việc diễn đạt bản thân được cải thiện thấy rõ, về cuộc sống, những người có một số 1 thường cảm thấy thiếu một điều gì đó trong cuộc sống, mặc dù thoạt nhìn họ rất đủ đầy ở một số mặt.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.FIVE,
+            meaning: <div>
+                <p><strong><em>Người có một số 5 trong Biểu đồ ngày sinh sẽ có cơ hội tốt nhất để đạt được tính cách cân
+                    bằng. </em></strong>Đây cũng là con số duy nhất đảm bảo tất cả các con số nằm ở bốn góc biểu đồ
+                    (1,3,7,9) không bị rơi vào thế “ Con số bị cô lập ”. <strong><em>Đặc biệt, một số 5 sẽ hỗ trợ rất
+                        tốt cho việc kiểm soát cảm xúc, vì nó đảm bảo sự nhạy cảm với cuộc sống được phát triển thành
+                        một chỉ dẫn trực giác đáng tin cậy.</em></strong> Điều này giúp những người sở hữu một số 5 xuất
+                    sắc trong việc chọn lựa những hành động phù hợp với tình huống chứ không phản ứng một cách thiếu suy
+                    nghĩ. Có vai trò như một hàng rào bảo vệ đầy giá trị cho sự nhạy cảm của con người, một số 5 trong
+                    biểu đồ sẽ củng có tính can trường và lòng trắc ẩn, qua đó tạo nên một người đầy nghị lực. Nó cũng
+                    mang lại sức mạnh của lòng trắc ẩn và sự tự do để thúc đẩy các giá trị của tất cả những hình thức
+                    biểu đạt khác. Số 5 duy nhất trong biểu đồ cũng hỗ trợ người sở hữu nó thấu hiểu những cảm xúc của
+                    bản thân, và từ đó giúp họ có khả năng tôn trọng cảm nhận của người khác.</p>
+            </div>
         },
         2: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.FIVE,
-            meaning: 'Người có hai số 1 (11) trong Biểu đồ ngày sinh là người may mắn nhất trong cả nhóm, bởi sự cân bằng trời cho trong việc diễn đạt nội tâm. Đây là một đặc điểm nên được sử dụng một cách khôn ngoan - không bao giờ lạm dụng nó cho mục đích thao túng người khác. (Đồng thời hãy nhớ đừng mất kiên nhẫn với những người không may mắn không có hai số 1 giống bạn, đặc biệt nếu đó là người yêu hoặc người bạn đời của bạn.) Người có hai số 1 thường có khả năng nhìn nhận các vấn đề hay các cuộc tranh luận theo cả hai mặt, và vì vậy họ hoàn toàn có khả năng chuyển sang hướng đối lập trong một cuộc thảo luận nếu quan điểm của bên đó có vẻ có giá trị hơn. Điều này giúp họ không bị sa vào tư duy bảo thủ, thứ khiến tầm hiểu biết bị giới hạn một chiều, và vì thế bản thân họ cũng thường ít khi bắt bẻ những “ lỗi sai ” của người khác. Có thể nói người có hai số 1 trong biểu đồ thường dễ có cuộc sống cân bằng, an vui, bất kể cuộc sống có diễn ra thế nào. Về nhận định này, tôi có hai điều muốn chia sẻ kỹ hơn : Một Biểu đồ ngày sinh sẽ bao gồm rất nhiều yếu tố chi tiết bên trong, yếu tố này hòa quyện với yếu tố kia, hay yếu tố này mâu thuẫn với yếu tố kia, làm giảm giá trị của yếu tố kia.\n' +
-                '\n' + 'Ví dụ, nếu một người có được hai số 1 nhưng lại trống hoàn toàn cột giữa (4-5-6 - mang ý nghĩa Mũi tên uất giận, vì họ mãi không đạt được điều mình khát khao muốn có) , và đặc biệt nếu có thêm số 7 (hay 77, hay 777) thì người đó rất dễ gặp phải một trong những điều bất ý lớn trong các khía cạnh: sức khỏe, tiền tài, tình yêu, sự nghiệp ... Nhưng nhờ sức mạnh của hai số 1, người đó vẫn hay dùng lòng tin để tiếp thu cái mới, từ đó khiến bản thân gặp nhiều thiệt thòi. Tuy nhiên, nhờ trong Biểu đồ ngày sinh của tôi có hai số 1 (11) nên tôi có được một đặc điểm (như đã đề cập ở trên) : dễ dàng nhìn được hai mặt của một vấn đề, chịu thay đổi quan điểm một khi thấy các quan điểm khác cũng đúng hoặc có giá trị. Điều này đặc biệt ý nghĩa với các vấn đề mang tính trực giác, đòi hỏi sự hiểu biết sâu xa hơn những gì mắt thường nhìn thấy. Cho nên hiện giờ tôi đã thôi không còn dùng khái niệm “ thấy mới tin ” nữa, mà bắt đầu lắng tâm mình hơn, mỗi ngày một phát huy trực giác (còn gọi là “ con mắt ” bên trong) để cảm mọi việc, nhờ vậy tôi có thể tiếp thu nhiều cái mới mẻ hơn, rộng lớn hơn. Như vậy, hai số 1 (11) đã giúp tôi hóa giải bớt tính “ cứng đầu ” của Mũi tên 1-4-7 đó.\n' +
-                '\n' + 'Trở lại với những đặc điểm nổi bật của hai số 1 (11) :\n' + '\n' + 'Chính nhờ những yếu tố tích cực, dung hòa và cân bằng này mà người có hai số 1 trong biểu đồ dễ trở thành các chính trị gia thành công hoặc người của công chúng, người nổi tiếng. Yếu tố hai số 1 làm nổi bật nhận thức về con người, cũng như cách biểu đạt bản thân và khả năng nhìn nhận vấn đề một cách đa chiều, không phiến diện, giúp giảm thiểu khả năng bị hiểu lầm.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.FIVE,
+            meaning: <div>
+                <p><strong><em>Người có hai số 5 trong Biểu đồ ngày sinh thường có lòng quyết tâm mãnh liệt, được thể
+                    hiện qua ánh mắt mạnh mẽ và đôi lông mày hay nhíu lại. </em></strong>Quyết tâm sắt đá này mang đến
+                    cho họ dáng vẻ rất tự tin và kiên định, mà đôi khi chỉ là bề ngoài hơn là thực tế. Khi họ trưởng
+                    thành, sự tự tin này thường chỉ còn là thứ mà chúng ta hay gọi là “ làm oai ”, chứ không phải là sự
+                    tự tin thật sự. Đồng thời họ cũng gặp phải nhiều khó khăn trong việc xử lý những vấn đề quá nặng về
+                    tình cảm, cảm xúc trong gia đình hoặc nơi công sở. Họ cần chú ý để không nghiêm trọng hóa các vấn đề
+                    này và giữ cho mọi việc nhẹ nhàng như nó vốn dĩ như vậy.</p>
+                <p><em><strong>Đôi khi sự mãnh liệt và nhiệt tình ở những người có hai số 5 trở nên thái quá&nbsp;đến
+                    mức không thể chịu đựng được và gây ra những sự hiểu lầm khiến những người thân cận với họ cảm thấy
+                    phiền hà và điên tiết. </strong></em>Sự nghiêm trọng quá mức trong thái độ hay lời nói của họ có thể
+                    lên đến mức tạo ra những hỗn loạn về cảm xúc trong môi trường họ sống, từ đó gây ra các vấn đề sức
+                    khỏe có liên quan đến vùng bụng và dạ dày, như chứng khó tiêu hoặc loét dạ dày. Những người có hai
+                    số 5 cần chú ý kiểm soát cảm xúc, nếu không họ dễ sa đà vào các chất hay thói quen gây nghiện để
+                    giải tỏa năng lượng cảm xúc bị dồn nén của mình.</p>
+            </div>
         },
         3: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.FIVE,
-            meaning: 'Với những người có ba số 1 trong Biểu đồ ngày sinh, có hai khả năng khá đối lập xảy ra trong thực tế. Khả năng thường gặp nhất là những người này thuộc dạng nói rất nhiều, thường có mặt trong rất nhiều cuộc trò chuyện sôi nổi mà trong đó họ trở nên nổi bật và thú vị. Nhìn chung họ thấy cuộc sống dễ chịu và thường cố gắng chia sẻ điều đó với những người xung quanh, Nhóm thứ hai là những người cũng có ba số 1 nhưng lại không có số nào ở Trục ngang Tinh thần (tức là không có các số 2-5-8) . Những người này khá im lặng, hướng nội, bẽn lẽn, đặc biệt là với người lạ. Tuy nhiên, họ có thể hoạt bát và nói nhiều khi trò chuyện với bạn bè thân thiết hoặc người thân trong nhà - đó là những lúc họ cảm thấy thoải mái. Những người này thường dễ diễn đạt cảm xúc hay nội tâm của mình bằng cách viết, vì khi đó dòng suy nghĩ của họ liền mạch hơn, không bị cản trở bởi sự nhạy cảm quá mức của họ. Nếu bạn thuộc nhóm này mà chưa biết sức mạnh khả năng viết lách của mình, hãy thử xem sao. Hãy xem viết lách là một cách để tập diễn đạt bản thân cho trôi chảy, khơi thông những cảm xúc rối rắm tắc nghẽn trong lòng, cũng như là một cách để tự chữa lành. Ngoài ra, còn một khả năng nữa ở những người có ba số 1 mà bản thân tôi quan sát thấy, đó là tâm trạng lúc vui lúc buồn. Tùy theo những yếu tố khác trong Biểu đồ ngày sinh mà tỷ lệ vui buồn sẽ gia giảm khác nhau, tốt nhất thì được 5/5, còn không thì 4/6, không nữa thì 3/7, lúc vui họ có xu hướng nói rất nhiều, lúc buồn thì ngồi im, không quan tâm tới ai.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.FIVE,
+            meaning: <div><p><em><strong>Những đặc điểm của hai số 5 sẽ thể hiện mạnh mẽ hơn khi một người có đến ba số
+                5 trong Biểu đồ ngày sinh. Những cảm xúc mãnh liệt đến mức gây căng thẳng như vậy rất khó để dung
+                hòa. </strong></em>May mà rất hiếm người có ngày sinh rơi vào trường hợp này. Các bậc cha mẹ cần dạy con
+                từ rất sớm để trang bị cho con khả năng tự kỷ luật. Đây là trách nhiệm rất quan trọng của những bậc phụ
+                huynh này, những người hiếm khi được chuẩn bị tinh thần cho trọng trách này và thường cảm thấy không thể
+                hiểu nổi đứa con “ phức tạp ” của mình. Các bậc cha mẹ cũng đừng tuyệt vọng, vì tình yêu thương và sự
+                thấu hiểu của họ sẽ đem lại giá trị lớn lao và giúp các con phát triển đúng mực.</p>
+                <p><strong><em>Với trường hợp này, cả cha mẹ và con cái đều phải cẩn trọng suy nghĩ trước khi nói hoặc
+                    hành động, để tạo điều kiện cho sức mạnh trí tuệ được phát huy và giảm thiểu nguy cơ vô tình làm tổn
+                    thương sự nhạy cảm của một người “ mãnh liệt ” như vậy. </em></strong>Nếu làm được điều này thì các
+                    con của họ sẽ không cần dựng lên một “ hàng rào ” bảo vệ sự nhạy cảm của chính mình. Điều này sẽ
+                    giúp bảo đảm đời sống xã hội và hạnh phúc của con trẻ.</p>
+            </div>
         },
         4: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.FIVE,
-            meaning: 'Người có bốn số 1 trong ngày sinh thường gặp trục trặc với vấn đề diễn đạt bằng lời, và vì vậy, rất dễ bị người khác hiểu lầm. Nhưng cuộc sống nhanh chóng dạy họ giấu đi những cảm xúc rối rắm bằng một nụ cười, cho dù họ có khuynh hướng dẫn tiếp tục chịu đựng bên trong cho đến khi tự có ý thức giải tỏa những cảm xúc đó và sống lẹ làng hơn. Nói một cách dễ hiểu, những người có bốn số 1 thường tự làm mình khổ tâm. Số 1 mang đặc tính về “ cái tôi ” của mỗi người, vậy nên hãy tưởng tượng một người có đến bốn lần “ cái tôi ” như vậy sẽ như thế nào. Họ có “ cái tôi rất mạnh, nhưng rất khó diễn đạt những cảm giác sâu đậm như vậy về bản thân mình. Vì vậy, Thầy David khuyên: vì hạnh phúc của chính mình và của những người thân, những người có bốn số 1 phải học cách kiểm soát cảm xúc của mình. Khi họ thả lỏng hơn, bớt căng thẳng, bớt thiếu tự tin (đôi khi họ không nhận ra điều này, mà trái lại, họ có thể cảm thấy mình quá tự tin là đằng khác), họ sẽ cảm thấy ít bị cản trở hơn và diễn đạt cảm xúc của mình một cách thoải mái hơn, thay vì cứ đè nén những sầu muộn, rối rắm trong nội tâm của mình.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.FIVE,
+            meaning: <div>
+                <p><em><strong>Con số này rất hiếm gặp. Người sở hữu cụm số này thường bị căng thẳng dữ dội, khiến cho
+                    họ dễ gặp các vấn đề về sức khỏe có liên quan đến vùng bụng và dạ dày. </strong></em>Những người này
+                    cũng dễ gặp tai nạn và thường ở trong trạng thái căng thẳng cao độ. Cuộc sống thường tạo ra các “
+                    tai nạn ” để khiến chúng ta chậm bước lại hoặc quay đầu, nếu chúng ta có lỡ lạc khỏi con đường tiến
+                    hóa của mình. Nhưng nếu không biết tự xem xét tình huống của mình, chúng ta sẽ có nguy cơ gặp thêm
+                    nhiều “ tai nạn ” khác trên hành trình của mình. Đây là điều rất dễ xảy ra với người có bốn số 5
+                    trong Biểu đồ. <strong><em>Những người này cũng thường cảm thấy cuộc sống rất khó hiểu, nếu họ không
+                        chịu tiếp nhận những sự hướng dẫn khôn ngoan để giúp định hướng cho bản thân mình.</em></strong>
+                </p>
+            </div>
         },
-        5: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.FIVE,
-            meaning: 'Với năm hay sáu số 1 trên Biểu đồ ngày sinh, “ cái tôi ” thường bị đè nén để giảm bớt các khó khăn trong việc diễn đạt cảm xúc cá nhân. Những người trẻ tuổi thuộc nhóm này thường cảm thấy buồn vì bị mọi người xung quanh hiểu lầm. Điều này dẫn đến sự tách rời, từ đó gây gia sự cô độc. Họ có thể phát triển theo hướng bị ám ảnh với ngoại hình và hành động của mình, cũng như thường gắn rất nhiều gương trong nhà nhưng lại có xu hướng giấu chúng đi để tránh người khác nghĩ họ quá tự tôn. Nhưng họ vẫn bí mật ngắm mình trong gương mỗi khi có dịp. Tính vị kỷ và “ tự lừa mình ” này có thể gây ra sự mất cân bằng về tâm thần, chúng ta có thể giúp trẻ thuộc nhóm có quá nhiều số 1 gia tăng nhận thức bằng cách cho chúng tham gia nhiều hoạt động nghệ thuật khác nhau, như viết lách, làm thơ, vẽ, làm đồ gốm,... Điều này có thể áp dụng được cho trẻ mọi lứa tuổi.'
-        }
+        // 5: {
+        //     title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.FIVE,
+        //     meaning: <div></div>
+        // }
     },
     6: {
         1: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.SIX,
-            meaning: 'Những người có Biểu đồ ngày sinh có một số 1 thường gặp một chút khó khăn trong việc thể hiện bản thân qua ngôn ngữ. Điều này không có nghĩa là họ không thể nói chuyện một cách suôn sẻ, mà là họ khó diễn đạt được cảm xúc nội tâm của mình.\n' + '\n' + 'Họ có thể nói rất lưu loát và đầy thuyết phục về các đề tài không liên quan đến diễn đạt cảm xúc cá nhân, nhưng thường không biết cách biểu đạt bản thân hoặc diễn tả những gì mình đang cảm thấy. Chỉ khi nào họ học được cách làm chủ bản thân - kết quả của quá trình trưởng thành và thấu hiểu - thì điều này mới được cải thiện. Đôi khi họ sẽ cố ý nói ra những lời hoàn toàn trái ngược với suy nghĩ thật sự của mình như một kiểu phản ứng tự vệ - tức là họ Cố ý làm tổn thương hoặc xúc phạm người khác để tự bảo vệ bản thân mình. Điều này khiến vấn đề ban đầu trở nên nghiêm trọng hơn và gây ra những cuộc tranh cãi gay gắt. Họ cần tập suy nghĩ cẩn trọng trước khi phát biểu, và họ có thể làm được điều ấy bằng cách học kiểm soát phản ứng của bản thân trước các ý kiến, lời phê bình, vì những lời nói đã nói ra thì không thể thu hồi và cảm giác tổn thương rất khó được chữa lành. Để cải thiện hạn chế này, hãy lấy một quyển số trắng và ghi ngày tháng hiện tại. Sau đó, vào buổi tối, trước khi đi ngủ, hãy dành vài phút viết ra những suy nghĩ và cảm nhận của bạn về ngày hôm nay. Nhớ ghi rõ cả những việc bạn vốn dĩ muốn làm, những lời bạn vốn dĩ muốn nói, nhưng rốt cuộc đã không thực hiện được và những điều bạn đã nói hay lỡ làm mà bạn ước gì bạn đã không làm hay nói. Buổi sáng hôm sau, bạn hãy đọc to toàn bộ nội dung đó trước một tấm gương lớn và quan sát ngôn ngữ cơ thể bạn.\n' +
-                '\n' + 'Hãy làm điều này thường xuyên và bạn sẽ nhìn thấy sự tự tin trong việc diễn đạt bản thân được cải thiện thấy rõ, về cuộc sống, những người có một số 1 thường cảm thấy thiếu một điều gì đó trong cuộc sống, mặc dù thoạt nhìn họ rất đủ đầy ở một số mặt.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.SIX,
+            meaning: <div>
+                <p><em><strong>Số 6 chỉ óc sáng tạo, và biểu hiện phổ biến nhất của những người mang đặc tính này của số
+                    6 chính là tình yêu sâu đậm với mái ấm của mình.</strong></em> Tuy nhiên, khi thể hiện ở mức độ cá
+                    nhân, họ thường chọn những lĩnh vực nghệ thuật, như sáng tác, biểu diễn, vẽ tranh, làm gốm... Người
+                    có một số 6 rất tập trung vào trách nhiệm với gia đình. Nhưng khi trưởng thành hơn, những người này
+                    cảm thấy chỉ trách nhiệm với gia đình thôi là chưa đủ để thể hiện tính sáng tạo của mình, do đó họ
+                    sẽ tham gia vào nhiều lĩnh vực khác để thỏa mãn bản thân - hoặc họ sẽ tiếp tục thắc mắc tại sao mình
+                    vẫn chưa có được cảm giác mãn nguyện trong những việc mình làm. Khi họ “ phát hiện ” ra các thể loại
+                    nghệ thuật phù hợp, đặc biệt là sức mạnh sáng tạo của âm nhạc, cuộc sống của họ sẽ thăng hoa một
+                    cách đáng kinh ngạc.</p>
+            </div>
         },
         2: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.SIX,
-            meaning: 'Người có hai số 1 (11) trong Biểu đồ ngày sinh là người may mắn nhất trong cả nhóm, bởi sự cân bằng trời cho trong việc diễn đạt nội tâm. Đây là một đặc điểm nên được sử dụng một cách khôn ngoan - không bao giờ lạm dụng nó cho mục đích thao túng người khác. (Đồng thời hãy nhớ đừng mất kiên nhẫn với những người không may mắn không có hai số 1 giống bạn, đặc biệt nếu đó là người yêu hoặc người bạn đời của bạn.) Người có hai số 1 thường có khả năng nhìn nhận các vấn đề hay các cuộc tranh luận theo cả hai mặt, và vì vậy họ hoàn toàn có khả năng chuyển sang hướng đối lập trong một cuộc thảo luận nếu quan điểm của bên đó có vẻ có giá trị hơn. Điều này giúp họ không bị sa vào tư duy bảo thủ, thứ khiến tầm hiểu biết bị giới hạn một chiều, và vì thế bản thân họ cũng thường ít khi bắt bẻ những “ lỗi sai ” của người khác. Có thể nói người có hai số 1 trong biểu đồ thường dễ có cuộc sống cân bằng, an vui, bất kể cuộc sống có diễn ra thế nào. Về nhận định này, tôi có hai điều muốn chia sẻ kỹ hơn : Một Biểu đồ ngày sinh sẽ bao gồm rất nhiều yếu tố chi tiết bên trong, yếu tố này hòa quyện với yếu tố kia, hay yếu tố này mâu thuẫn với yếu tố kia, làm giảm giá trị của yếu tố kia.\n' +
-                '\n' + 'Ví dụ, nếu một người có được hai số 1 nhưng lại trống hoàn toàn cột giữa (4-5-6 - mang ý nghĩa Mũi tên uất giận, vì họ mãi không đạt được điều mình khát khao muốn có) , và đặc biệt nếu có thêm số 7 (hay 77, hay 777) thì người đó rất dễ gặp phải một trong những điều bất ý lớn trong các khía cạnh: sức khỏe, tiền tài, tình yêu, sự nghiệp ... Nhưng nhờ sức mạnh của hai số 1, người đó vẫn hay dùng lòng tin để tiếp thu cái mới, từ đó khiến bản thân gặp nhiều thiệt thòi. Tuy nhiên, nhờ trong Biểu đồ ngày sinh của tôi có hai số 1 (11) nên tôi có được một đặc điểm (như đã đề cập ở trên) : dễ dàng nhìn được hai mặt của một vấn đề, chịu thay đổi quan điểm một khi thấy các quan điểm khác cũng đúng hoặc có giá trị. Điều này đặc biệt ý nghĩa với các vấn đề mang tính trực giác, đòi hỏi sự hiểu biết sâu xa hơn những gì mắt thường nhìn thấy. Cho nên hiện giờ tôi đã thôi không còn dùng khái niệm “ thấy mới tin ” nữa, mà bắt đầu lắng tâm mình hơn, mỗi ngày một phát huy trực giác (còn gọi là “ con mắt ” bên trong) để cảm mọi việc, nhờ vậy tôi có thể tiếp thu nhiều cái mới mẻ hơn, rộng lớn hơn. Như vậy, hai số 1 (11) đã giúp tôi hóa giải bớt tính “ cứng đầu ” của Mũi tên 1-4-7 đó.\n' +
-                '\n' + 'Trở lại với những đặc điểm nổi bật của hai số 1 (11) :\n' + '\n' + 'Chính nhờ những yếu tố tích cực, dung hòa và cân bằng này mà người có hai số 1 trong biểu đồ dễ trở thành các chính trị gia thành công hoặc người của công chúng, người nổi tiếng. Yếu tố hai số 1 làm nổi bật nhận thức về con người, cũng như cách biểu đạt bản thân và khả năng nhìn nhận vấn đề một cách đa chiều, không phiến diện, giúp giảm thiểu khả năng bị hiểu lầm.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.SIX,
+            meaning: <div>
+                <p><strong><em>Có hai số 6 trong Biểu đồ ngày sinh có thể trở thành một thử thách vĩ đại hoặc một gánh
+                    nặng vô cùng to lớn. </em></strong>Mỗi cá nhân sẽ có cách ứng phó khác nhau với tình trạng này, tùy
+                    vào con số chủ đạo và nhiều yếu tố khác như môi trường sống, đặc biệt là ảnh hưởng của cha mẹ trong
+                    giai đoạn đầu đời. <strong><em>Mặt tiêu cực của hai số 6 thể hiện khá rõ nét và kéo dài đối với
+                        những người có nhận thức kém hơn</em></strong>. Điều này gây ra sự lo lắng, bồn chồn, căng thẳng
+                    và dễ nóng giận, đặc biệt là ở nhà và nơi công sở. Những người thân cận với họ sẽ cảm nhận sự tiêu
+                    cực này rõ nhất; và đối với tất cả những người có liên quan, sự tiêu cực này có thể gây ra tình
+                    trạng rối loạn vì căng thẳng, thậm chí có thể dẫn đến bệnh tật.</p>
+                <p><strong><em>Cách hóa giải tốt nhất là mở rộng mối quan tâm của họ ra ngoài phạm vi gia đình để vươn
+                    tới những lĩnh vực sáng tạo đa dạng hơn.</em></strong> Nghề nghiệp của những người có hai số 6 trong
+                    ngày sinh nên hướng về những ngành chú trọng tính sáng tạo, được truyền cảm hứng bởi sự tự tin và
+                    thấu hiểu sâu sắc về một vấn đề nào đó. Họ cần được hướng dẫn nhẹ nhàng - đừng bao giờ hối thúc hay
+                    đe dọa họ. Đối với những người này, tình yêu và sự tôn trọng là vô cùng quan trọng, có chức năng như
+                    “ dầu cù là giúp xoa dịu hệ thống thần kinh nhạy cảm của họ. <strong><em>Những người này cần thư
+                        giãn nhiều hơn những nhóm khác, bởi họ tiêu hao rất nhiều năng lượng trí não vào những hoạt động
+                        sáng tạo hoặc hoạt động thường ngày. Họ cần tập tĩnh tâm, hoặc thiền càng tốt, trước khi đi ngủ
+                        để đảm bảo sự thư giãn hoàn toàn. Họ cũng cần những giấc ngủ trưa mỗi khi có thể.</em></strong>
+                </p>
+            </div>
         },
         3: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.SIX,
-            meaning: 'Với những người có ba số 1 trong Biểu đồ ngày sinh, có hai khả năng khá đối lập xảy ra trong thực tế. Khả năng thường gặp nhất là những người này thuộc dạng nói rất nhiều, thường có mặt trong rất nhiều cuộc trò chuyện sôi nổi mà trong đó họ trở nên nổi bật và thú vị. Nhìn chung họ thấy cuộc sống dễ chịu và thường cố gắng chia sẻ điều đó với những người xung quanh, Nhóm thứ hai là những người cũng có ba số 1 nhưng lại không có số nào ở Trục ngang Tinh thần (tức là không có các số 2-5-8) . Những người này khá im lặng, hướng nội, bẽn lẽn, đặc biệt là với người lạ. Tuy nhiên, họ có thể hoạt bát và nói nhiều khi trò chuyện với bạn bè thân thiết hoặc người thân trong nhà - đó là những lúc họ cảm thấy thoải mái. Những người này thường dễ diễn đạt cảm xúc hay nội tâm của mình bằng cách viết, vì khi đó dòng suy nghĩ của họ liền mạch hơn, không bị cản trở bởi sự nhạy cảm quá mức của họ. Nếu bạn thuộc nhóm này mà chưa biết sức mạnh khả năng viết lách của mình, hãy thử xem sao. Hãy xem viết lách là một cách để tập diễn đạt bản thân cho trôi chảy, khơi thông những cảm xúc rối rắm tắc nghẽn trong lòng, cũng như là một cách để tự chữa lành. Ngoài ra, còn một khả năng nữa ở những người có ba số 1 mà bản thân tôi quan sát thấy, đó là tâm trạng lúc vui lúc buồn. Tùy theo những yếu tố khác trong Biểu đồ ngày sinh mà tỷ lệ vui buồn sẽ gia giảm khác nhau, tốt nhất thì được 5/5, còn không thì 4/6, không nữa thì 3/7, lúc vui họ có xu hướng nói rất nhiều, lúc buồn thì ngồi im, không quan tâm tới ai.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.SIX,
+            meaning: <div><p><strong><em>Người có ba số 6 trong Biểu đồ ngày sinh càng nhân thêm sự căng thẳng thần kinh
+                trong mọi việc, đặc biệt là trong chuyện gia đình. Phụ nữ chịu tác động bởi điều này nhiều hơn, vì mối
+                quan tâm hàng đầu của những người phụ nữ có ba số 6 thường là vấn đề gia đình.</em></strong>
+                <em><strong>Một trong những hậu quả của điều này chính là họ thường bảo vệ các con quá mức, có thái độ
+                    sở hữu đối với những người mà họ yêu thương.</strong></em></p>
+                <p>Vấn đề thường gặp đối với những người thuộc nhóm này chính là họ hiếm khi nhận ra tiềm năng sáng tạo
+                    rất tích cực trong cuộc sống gia đình. Thay vào đó, họ thường tự làm khổ mình bởi các mối bận tâm,
+                    và điều này trở thành những cơn lốc cảm xúc lệch lạc. Bảo vệ con cái quá mức chính là biểu hiện của
+                    tình trạng này. Họ thường cảm thấy sợ hãi viễn cảnh con cái lớn khôn và rời khỏi vòng tay mình, do
+                    đó họ bắt đầu có những hành động sở hữu kém lành mạnh mà cuối cùng sẽ khiến các con của họ cảm thấy
+                    bị trói buộc, để rồi chúng sẽ muốn rời xa họ sớm hơn.</p>
+                <p><em><strong>Những người này cần chú trọng quan tâm bản thân để có được sự cân bằng trong cuộc sống.
+                    Nghỉ ngơi, thư giãn đúng mực, tìm sự giải khuây và thú vui trong các hoạt động sáng tạo ở bất kỳ
+                    hình thức nào cũng là những giải pháp tốt để đạt được điều này.</strong></em></p></div>
         },
         4: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.SIX,
-            meaning: 'Người có bốn số 1 trong ngày sinh thường gặp trục trặc với vấn đề diễn đạt bằng lời, và vì vậy, rất dễ bị người khác hiểu lầm. Nhưng cuộc sống nhanh chóng dạy họ giấu đi những cảm xúc rối rắm bằng một nụ cười, cho dù họ có khuynh hướng dẫn tiếp tục chịu đựng bên trong cho đến khi tự có ý thức giải tỏa những cảm xúc đó và sống lẹ làng hơn. Nói một cách dễ hiểu, những người có bốn số 1 thường tự làm mình khổ tâm. Số 1 mang đặc tính về “ cái tôi ” của mỗi người, vậy nên hãy tưởng tượng một người có đến bốn lần “ cái tôi ” như vậy sẽ như thế nào. Họ có “ cái tôi rất mạnh, nhưng rất khó diễn đạt những cảm giác sâu đậm như vậy về bản thân mình. Vì vậy, Thầy David khuyên: vì hạnh phúc của chính mình và của những người thân, những người có bốn số 1 phải học cách kiểm soát cảm xúc của mình. Khi họ thả lỏng hơn, bớt căng thẳng, bớt thiếu tự tin (đôi khi họ không nhận ra điều này, mà trái lại, họ có thể cảm thấy mình quá tự tin là đằng khác), họ sẽ cảm thấy ít bị cản trở hơn và diễn đạt cảm xúc của mình một cách thoải mái hơn, thay vì cứ đè nén những sầu muộn, rối rắm trong nội tâm của mình.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.SIX,
+            meaning: <div>
+                <p>Người có bốn số 6 cực kỳ hiếm, xuất hiện chỉ ba lần trong một thế kỷ. Trong thế kỷ 20, ngày sinh cuối
+                    cùng có bốn số 6 là ngày 26/6/1966, và may mắn ngày sinh này có các số 1 , 2 và 9 giúp giảm bớt sự
+                    căng thẳng của nhiều số 6 lặp lại. <em><strong>Bốn số 6 thể hiện tiềm năng sáng tạo vượt trội. Mặt
+                        khác, các khía cạnh tiêu cực, vốn bị chi phối nặng nề bởi cảm xúc, cũng luôn chực chờ để thao
+                        túng những người có bốn số 6 trong biểu đồ</strong></em>. Chính vì vậy, những người này dễ bị lo
+                    âu sầu khổ, làm tổn hại đến sức khỏe của họ và các mối quan hệ bạn bè và những lời phàn nàn không
+                    ngớt. Nếu cha mẹ nhìn ra đặc điểm này của đứa trẻ có bốn số 6 ngay từ nhỏ và kiên nhẫn hướng dẫn trẻ
+                    phát huy tiềm năng sáng tạo, thì trẻ sẽ không bị chi phối bởi những đặc điểm tiêu cực của bốn số
+                    6.<em><strong> Khi được đối xử bằng tình yêu thương vô điều kiện, những người sở hữu bốn số 6 sẽ dễ
+                        dàng tìm được cách tích cực để thể hiện tài năng của mình ở các hoạt động sáng
+                        tạo.</strong></em></p>
+                <p><strong><em>Tóm lại, những người có số 6 trong ngày sinh sẽ luôn có thiên hướng sáng tạo. Chúng ta
+                    càng sớm ý thức được điều này và tập trung mài giũa nó thì càng dễ tránh được những khía cạnh tiêu
+                    cực như đã đề cập ở trên</em></strong>. Khi đó, năng lượng của bốn số 6 được giải phóng một cách
+                    tích cực và sẽ thăng hoa, giúp người sở hữu nó gặt hái được nhiều thành quả tốt đẹp.</p>
+            </div>
         },
-        5: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.SIX,
-            meaning: 'Với năm hay sáu số 1 trên Biểu đồ ngày sinh, “ cái tôi ” thường bị đè nén để giảm bớt các khó khăn trong việc diễn đạt cảm xúc cá nhân. Những người trẻ tuổi thuộc nhóm này thường cảm thấy buồn vì bị mọi người xung quanh hiểu lầm. Điều này dẫn đến sự tách rời, từ đó gây gia sự cô độc. Họ có thể phát triển theo hướng bị ám ảnh với ngoại hình và hành động của mình, cũng như thường gắn rất nhiều gương trong nhà nhưng lại có xu hướng giấu chúng đi để tránh người khác nghĩ họ quá tự tôn. Nhưng họ vẫn bí mật ngắm mình trong gương mỗi khi có dịp. Tính vị kỷ và “ tự lừa mình ” này có thể gây ra sự mất cân bằng về tâm thần, chúng ta có thể giúp trẻ thuộc nhóm có quá nhiều số 1 gia tăng nhận thức bằng cách cho chúng tham gia nhiều hoạt động nghệ thuật khác nhau, như viết lách, làm thơ, vẽ, làm đồ gốm,... Điều này có thể áp dụng được cho trẻ mọi lứa tuổi.'
-        }
+        // 5: {
+        //     title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.SIX,
+        //     meaning: <div>
+        //     </div>
+        // }
     },
     7: {
         1: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN,
-            meaning: 'Những người có Biểu đồ ngày sinh có một số 1 thường gặp một chút khó khăn trong việc thể hiện bản thân qua ngôn ngữ. Điều này không có nghĩa là họ không thể nói chuyện một cách suôn sẻ, mà là họ khó diễn đạt được cảm xúc nội tâm của mình.\n' + '\n' + 'Họ có thể nói rất lưu loát và đầy thuyết phục về các đề tài không liên quan đến diễn đạt cảm xúc cá nhân, nhưng thường không biết cách biểu đạt bản thân hoặc diễn tả những gì mình đang cảm thấy. Chỉ khi nào họ học được cách làm chủ bản thân - kết quả của quá trình trưởng thành và thấu hiểu - thì điều này mới được cải thiện. Đôi khi họ sẽ cố ý nói ra những lời hoàn toàn trái ngược với suy nghĩ thật sự của mình như một kiểu phản ứng tự vệ - tức là họ Cố ý làm tổn thương hoặc xúc phạm người khác để tự bảo vệ bản thân mình. Điều này khiến vấn đề ban đầu trở nên nghiêm trọng hơn và gây ra những cuộc tranh cãi gay gắt. Họ cần tập suy nghĩ cẩn trọng trước khi phát biểu, và họ có thể làm được điều ấy bằng cách học kiểm soát phản ứng của bản thân trước các ý kiến, lời phê bình, vì những lời nói đã nói ra thì không thể thu hồi và cảm giác tổn thương rất khó được chữa lành. Để cải thiện hạn chế này, hãy lấy một quyển số trắng và ghi ngày tháng hiện tại. Sau đó, vào buổi tối, trước khi đi ngủ, hãy dành vài phút viết ra những suy nghĩ và cảm nhận của bạn về ngày hôm nay. Nhớ ghi rõ cả những việc bạn vốn dĩ muốn làm, những lời bạn vốn dĩ muốn nói, nhưng rốt cuộc đã không thực hiện được và những điều bạn đã nói hay lỡ làm mà bạn ước gì bạn đã không làm hay nói. Buổi sáng hôm sau, bạn hãy đọc to toàn bộ nội dung đó trước một tấm gương lớn và quan sát ngôn ngữ cơ thể bạn.\n' +
-                '\n' + 'Hãy làm điều này thường xuyên và bạn sẽ nhìn thấy sự tự tin trong việc diễn đạt bản thân được cải thiện thấy rõ, về cuộc sống, những người có một số 1 thường cảm thấy thiếu một điều gì đó trong cuộc sống, mặc dù thoạt nhìn họ rất đủ đầy ở một số mặt.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN,
+            meaning: <div>
+                <p>Sự hy sinh của bạn sẽ thuộc một trong ba lĩnh vực sau đây : sức khỏe, tiền tài hoặc tình yêu. Sự hy
+                    sinh này đã hoặc sẽ xuất hiện trong cuộc đời bạn như một phần thiết yếu trong tiến trình học hỏi ở
+                    vòng đời này. <strong><em>Những đau thương, hy sinh này là một phần để tâm hồn bạn chịu “ hé mở ” .
+                        Nhưng thông thường, những người chịu tổn thất, hy sinh này lại than vãn mà không nhận ra bản
+                        chất của bài học này chính là “ buông bỏ để đạt được ”.</em></strong></p>
+                <p>Khi không đánh đồng bản thân với giá trị của những của cải vật chất mà mình sở hữu, chúng ta học được
+                    sự khác biệt giữa “ sở thích ” và “ nỗi ám ảnh sở hữu ”. Về mặt sức khỏe và tình yêu, bất kỳ sự mất
+                    mát nào về mặt này đều giúp chúng ta trui rèn và thanh lọc thái độ cũng như các thói quen trong cuộc
+                    sống. Nếu muốn hoàn thành mục đích sống của mình khi đến với Trái đất này, chúng ta phải đảm bảo
+                    chăm sóc tốt sức khỏe của mình. Trong tình yêu, ta thường hay nhầm lẫn sự thèm muốn (có được tình
+                    yêu) với tình yêu vô điều kiện.<strong><em> Hãy nhớ rằng, nếu thực hành yêu thương vô điều kiện,
+                        chúng ta không bao giờ mất mát gì cả, bởi vốn dĩ ta không có mong cầu gì. Tuy nhiên, thực tế là
+                        nhiều người trong chúng ta hiếm khi duy trì được tình yêu dài lâu vì cứ gắn kèm “ tình yêu ” với
+                        biết bao đòi hỏi và kỳ vọng về cảm xúc.</em></strong></p>
+            </div>
         },
         2: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN,
-            meaning: 'Người có hai số 1 (11) trong Biểu đồ ngày sinh là người may mắn nhất trong cả nhóm, bởi sự cân bằng trời cho trong việc diễn đạt nội tâm. Đây là một đặc điểm nên được sử dụng một cách khôn ngoan - không bao giờ lạm dụng nó cho mục đích thao túng người khác. (Đồng thời hãy nhớ đừng mất kiên nhẫn với những người không may mắn không có hai số 1 giống bạn, đặc biệt nếu đó là người yêu hoặc người bạn đời của bạn.) Người có hai số 1 thường có khả năng nhìn nhận các vấn đề hay các cuộc tranh luận theo cả hai mặt, và vì vậy họ hoàn toàn có khả năng chuyển sang hướng đối lập trong một cuộc thảo luận nếu quan điểm của bên đó có vẻ có giá trị hơn. Điều này giúp họ không bị sa vào tư duy bảo thủ, thứ khiến tầm hiểu biết bị giới hạn một chiều, và vì thế bản thân họ cũng thường ít khi bắt bẻ những “ lỗi sai ” của người khác. Có thể nói người có hai số 1 trong biểu đồ thường dễ có cuộc sống cân bằng, an vui, bất kể cuộc sống có diễn ra thế nào. Về nhận định này, tôi có hai điều muốn chia sẻ kỹ hơn : Một Biểu đồ ngày sinh sẽ bao gồm rất nhiều yếu tố chi tiết bên trong, yếu tố này hòa quyện với yếu tố kia, hay yếu tố này mâu thuẫn với yếu tố kia, làm giảm giá trị của yếu tố kia.\n' +
-                '\n' + 'Ví dụ, nếu một người có được hai số 1 nhưng lại trống hoàn toàn cột giữa (4-5-6 - mang ý nghĩa Mũi tên uất giận, vì họ mãi không đạt được điều mình khát khao muốn có) , và đặc biệt nếu có thêm số 7 (hay 77, hay 777) thì người đó rất dễ gặp phải một trong những điều bất ý lớn trong các khía cạnh: sức khỏe, tiền tài, tình yêu, sự nghiệp ... Nhưng nhờ sức mạnh của hai số 1, người đó vẫn hay dùng lòng tin để tiếp thu cái mới, từ đó khiến bản thân gặp nhiều thiệt thòi. Tuy nhiên, nhờ trong Biểu đồ ngày sinh của tôi có hai số 1 (11) nên tôi có được một đặc điểm (như đã đề cập ở trên) : dễ dàng nhìn được hai mặt của một vấn đề, chịu thay đổi quan điểm một khi thấy các quan điểm khác cũng đúng hoặc có giá trị. Điều này đặc biệt ý nghĩa với các vấn đề mang tính trực giác, đòi hỏi sự hiểu biết sâu xa hơn những gì mắt thường nhìn thấy. Cho nên hiện giờ tôi đã thôi không còn dùng khái niệm “ thấy mới tin ” nữa, mà bắt đầu lắng tâm mình hơn, mỗi ngày một phát huy trực giác (còn gọi là “ con mắt ” bên trong) để cảm mọi việc, nhờ vậy tôi có thể tiếp thu nhiều cái mới mẻ hơn, rộng lớn hơn. Như vậy, hai số 1 (11) đã giúp tôi hóa giải bớt tính “ cứng đầu ” của Mũi tên 1-4-7 đó.\n' +
-                '\n' + 'Trở lại với những đặc điểm nổi bật của hai số 1 (11) :\n' + '\n' + 'Chính nhờ những yếu tố tích cực, dung hòa và cân bằng này mà người có hai số 1 trong biểu đồ dễ trở thành các chính trị gia thành công hoặc người của công chúng, người nổi tiếng. Yếu tố hai số 1 làm nổi bật nhận thức về con người, cũng như cách biểu đạt bản thân và khả năng nhìn nhận vấn đề một cách đa chiều, không phiến diện, giúp giảm thiểu khả năng bị hiểu lầm.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN,
+            meaning: <div>
+                <p>Hai số 7 trong Biểu đồ ngày sinh nhấn mạnh gấp đôi mức độ của “ bài học ” trong cuộc đời. Những người
+                    có hai số 7 sẽ thấy những bài học thương đau trong cuộc đời họ xuất hiện ở hai trong số ba khía cạnh
+                    cơ bản của đời sống: sức khỏe, tình cảm, hoặc tiền tài. <strong><em>Trải nghiệm này có mục đích nhắc
+                        nhở họ thấu hiểu ý nghĩa mang tính triết lý của cuộc đời ở mức độ sâu sắc hơn. Điều này thường
+                        kích thích sự quan tâm của họ đối với các vấn đề thuộc phạm trù siêu hình học, từ đó khơi dậy
+                        năng lực chữa lành, khả năng hướng dẫn và lòng trắc ẩn trong họ.</em></strong></p>
+                <p>Nếu không nhận ra những giá trị sâu xa này, người có hai số 7 sẽ dễ rơi vào trạng thái sống tiêu cực
+                    và không ngừng than vãn về những mất mát đau thương mà họ gặp phải, trách móc mọi người về các vấn
+                    đề của họ và lên án cuộc đời bất công. Họ sẽ trở thành những người cọc cằn, xấu tính mà hầu như ai
+                    cũng muốn tránh tiếp xúc.</p>
+            </div>
         },
         3: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN,
-            meaning: 'Với những người có ba số 1 trong Biểu đồ ngày sinh, có hai khả năng khá đối lập xảy ra trong thực tế. Khả năng thường gặp nhất là những người này thuộc dạng nói rất nhiều, thường có mặt trong rất nhiều cuộc trò chuyện sôi nổi mà trong đó họ trở nên nổi bật và thú vị. Nhìn chung họ thấy cuộc sống dễ chịu và thường cố gắng chia sẻ điều đó với những người xung quanh, Nhóm thứ hai là những người cũng có ba số 1 nhưng lại không có số nào ở Trục ngang Tinh thần (tức là không có các số 2-5-8) . Những người này khá im lặng, hướng nội, bẽn lẽn, đặc biệt là với người lạ. Tuy nhiên, họ có thể hoạt bát và nói nhiều khi trò chuyện với bạn bè thân thiết hoặc người thân trong nhà - đó là những lúc họ cảm thấy thoải mái. Những người này thường dễ diễn đạt cảm xúc hay nội tâm của mình bằng cách viết, vì khi đó dòng suy nghĩ của họ liền mạch hơn, không bị cản trở bởi sự nhạy cảm quá mức của họ. Nếu bạn thuộc nhóm này mà chưa biết sức mạnh khả năng viết lách của mình, hãy thử xem sao. Hãy xem viết lách là một cách để tập diễn đạt bản thân cho trôi chảy, khơi thông những cảm xúc rối rắm tắc nghẽn trong lòng, cũng như là một cách để tự chữa lành. Ngoài ra, còn một khả năng nữa ở những người có ba số 1 mà bản thân tôi quan sát thấy, đó là tâm trạng lúc vui lúc buồn. Tùy theo những yếu tố khác trong Biểu đồ ngày sinh mà tỷ lệ vui buồn sẽ gia giảm khác nhau, tốt nhất thì được 5/5, còn không thì 4/6, không nữa thì 3/7, lúc vui họ có xu hướng nói rất nhiều, lúc buồn thì ngồi im, không quan tâm tới ai.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN,
+            meaning: <div><p>Người có ba số 7 trong Biểu đồ ngày sinh có vẻ là những người có số phận đáng buồn vì gặp
+                phải những mất mát nặng nề trong cả ba khía cạnh của đời sống: sức khỏe, tình cảm hoặc tiền tài. Nhưng
+                đó lại thường là cảm nhận của những người thân thiết với họ, chứ không phải là cảm nhận của bản thân họ
+                - người gánh chịu những tổn thất này - vì sau khi trải qua quá nhiều bài học thương đau, họ đã có sự
+                thấu hiểu sâu sắc và nhận ra mục đích mà “ đời ” đang kiên trì “ dạy họ. <em><strong>Những mất mát này
+                    chính là bài kiểm tra tính can trường và lòng trắc ẩn, mà những ai vượt qua được sẽ trở nên vô cùng
+                    mạnh mẽ. Những người này có giá trị và quan điểm về cuộc sống phát triển vượt qua giới hạn trí tuệ
+                    thông thường. </strong></em>Họ là vốn quý của gia đình và xã hội, là chỗ dựa đáng tin cậy để mọi
+                người có thể tìm đến nương tựa hoặc xin chỉ dẫn. Nhưng đó là với những ai vượt qua được những thử thách
+                ngặt nghèo của cuộc sống. Còn đối với những người có ba số 7 không thể lội qua vùng lầy này, họ sẽ cảm
+                thấy mất tất cả, héo hon trong vũng bùn cuộc đời và dựa vào lòng thương cảm của người khác để níu kéo sự
+                tồn tại của mình. Họ rất dễ trầm cảm và có những hành vi phản xã hội khiến bạn bè rời xa, gia đình né
+                tránh.</p></div>
         },
         4: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN,
-            meaning: 'Người có bốn số 1 trong ngày sinh thường gặp trục trặc với vấn đề diễn đạt bằng lời, và vì vậy, rất dễ bị người khác hiểu lầm. Nhưng cuộc sống nhanh chóng dạy họ giấu đi những cảm xúc rối rắm bằng một nụ cười, cho dù họ có khuynh hướng dẫn tiếp tục chịu đựng bên trong cho đến khi tự có ý thức giải tỏa những cảm xúc đó và sống lẹ làng hơn. Nói một cách dễ hiểu, những người có bốn số 1 thường tự làm mình khổ tâm. Số 1 mang đặc tính về “ cái tôi ” của mỗi người, vậy nên hãy tưởng tượng một người có đến bốn lần “ cái tôi ” như vậy sẽ như thế nào. Họ có “ cái tôi rất mạnh, nhưng rất khó diễn đạt những cảm giác sâu đậm như vậy về bản thân mình. Vì vậy, Thầy David khuyên: vì hạnh phúc của chính mình và của những người thân, những người có bốn số 1 phải học cách kiểm soát cảm xúc của mình. Khi họ thả lỏng hơn, bớt căng thẳng, bớt thiếu tự tin (đôi khi họ không nhận ra điều này, mà trái lại, họ có thể cảm thấy mình quá tự tin là đằng khác), họ sẽ cảm thấy ít bị cản trở hơn và diễn đạt cảm xúc của mình một cách thoải mái hơn, thay vì cứ đè nén những sầu muộn, rối rắm trong nội tâm của mình.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN,
+            meaning: <div><p>Với cả bản thân đứa trẻ lẫn cha mẹ của những đứa trẻ có bốn số 7, sự hỗ trợ tận tình trong
+                đời sống thực tế và tinh thần là thiết yếu, vì nếu không, cả cha mẹ lẫn đứa trẻ đều sẽ gục ngã dưới gánh
+                nặng mà những tổ hợp những mất mát mang lại. <em><strong>Nhưng một lần nữa , cần phải nhấn mạnh rằng
+                    những tổn thất này có thể là những trải nghiệm đáng giá mà qua đó chúng ta sẽ học được những bài học
+                    để đời. Lộ trình đầy cam go này là không thể tránh được, do đó, tốt nhất là gia đình và bản thân
+                    người mang bốn số 7 cần thay đổi quan điểm về cuộc sống, từ “ ly nước đã vơi một nửa ” sang “ ly
+                    nước còn đầy một nửa ” , để có thể vượt qua chặng đường gập ghềnh này.</strong></em></p></div>
         },
-        5: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN,
-            meaning: 'Với năm hay sáu số 1 trên Biểu đồ ngày sinh, “ cái tôi ” thường bị đè nén để giảm bớt các khó khăn trong việc diễn đạt cảm xúc cá nhân. Những người trẻ tuổi thuộc nhóm này thường cảm thấy buồn vì bị mọi người xung quanh hiểu lầm. Điều này dẫn đến sự tách rời, từ đó gây gia sự cô độc. Họ có thể phát triển theo hướng bị ám ảnh với ngoại hình và hành động của mình, cũng như thường gắn rất nhiều gương trong nhà nhưng lại có xu hướng giấu chúng đi để tránh người khác nghĩ họ quá tự tôn. Nhưng họ vẫn bí mật ngắm mình trong gương mỗi khi có dịp. Tính vị kỷ và “ tự lừa mình ” này có thể gây ra sự mất cân bằng về tâm thần, chúng ta có thể giúp trẻ thuộc nhóm có quá nhiều số 1 gia tăng nhận thức bằng cách cho chúng tham gia nhiều hoạt động nghệ thuật khác nhau, như viết lách, làm thơ, vẽ, làm đồ gốm,... Điều này có thể áp dụng được cho trẻ mọi lứa tuổi.'
-        }
+        // 5: {
+        //     title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN,
+        //     meaning: <div></div>
+        // }
     },
     8: {
         1: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.EIGHT,
-            meaning: 'Những người có Biểu đồ ngày sinh có một số 1 thường gặp một chút khó khăn trong việc thể hiện bản thân qua ngôn ngữ. Điều này không có nghĩa là họ không thể nói chuyện một cách suôn sẻ, mà là họ khó diễn đạt được cảm xúc nội tâm của mình.\n' + '\n' + 'Họ có thể nói rất lưu loát và đầy thuyết phục về các đề tài không liên quan đến diễn đạt cảm xúc cá nhân, nhưng thường không biết cách biểu đạt bản thân hoặc diễn tả những gì mình đang cảm thấy. Chỉ khi nào họ học được cách làm chủ bản thân - kết quả của quá trình trưởng thành và thấu hiểu - thì điều này mới được cải thiện. Đôi khi họ sẽ cố ý nói ra những lời hoàn toàn trái ngược với suy nghĩ thật sự của mình như một kiểu phản ứng tự vệ - tức là họ Cố ý làm tổn thương hoặc xúc phạm người khác để tự bảo vệ bản thân mình. Điều này khiến vấn đề ban đầu trở nên nghiêm trọng hơn và gây ra những cuộc tranh cãi gay gắt. Họ cần tập suy nghĩ cẩn trọng trước khi phát biểu, và họ có thể làm được điều ấy bằng cách học kiểm soát phản ứng của bản thân trước các ý kiến, lời phê bình, vì những lời nói đã nói ra thì không thể thu hồi và cảm giác tổn thương rất khó được chữa lành. Để cải thiện hạn chế này, hãy lấy một quyển số trắng và ghi ngày tháng hiện tại. Sau đó, vào buổi tối, trước khi đi ngủ, hãy dành vài phút viết ra những suy nghĩ và cảm nhận của bạn về ngày hôm nay. Nhớ ghi rõ cả những việc bạn vốn dĩ muốn làm, những lời bạn vốn dĩ muốn nói, nhưng rốt cuộc đã không thực hiện được và những điều bạn đã nói hay lỡ làm mà bạn ước gì bạn đã không làm hay nói. Buổi sáng hôm sau, bạn hãy đọc to toàn bộ nội dung đó trước một tấm gương lớn và quan sát ngôn ngữ cơ thể bạn.\n' +
-                '\n' + 'Hãy làm điều này thường xuyên và bạn sẽ nhìn thấy sự tự tin trong việc diễn đạt bản thân được cải thiện thấy rõ, về cuộc sống, những người có một số 1 thường cảm thấy thiếu một điều gì đó trong cuộc sống, mặc dù thoạt nhìn họ rất đủ đầy ở một số mặt.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.EIGHT,
+            meaning: <div>
+                <p><strong><em>Khi sống tích cực, người có một số 8 trong Biểu đồ sinh vô cùng tỉ mỉ và làm việc có hệ
+                    thống. Còn nếu sống tiêu cực, họ sẽ lãnh đạm và không ổn định.</em></strong> Sự ngăn nắp, tỉ mỉ, có
+                    sự chú ý hợp lý đến các chi tiết và quan tâm đến hiệu quả công việc là bản chất tự nhiên của những
+                    người này. Đây là những đặc điểm đến từ “ kho trí thức ” thực tế của họ, vốn là nền tảng cho sự phát
+                    triển tính độc lập ở nhóm người này.</p>
+                <p>Tuy nhiên, nếu chọn hướng tiêu cực, họ sẽ không ổn định về mặt cảm xúc, dễ bực bội và bồn chồn, mà
+                    hậu quả là họ thường thay đổi công việc, nhà ở và cả những mối quan hệ.</p>
+            </div>
         },
         2: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.EIGHT,
-            meaning: 'Người có hai số 1 (11) trong Biểu đồ ngày sinh là người may mắn nhất trong cả nhóm, bởi sự cân bằng trời cho trong việc diễn đạt nội tâm. Đây là một đặc điểm nên được sử dụng một cách khôn ngoan - không bao giờ lạm dụng nó cho mục đích thao túng người khác. (Đồng thời hãy nhớ đừng mất kiên nhẫn với những người không may mắn không có hai số 1 giống bạn, đặc biệt nếu đó là người yêu hoặc người bạn đời của bạn.) Người có hai số 1 thường có khả năng nhìn nhận các vấn đề hay các cuộc tranh luận theo cả hai mặt, và vì vậy họ hoàn toàn có khả năng chuyển sang hướng đối lập trong một cuộc thảo luận nếu quan điểm của bên đó có vẻ có giá trị hơn. Điều này giúp họ không bị sa vào tư duy bảo thủ, thứ khiến tầm hiểu biết bị giới hạn một chiều, và vì thế bản thân họ cũng thường ít khi bắt bẻ những “ lỗi sai ” của người khác. Có thể nói người có hai số 1 trong biểu đồ thường dễ có cuộc sống cân bằng, an vui, bất kể cuộc sống có diễn ra thế nào. Về nhận định này, tôi có hai điều muốn chia sẻ kỹ hơn : Một Biểu đồ ngày sinh sẽ bao gồm rất nhiều yếu tố chi tiết bên trong, yếu tố này hòa quyện với yếu tố kia, hay yếu tố này mâu thuẫn với yếu tố kia, làm giảm giá trị của yếu tố kia.\n' +
-                '\n' + 'Ví dụ, nếu một người có được hai số 1 nhưng lại trống hoàn toàn cột giữa (4-5-6 - mang ý nghĩa Mũi tên uất giận, vì họ mãi không đạt được điều mình khát khao muốn có) , và đặc biệt nếu có thêm số 7 (hay 77, hay 777) thì người đó rất dễ gặp phải một trong những điều bất ý lớn trong các khía cạnh: sức khỏe, tiền tài, tình yêu, sự nghiệp ... Nhưng nhờ sức mạnh của hai số 1, người đó vẫn hay dùng lòng tin để tiếp thu cái mới, từ đó khiến bản thân gặp nhiều thiệt thòi. Tuy nhiên, nhờ trong Biểu đồ ngày sinh của tôi có hai số 1 (11) nên tôi có được một đặc điểm (như đã đề cập ở trên) : dễ dàng nhìn được hai mặt của một vấn đề, chịu thay đổi quan điểm một khi thấy các quan điểm khác cũng đúng hoặc có giá trị. Điều này đặc biệt ý nghĩa với các vấn đề mang tính trực giác, đòi hỏi sự hiểu biết sâu xa hơn những gì mắt thường nhìn thấy. Cho nên hiện giờ tôi đã thôi không còn dùng khái niệm “ thấy mới tin ” nữa, mà bắt đầu lắng tâm mình hơn, mỗi ngày một phát huy trực giác (còn gọi là “ con mắt ” bên trong) để cảm mọi việc, nhờ vậy tôi có thể tiếp thu nhiều cái mới mẻ hơn, rộng lớn hơn. Như vậy, hai số 1 (11) đã giúp tôi hóa giải bớt tính “ cứng đầu ” của Mũi tên 1-4-7 đó.\n' +
-                '\n' + 'Trở lại với những đặc điểm nổi bật của hai số 1 (11) :\n' + '\n' + 'Chính nhờ những yếu tố tích cực, dung hòa và cân bằng này mà người có hai số 1 trong biểu đồ dễ trở thành các chính trị gia thành công hoặc người của công chúng, người nổi tiếng. Yếu tố hai số 1 làm nổi bật nhận thức về con người, cũng như cách biểu đạt bản thân và khả năng nhìn nhận vấn đề một cách đa chiều, không phiến diện, giúp giảm thiểu khả năng bị hiểu lầm.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.EIGHT,
+            meaning: <div>
+                <p><strong><em>Khả năng đánh giá của hai số 8 trên Biểu đồ ngày sinh có thể cực kỳ có lợi cho người sở
+                    hữu nó, hoặc sẽ khiến họ trở nên vô cùng không ổn định, tùy thuộc vào mức độ tích cực của
+                    h</em></strong>ọ. Nếu nói về sự quan tâm đến chi tiết, những người này xuất sắc đến mức khó ai bì
+                    kịp. Nhưng họ cần ý thức để khả năng quan sát này không khiến họ tự tin thái quá đến mức trở nên độc
+                    tài. Vì điều này sẽ gây ra sự mâu thuẫn về cảm xúc trong chính bản thân họ, dẫn tới hậu quả là sự
+                    bất an cao độ và tính bất ổn định về cảm xúc.</p>
+                <p>Nhu cầu đi tìm chân lý và sự thông thái cũng có thể khiến họ đứng ngồi không yên, nhưng theo hướng
+                    tích cực. Nó tạo cảm hứng cho họ du lịch đó đây, mà qua đó họ sẽ lượm lặt được nhiều kinh nghiệm,
+                    kiến thức và tri thức. Nếu lúc trẻ họ không du lịch nhiều, sự thất vọng trong lòng họ có thể phát
+                    triển và ngày càng khiến họ khó chịu hơn. <em><strong>Điều này có thể gây ra cảm giác bị trói buộc,
+                        và chỉ khi nào có cơ hội đi đó đây thì họ mới có thể tìm lại được cảm giác bình yên trong tâm
+                        trí.</strong></em></p>
+            </div>
         },
         3: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.EIGHT,
-            meaning: 'Với những người có ba số 1 trong Biểu đồ ngày sinh, có hai khả năng khá đối lập xảy ra trong thực tế. Khả năng thường gặp nhất là những người này thuộc dạng nói rất nhiều, thường có mặt trong rất nhiều cuộc trò chuyện sôi nổi mà trong đó họ trở nên nổi bật và thú vị. Nhìn chung họ thấy cuộc sống dễ chịu và thường cố gắng chia sẻ điều đó với những người xung quanh, Nhóm thứ hai là những người cũng có ba số 1 nhưng lại không có số nào ở Trục ngang Tinh thần (tức là không có các số 2-5-8) . Những người này khá im lặng, hướng nội, bẽn lẽn, đặc biệt là với người lạ. Tuy nhiên, họ có thể hoạt bát và nói nhiều khi trò chuyện với bạn bè thân thiết hoặc người thân trong nhà - đó là những lúc họ cảm thấy thoải mái. Những người này thường dễ diễn đạt cảm xúc hay nội tâm của mình bằng cách viết, vì khi đó dòng suy nghĩ của họ liền mạch hơn, không bị cản trở bởi sự nhạy cảm quá mức của họ. Nếu bạn thuộc nhóm này mà chưa biết sức mạnh khả năng viết lách của mình, hãy thử xem sao. Hãy xem viết lách là một cách để tập diễn đạt bản thân cho trôi chảy, khơi thông những cảm xúc rối rắm tắc nghẽn trong lòng, cũng như là một cách để tự chữa lành. Ngoài ra, còn một khả năng nữa ở những người có ba số 1 mà bản thân tôi quan sát thấy, đó là tâm trạng lúc vui lúc buồn. Tùy theo những yếu tố khác trong Biểu đồ ngày sinh mà tỷ lệ vui buồn sẽ gia giảm khác nhau, tốt nhất thì được 5/5, còn không thì 4/6, không nữa thì 3/7, lúc vui họ có xu hướng nói rất nhiều, lúc buồn thì ngồi im, không quan tâm tới ai.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.EIGHT,
+            meaning: <div><p>Ở người có ba số 8 trong Biểu đồ ngày sinh, cảm giác bồn chồn khó chịu thường đến từ khía
+                cạnh tiêu cực hơn là từ khía cạnh tích cực. Họ cảm thấy cuộc sống vô nghĩa và thật đáng chán, và do đó,
+                họ trở thành nạn nhân của sự bi quan cùng cực. <em><strong>Những người này cần rất nhiều tình yêu thương
+                    và sự hướng dẫn để khuyến khích họ có cái nhìn rộng mở và lạc quan hơn về cuộc đời. Suy cho cùng, họ
+                    cần hiểu rằng cuộc sống này vẫn tiếp diễn, cho dù họ có tích cực tận hưởng nó hay
+                    không.</strong></em></p>
+                <p>Tất cả những gì họ cần làm là thay đổi thái độ và nhảy xuống nước để tham gia cuộc bơi đua, thay vì
+                    đứng trên bờ than thở về nhiệt độ của dòng nước mà họ thậm chí còn chưa nhúng chân xuống
+                    thử. <strong><em>Đối với người có ba số 8 biết hướng về sự tích cực, cuộc sống của họ là chuỗi ngày
+                        tỏa sáng của trí tuệ và cảm giác độc lập đáng tự hào.</em></strong></p>
+                <p>Ngay cả khi họ luôn thích xê dịch, sự bình yên trong tâm hồn và năng lượng của niềm vui sống luôn
+                    giúp họ có rất nhiều bạn bè. Thật không may là chỉ có một số rất ít người có ba số 8 có thể sống
+                    theo hướng này, nhưng hy vọng sẽ có những người đọc được những lời này và chuyển tiêu cực thành tích
+                    cực, từ đó thay đổi cuộc đời mình theo chiều hướng tốt hơn.</p>
+            </div>
         },
         4: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.EIGHT,
-            meaning: 'Người có bốn số 1 trong ngày sinh thường gặp trục trặc với vấn đề diễn đạt bằng lời, và vì vậy, rất dễ bị người khác hiểu lầm. Nhưng cuộc sống nhanh chóng dạy họ giấu đi những cảm xúc rối rắm bằng một nụ cười, cho dù họ có khuynh hướng dẫn tiếp tục chịu đựng bên trong cho đến khi tự có ý thức giải tỏa những cảm xúc đó và sống lẹ làng hơn. Nói một cách dễ hiểu, những người có bốn số 1 thường tự làm mình khổ tâm. Số 1 mang đặc tính về “ cái tôi ” của mỗi người, vậy nên hãy tưởng tượng một người có đến bốn lần “ cái tôi ” như vậy sẽ như thế nào. Họ có “ cái tôi rất mạnh, nhưng rất khó diễn đạt những cảm giác sâu đậm như vậy về bản thân mình. Vì vậy, Thầy David khuyên: vì hạnh phúc của chính mình và của những người thân, những người có bốn số 1 phải học cách kiểm soát cảm xúc của mình. Khi họ thả lỏng hơn, bớt căng thẳng, bớt thiếu tự tin (đôi khi họ không nhận ra điều này, mà trái lại, họ có thể cảm thấy mình quá tự tin là đằng khác), họ sẽ cảm thấy ít bị cản trở hơn và diễn đạt cảm xúc của mình một cách thoải mái hơn, thay vì cứ đè nén những sầu muộn, rối rắm trong nội tâm của mình.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.EIGHT,
+            meaning: <div><p><em><strong>Những người có bốn số 8 trong ngày sinh thường cực kỳ năng động, đôi khi trở
+                thành “ tăng động ” </strong></em>. Những đứa trẻ có bốn số 8 không bao giờ chịu ngồi yên, vì đối với
+                chúng thì đây là hành động “ bất thường ”, khiến cảm xúc của chúng bị dồn nén và cuối cùng sẽ “ bùng nổ
+                ” thành cảnh gà bay chó sủa. Người thuộc nhóm này cần được dạy để phát triển khả năng định hướng chính
+                xác từ khi còn nhỏ, và nên được đưa đi đó đi đây thường xuyên cho đến khi họ đủ trưởng thành để có thể
+                tự đi một mình.</p></div>
         },
-        5: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.EIGHT,
-            meaning: 'Với năm hay sáu số 1 trên Biểu đồ ngày sinh, “ cái tôi ” thường bị đè nén để giảm bớt các khó khăn trong việc diễn đạt cảm xúc cá nhân. Những người trẻ tuổi thuộc nhóm này thường cảm thấy buồn vì bị mọi người xung quanh hiểu lầm. Điều này dẫn đến sự tách rời, từ đó gây gia sự cô độc. Họ có thể phát triển theo hướng bị ám ảnh với ngoại hình và hành động của mình, cũng như thường gắn rất nhiều gương trong nhà nhưng lại có xu hướng giấu chúng đi để tránh người khác nghĩ họ quá tự tôn. Nhưng họ vẫn bí mật ngắm mình trong gương mỗi khi có dịp. Tính vị kỷ và “ tự lừa mình ” này có thể gây ra sự mất cân bằng về tâm thần, chúng ta có thể giúp trẻ thuộc nhóm có quá nhiều số 1 gia tăng nhận thức bằng cách cho chúng tham gia nhiều hoạt động nghệ thuật khác nhau, như viết lách, làm thơ, vẽ, làm đồ gốm,... Điều này có thể áp dụng được cho trẻ mọi lứa tuổi.'
-        }
+        // 5: {
+        //     title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.EIGHT,
+        //     meaning: <div></div>
+        // }
     },
     9: {
         1: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.NINE,
-            meaning: 'Những người có Biểu đồ ngày sinh có một số 1 thường gặp một chút khó khăn trong việc thể hiện bản thân qua ngôn ngữ. Điều này không có nghĩa là họ không thể nói chuyện một cách suôn sẻ, mà là họ khó diễn đạt được cảm xúc nội tâm của mình.\n' + '\n' + 'Họ có thể nói rất lưu loát và đầy thuyết phục về các đề tài không liên quan đến diễn đạt cảm xúc cá nhân, nhưng thường không biết cách biểu đạt bản thân hoặc diễn tả những gì mình đang cảm thấy. Chỉ khi nào họ học được cách làm chủ bản thân - kết quả của quá trình trưởng thành và thấu hiểu - thì điều này mới được cải thiện. Đôi khi họ sẽ cố ý nói ra những lời hoàn toàn trái ngược với suy nghĩ thật sự của mình như một kiểu phản ứng tự vệ - tức là họ Cố ý làm tổn thương hoặc xúc phạm người khác để tự bảo vệ bản thân mình. Điều này khiến vấn đề ban đầu trở nên nghiêm trọng hơn và gây ra những cuộc tranh cãi gay gắt. Họ cần tập suy nghĩ cẩn trọng trước khi phát biểu, và họ có thể làm được điều ấy bằng cách học kiểm soát phản ứng của bản thân trước các ý kiến, lời phê bình, vì những lời nói đã nói ra thì không thể thu hồi và cảm giác tổn thương rất khó được chữa lành. Để cải thiện hạn chế này, hãy lấy một quyển số trắng và ghi ngày tháng hiện tại. Sau đó, vào buổi tối, trước khi đi ngủ, hãy dành vài phút viết ra những suy nghĩ và cảm nhận của bạn về ngày hôm nay. Nhớ ghi rõ cả những việc bạn vốn dĩ muốn làm, những lời bạn vốn dĩ muốn nói, nhưng rốt cuộc đã không thực hiện được và những điều bạn đã nói hay lỡ làm mà bạn ước gì bạn đã không làm hay nói. Buổi sáng hôm sau, bạn hãy đọc to toàn bộ nội dung đó trước một tấm gương lớn và quan sát ngôn ngữ cơ thể bạn.\n' +
-                '\n' + 'Hãy làm điều này thường xuyên và bạn sẽ nhìn thấy sự tự tin trong việc diễn đạt bản thân được cải thiện thấy rõ, về cuộc sống, những người có một số 1 thường cảm thấy thiếu một điều gì đó trong cuộc sống, mặc dù thoạt nhìn họ rất đủ đầy ở một số mặt.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.NINE,
+            meaning: <div>
+                <p><strong><em>Số 9 mang ba giá trị lớn là tham vọng / hoài bão, trách nhiệm và lý tưởng. Đây là sức
+                    mạnh nền tảng cho sự phát triển của xã hội thế kỷ trước, thúc đẩy chúng ta tìm hiểu cuộc sống nhiều
+                    hơn và kiểm soát nó tốt hơn. </em></strong>Thầy David nhắc nhớ rằng đừng nghĩ có được ba giá trị lớn
+                    này thì chúng ta đã thành công. Mặc dù so với đầu thế kỷ 20, giờ đây chúng ta hiểu biết hơn về môi
+                    trường sống và giá trị của con người, nhưng chúng ta cũng khiến môi trường xuống cấp hơn, bệnh tật
+                    xuất hiện nhiều hơn, sự đói nghèo cũng gia tăng hơn bất kỳ giai đoạn nào trong hai thế kỷ vừa
+                    qua<em><strong>. Chúng ta đã sai ở đâu? Có phải chúng ta đã tập trung vào tham vọng và không đủ chú
+                        trọng yếu tố trách nhiệm và lý tưởng?</strong></em>
+                </p>
+                <p>Để phát huy sức mạnh của một số 9 một cách hiệu quả nhất, chúng ta cần học cách cân bằng ba giá trị
+                    này, tạo thành thế hài hòa, vững chãi như kiềng ba chân. Bất kỳ sự bù đắp quá mức nào cũng chỉ làm
+                    sự mất cân bằng thêm trầm trọng và dẫn đến những điều tệ hại khác mà thôi .<strong><em> Hãy nhớ rằng
+                        sự cân bằng mới là quan trọng nhất.</em></strong></p>
+            </div>
         },
         2: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.NINE,
-            meaning: 'Người có hai số 1 (11) trong Biểu đồ ngày sinh là người may mắn nhất trong cả nhóm, bởi sự cân bằng trời cho trong việc diễn đạt nội tâm. Đây là một đặc điểm nên được sử dụng một cách khôn ngoan - không bao giờ lạm dụng nó cho mục đích thao túng người khác. (Đồng thời hãy nhớ đừng mất kiên nhẫn với những người không may mắn không có hai số 1 giống bạn, đặc biệt nếu đó là người yêu hoặc người bạn đời của bạn.) Người có hai số 1 thường có khả năng nhìn nhận các vấn đề hay các cuộc tranh luận theo cả hai mặt, và vì vậy họ hoàn toàn có khả năng chuyển sang hướng đối lập trong một cuộc thảo luận nếu quan điểm của bên đó có vẻ có giá trị hơn. Điều này giúp họ không bị sa vào tư duy bảo thủ, thứ khiến tầm hiểu biết bị giới hạn một chiều, và vì thế bản thân họ cũng thường ít khi bắt bẻ những “ lỗi sai ” của người khác. Có thể nói người có hai số 1 trong biểu đồ thường dễ có cuộc sống cân bằng, an vui, bất kể cuộc sống có diễn ra thế nào. Về nhận định này, tôi có hai điều muốn chia sẻ kỹ hơn : Một Biểu đồ ngày sinh sẽ bao gồm rất nhiều yếu tố chi tiết bên trong, yếu tố này hòa quyện với yếu tố kia, hay yếu tố này mâu thuẫn với yếu tố kia, làm giảm giá trị của yếu tố kia.\n' +
-                '\n' + 'Ví dụ, nếu một người có được hai số 1 nhưng lại trống hoàn toàn cột giữa (4-5-6 - mang ý nghĩa Mũi tên uất giận, vì họ mãi không đạt được điều mình khát khao muốn có) , và đặc biệt nếu có thêm số 7 (hay 77, hay 777) thì người đó rất dễ gặp phải một trong những điều bất ý lớn trong các khía cạnh: sức khỏe, tiền tài, tình yêu, sự nghiệp ... Nhưng nhờ sức mạnh của hai số 1, người đó vẫn hay dùng lòng tin để tiếp thu cái mới, từ đó khiến bản thân gặp nhiều thiệt thòi. Tuy nhiên, nhờ trong Biểu đồ ngày sinh của tôi có hai số 1 (11) nên tôi có được một đặc điểm (như đã đề cập ở trên) : dễ dàng nhìn được hai mặt của một vấn đề, chịu thay đổi quan điểm một khi thấy các quan điểm khác cũng đúng hoặc có giá trị. Điều này đặc biệt ý nghĩa với các vấn đề mang tính trực giác, đòi hỏi sự hiểu biết sâu xa hơn những gì mắt thường nhìn thấy. Cho nên hiện giờ tôi đã thôi không còn dùng khái niệm “ thấy mới tin ” nữa, mà bắt đầu lắng tâm mình hơn, mỗi ngày một phát huy trực giác (còn gọi là “ con mắt ” bên trong) để cảm mọi việc, nhờ vậy tôi có thể tiếp thu nhiều cái mới mẻ hơn, rộng lớn hơn. Như vậy, hai số 1 (11) đã giúp tôi hóa giải bớt tính “ cứng đầu ” của Mũi tên 1-4-7 đó.\n' +
-                '\n' + 'Trở lại với những đặc điểm nổi bật của hai số 1 (11) :\n' + '\n' + 'Chính nhờ những yếu tố tích cực, dung hòa và cân bằng này mà người có hai số 1 trong biểu đồ dễ trở thành các chính trị gia thành công hoặc người của công chúng, người nổi tiếng. Yếu tố hai số 1 làm nổi bật nhận thức về con người, cũng như cách biểu đạt bản thân và khả năng nhìn nhận vấn đề một cách đa chiều, không phiến diện, giúp giảm thiểu khả năng bị hiểu lầm.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.NINE,
+            meaning: <div>
+                <p>Tính lý tưởng và sự nhiệt tình được tăng cao, kèm theo những suy nghĩ cực kỳ nghiêm túc chính là đặc
+                    điểm của những người có hai số 9 trong Biểu đồ ngày sinh. Họ thường thể hiện tính lý tưởng một cách
+                    thái quá đến mức những lý tưởng đó gần như phi thực tế. <em><strong>Do đó, họ cần nỗ lực duy trì sự
+                        cân bằng giữa tính thực tế và lý tưởng. Nếu muốn có cuộc sống hạnh phúc, những người này cần
+                        kiềm chế khuynh hướng phê bình những người mà họ cho là có mức độ lý tưởng thấp hơn
+                        mình.</strong></em></p>
+                <p>Mặt khác, nhóm người có hai số 9 thường có tư duy sâu sắc, và đằng sau tất cả những gì họ làm chính
+                    là mong muốn được trở thành người hữu ích. Họ chỉ cần tập thể hiện mong muốn này cho rõ ràng và
+                    tránh để nó bị lợi dụng.</p>
+            </div>
         },
         3: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.NINE,
-            meaning: 'Với những người có ba số 1 trong Biểu đồ ngày sinh, có hai khả năng khá đối lập xảy ra trong thực tế. Khả năng thường gặp nhất là những người này thuộc dạng nói rất nhiều, thường có mặt trong rất nhiều cuộc trò chuyện sôi nổi mà trong đó họ trở nên nổi bật và thú vị. Nhìn chung họ thấy cuộc sống dễ chịu và thường cố gắng chia sẻ điều đó với những người xung quanh, Nhóm thứ hai là những người cũng có ba số 1 nhưng lại không có số nào ở Trục ngang Tinh thần (tức là không có các số 2-5-8) . Những người này khá im lặng, hướng nội, bẽn lẽn, đặc biệt là với người lạ. Tuy nhiên, họ có thể hoạt bát và nói nhiều khi trò chuyện với bạn bè thân thiết hoặc người thân trong nhà - đó là những lúc họ cảm thấy thoải mái. Những người này thường dễ diễn đạt cảm xúc hay nội tâm của mình bằng cách viết, vì khi đó dòng suy nghĩ của họ liền mạch hơn, không bị cản trở bởi sự nhạy cảm quá mức của họ. Nếu bạn thuộc nhóm này mà chưa biết sức mạnh khả năng viết lách của mình, hãy thử xem sao. Hãy xem viết lách là một cách để tập diễn đạt bản thân cho trôi chảy, khơi thông những cảm xúc rối rắm tắc nghẽn trong lòng, cũng như là một cách để tự chữa lành. Ngoài ra, còn một khả năng nữa ở những người có ba số 1 mà bản thân tôi quan sát thấy, đó là tâm trạng lúc vui lúc buồn. Tùy theo những yếu tố khác trong Biểu đồ ngày sinh mà tỷ lệ vui buồn sẽ gia giảm khác nhau, tốt nhất thì được 5/5, còn không thì 4/6, không nữa thì 3/7, lúc vui họ có xu hướng nói rất nhiều, lúc buồn thì ngồi im, không quan tâm tới ai.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.NINE,
+            meaning: <div><p>Với ba số 9 trong Biểu đồ ngày sinh, sức mạnh của tính lý tưởng và tham vọng trở nên vượt
+                trội đến mức khó kiểm soát. Sức mạnh này đôi khi còn gây ra mất cân bằng về mặt tâm trí đối với những ai
+                không nhận ra nó. <em><strong>Vấn đề này có thể được khắc phục bằng cách sớm xác định những đứa trẻ có
+                    ba số 9 trong biểu đồ và dạy trẻ cách biểu đạt đồng đều trên cả ba phương diện chứ không chỉ tập
+                    trung vào phương diện trí não.</strong></em></p>
+                <p>Thêm vào đó, khi sống tiêu cực thì những người thuộc nhóm này còn hay có xu hướng phóng đại mọi thứ.
+                    Điều này thường gây ra những cơn giận bộc phát, mất kiểm soát cảm xúc, thậm chí còn có nguy cơ làm
+                    tổn hại đến sự cân bằng về mặt tâm trí. Bài học thiết yếu cho những người có ba số 9 là nhìn nhận
+                    mọi sự một cách khách quan và đúng với giá trị thực của chúng. <strong><em>Điều này sẽ giúp họ bớt
+                        phán xét và có thể chấp nhận những sự “ lệch pha ” nho nhỏ so với hệ thống lý tưởng cứng nhắc
+                        của mình.</em></strong></p></div>
         },
         4: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.NINE,
-            meaning: 'Người có bốn số 1 trong ngày sinh thường gặp trục trặc với vấn đề diễn đạt bằng lời, và vì vậy, rất dễ bị người khác hiểu lầm. Nhưng cuộc sống nhanh chóng dạy họ giấu đi những cảm xúc rối rắm bằng một nụ cười, cho dù họ có khuynh hướng dẫn tiếp tục chịu đựng bên trong cho đến khi tự có ý thức giải tỏa những cảm xúc đó và sống lẹ làng hơn. Nói một cách dễ hiểu, những người có bốn số 1 thường tự làm mình khổ tâm. Số 1 mang đặc tính về “ cái tôi ” của mỗi người, vậy nên hãy tưởng tượng một người có đến bốn lần “ cái tôi ” như vậy sẽ như thế nào. Họ có “ cái tôi rất mạnh, nhưng rất khó diễn đạt những cảm giác sâu đậm như vậy về bản thân mình. Vì vậy, Thầy David khuyên: vì hạnh phúc của chính mình và của những người thân, những người có bốn số 1 phải học cách kiểm soát cảm xúc của mình. Khi họ thả lỏng hơn, bớt căng thẳng, bớt thiếu tự tin (đôi khi họ không nhận ra điều này, mà trái lại, họ có thể cảm thấy mình quá tự tin là đằng khác), họ sẽ cảm thấy ít bị cản trở hơn và diễn đạt cảm xúc của mình một cách thoải mái hơn, thay vì cứ đè nén những sầu muộn, rối rắm trong nội tâm của mình.',
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.NINE,
+            meaning: <div><p>Thi thoảng chúng ta gặp một số người có bốn số 9 trong Biểu đồ ngày sinh. Mặc dù chỉ chiếm
+                tỷ lệ rất nhỏ trong dân số, họ thật sự cần được hỗ trợ. Thầy David chia những người này thành hai nhóm
+                riêng biệt: Phổ biến nhất là nhóm những người sống mơ màng trong một thế giới kém thực tế. Họ thường rơi
+                ra khỏi guồng quay của xã hội vì không thể nắm bắt được những yếu tố thực tế trong cuộc sống, thứ không
+                thể đẹp và hoàn hảo như trong lý tưởng của họ. Một số khác thì không đến mức như thế. Họ có vẻ “ bình
+                thường và ngoan ngoãn cho đến khi chịu hết nổi - khi đó họ sẽ tự tách mình ra khỏi xã hội hoặc tự khóa
+                mình trong nhà suốt nhiều ngày hoặc nhiều tháng trời.</p>
+                <p>Đây là những người không gây hại gì, nhưng cũng không cho rằng mình có bất cứ điều gì bất thường và
+                    không chịu đón nhận sự hỗ trợ hoặc dẫn dắt. Nhóm thứ hai là những người có thái độ quá khích, thù
+                    hằn và có vẻ tìm sự thỏa mãn qua việc miệt thị những người mà theo quan điểm của họ là quá kém so
+                    với lý tưởng của họ. <strong><em>Đây là những người có thể trở nên nguy hiểm và cần được dẫn dắt cẩn
+                        thận, nếu không họ vô cùng cô đơn hoặc làm hại bản thân và người khác trong cơn nóng giận khó có
+                        thể kiềm chế của mình.</em></strong></p>
+            </div>
         },
         5: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.NINE,
-            meaning: 'Với năm hay sáu số 1 trên Biểu đồ ngày sinh, “ cái tôi ” thường bị đè nén để giảm bớt các khó khăn trong việc diễn đạt cảm xúc cá nhân. Những người trẻ tuổi thuộc nhóm này thường cảm thấy buồn vì bị mọi người xung quanh hiểu lầm. Điều này dẫn đến sự tách rời, từ đó gây gia sự cô độc. Họ có thể phát triển theo hướng bị ám ảnh với ngoại hình và hành động của mình, cũng như thường gắn rất nhiều gương trong nhà nhưng lại có xu hướng giấu chúng đi để tránh người khác nghĩ họ quá tự tôn. Nhưng họ vẫn bí mật ngắm mình trong gương mỗi khi có dịp. Tính vị kỷ và “ tự lừa mình ” này có thể gây ra sự mất cân bằng về tâm thần, chúng ta có thể giúp trẻ thuộc nhóm có quá nhiều số 1 gia tăng nhận thức bằng cách cho chúng tham gia nhiều hoạt động nghệ thuật khác nhau, như viết lách, làm thơ, vẽ, làm đồ gốm,... Điều này có thể áp dụng được cho trẻ mọi lứa tuổi.'
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.NINE,
+            meaning: <div><p>Đây là những người không gây hại gì, nhưng cũng không cho rằng mình có bất cứ điều gì bất
+                thường và không chịu đón nhận sự hỗ trợ hoặc dẫn dắt. Nhóm thứ hai là những người có thái độ quá khích,
+                thù hằn và có vẻ tìm sự thỏa mãn qua việc miệt thị những người mà theo quan điểm của họ là quá kém so
+                với lý tưởng của họ. <strong><em>Đây là những người có thể trở nên nguy hiểm và cần được dẫn dắt cẩn
+                    thận, nếu không họ vô cùng cô đơn hoặc làm hại bản thân và người khác trong cơn nóng giận khó có thể
+                    kiềm chế của mình.</em></strong></p>
+                <p><strong><em>Hy vọng cha mẹ của những đứa trẻ này được trang bị đầy đủ kiến thức về Nhân số học để có
+                    thể vượt qua thử thách và dạy các con về tính thực tế và lòng trắc ẩn.</em></strong></p>
+            </div>
         }
-    },
-    0: {
-        1: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.ZERO,
-            meaning: 'Những người có Biểu đồ ngày sinh có một số 1 thường gặp một chút khó khăn trong việc thể hiện bản thân qua ngôn ngữ. Điều này không có nghĩa là họ không thể nói chuyện một cách suôn sẻ, mà là họ khó diễn đạt được cảm xúc nội tâm của mình.\n' + '\n' + 'Họ có thể nói rất lưu loát và đầy thuyết phục về các đề tài không liên quan đến diễn đạt cảm xúc cá nhân, nhưng thường không biết cách biểu đạt bản thân hoặc diễn tả những gì mình đang cảm thấy. Chỉ khi nào họ học được cách làm chủ bản thân - kết quả của quá trình trưởng thành và thấu hiểu - thì điều này mới được cải thiện. Đôi khi họ sẽ cố ý nói ra những lời hoàn toàn trái ngược với suy nghĩ thật sự của mình như một kiểu phản ứng tự vệ - tức là họ Cố ý làm tổn thương hoặc xúc phạm người khác để tự bảo vệ bản thân mình. Điều này khiến vấn đề ban đầu trở nên nghiêm trọng hơn và gây ra những cuộc tranh cãi gay gắt. Họ cần tập suy nghĩ cẩn trọng trước khi phát biểu, và họ có thể làm được điều ấy bằng cách học kiểm soát phản ứng của bản thân trước các ý kiến, lời phê bình, vì những lời nói đã nói ra thì không thể thu hồi và cảm giác tổn thương rất khó được chữa lành. Để cải thiện hạn chế này, hãy lấy một quyển số trắng và ghi ngày tháng hiện tại. Sau đó, vào buổi tối, trước khi đi ngủ, hãy dành vài phút viết ra những suy nghĩ và cảm nhận của bạn về ngày hôm nay. Nhớ ghi rõ cả những việc bạn vốn dĩ muốn làm, những lời bạn vốn dĩ muốn nói, nhưng rốt cuộc đã không thực hiện được và những điều bạn đã nói hay lỡ làm mà bạn ước gì bạn đã không làm hay nói. Buổi sáng hôm sau, bạn hãy đọc to toàn bộ nội dung đó trước một tấm gương lớn và quan sát ngôn ngữ cơ thể bạn.\n' +
-                '\n' + 'Hãy làm điều này thường xuyên và bạn sẽ nhìn thấy sự tự tin trong việc diễn đạt bản thân được cải thiện thấy rõ, về cuộc sống, những người có một số 1 thường cảm thấy thiếu một điều gì đó trong cuộc sống, mặc dù thoạt nhìn họ rất đủ đầy ở một số mặt.',
-        },
-        2: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.ZERO,
-            meaning: 'Người có hai số 1 (11) trong Biểu đồ ngày sinh là người may mắn nhất trong cả nhóm, bởi sự cân bằng trời cho trong việc diễn đạt nội tâm. Đây là một đặc điểm nên được sử dụng một cách khôn ngoan - không bao giờ lạm dụng nó cho mục đích thao túng người khác. (Đồng thời hãy nhớ đừng mất kiên nhẫn với những người không may mắn không có hai số 1 giống bạn, đặc biệt nếu đó là người yêu hoặc người bạn đời của bạn.) Người có hai số 1 thường có khả năng nhìn nhận các vấn đề hay các cuộc tranh luận theo cả hai mặt, và vì vậy họ hoàn toàn có khả năng chuyển sang hướng đối lập trong một cuộc thảo luận nếu quan điểm của bên đó có vẻ có giá trị hơn. Điều này giúp họ không bị sa vào tư duy bảo thủ, thứ khiến tầm hiểu biết bị giới hạn một chiều, và vì thế bản thân họ cũng thường ít khi bắt bẻ những “ lỗi sai ” của người khác. Có thể nói người có hai số 1 trong biểu đồ thường dễ có cuộc sống cân bằng, an vui, bất kể cuộc sống có diễn ra thế nào. Về nhận định này, tôi có hai điều muốn chia sẻ kỹ hơn : Một Biểu đồ ngày sinh sẽ bao gồm rất nhiều yếu tố chi tiết bên trong, yếu tố này hòa quyện với yếu tố kia, hay yếu tố này mâu thuẫn với yếu tố kia, làm giảm giá trị của yếu tố kia.\n' +
-                '\n' + 'Ví dụ, nếu một người có được hai số 1 nhưng lại trống hoàn toàn cột giữa (4-5-6 - mang ý nghĩa Mũi tên uất giận, vì họ mãi không đạt được điều mình khát khao muốn có) , và đặc biệt nếu có thêm số 7 (hay 77, hay 777) thì người đó rất dễ gặp phải một trong những điều bất ý lớn trong các khía cạnh: sức khỏe, tiền tài, tình yêu, sự nghiệp ... Nhưng nhờ sức mạnh của hai số 1, người đó vẫn hay dùng lòng tin để tiếp thu cái mới, từ đó khiến bản thân gặp nhiều thiệt thòi. Tuy nhiên, nhờ trong Biểu đồ ngày sinh của tôi có hai số 1 (11) nên tôi có được một đặc điểm (như đã đề cập ở trên) : dễ dàng nhìn được hai mặt của một vấn đề, chịu thay đổi quan điểm một khi thấy các quan điểm khác cũng đúng hoặc có giá trị. Điều này đặc biệt ý nghĩa với các vấn đề mang tính trực giác, đòi hỏi sự hiểu biết sâu xa hơn những gì mắt thường nhìn thấy. Cho nên hiện giờ tôi đã thôi không còn dùng khái niệm “ thấy mới tin ” nữa, mà bắt đầu lắng tâm mình hơn, mỗi ngày một phát huy trực giác (còn gọi là “ con mắt ” bên trong) để cảm mọi việc, nhờ vậy tôi có thể tiếp thu nhiều cái mới mẻ hơn, rộng lớn hơn. Như vậy, hai số 1 (11) đã giúp tôi hóa giải bớt tính “ cứng đầu ” của Mũi tên 1-4-7 đó.\n' +
-                '\n' + 'Trở lại với những đặc điểm nổi bật của hai số 1 (11) :\n' + '\n' + 'Chính nhờ những yếu tố tích cực, dung hòa và cân bằng này mà người có hai số 1 trong biểu đồ dễ trở thành các chính trị gia thành công hoặc người của công chúng, người nổi tiếng. Yếu tố hai số 1 làm nổi bật nhận thức về con người, cũng như cách biểu đạt bản thân và khả năng nhìn nhận vấn đề một cách đa chiều, không phiến diện, giúp giảm thiểu khả năng bị hiểu lầm.',
-        },
-        3: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.ZERO,
-            meaning: 'Với những người có ba số 1 trong Biểu đồ ngày sinh, có hai khả năng khá đối lập xảy ra trong thực tế. Khả năng thường gặp nhất là những người này thuộc dạng nói rất nhiều, thường có mặt trong rất nhiều cuộc trò chuyện sôi nổi mà trong đó họ trở nên nổi bật và thú vị. Nhìn chung họ thấy cuộc sống dễ chịu và thường cố gắng chia sẻ điều đó với những người xung quanh, Nhóm thứ hai là những người cũng có ba số 1 nhưng lại không có số nào ở Trục ngang Tinh thần (tức là không có các số 2-5-8) . Những người này khá im lặng, hướng nội, bẽn lẽn, đặc biệt là với người lạ. Tuy nhiên, họ có thể hoạt bát và nói nhiều khi trò chuyện với bạn bè thân thiết hoặc người thân trong nhà - đó là những lúc họ cảm thấy thoải mái. Những người này thường dễ diễn đạt cảm xúc hay nội tâm của mình bằng cách viết, vì khi đó dòng suy nghĩ của họ liền mạch hơn, không bị cản trở bởi sự nhạy cảm quá mức của họ. Nếu bạn thuộc nhóm này mà chưa biết sức mạnh khả năng viết lách của mình, hãy thử xem sao. Hãy xem viết lách là một cách để tập diễn đạt bản thân cho trôi chảy, khơi thông những cảm xúc rối rắm tắc nghẽn trong lòng, cũng như là một cách để tự chữa lành. Ngoài ra, còn một khả năng nữa ở những người có ba số 1 mà bản thân tôi quan sát thấy, đó là tâm trạng lúc vui lúc buồn. Tùy theo những yếu tố khác trong Biểu đồ ngày sinh mà tỷ lệ vui buồn sẽ gia giảm khác nhau, tốt nhất thì được 5/5, còn không thì 4/6, không nữa thì 3/7, lúc vui họ có xu hướng nói rất nhiều, lúc buồn thì ngồi im, không quan tâm tới ai.',
-        },
-        4: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.ZERO,
-            meaning: 'Người có bốn số 1 trong ngày sinh thường gặp trục trặc với vấn đề diễn đạt bằng lời, và vì vậy, rất dễ bị người khác hiểu lầm. Nhưng cuộc sống nhanh chóng dạy họ giấu đi những cảm xúc rối rắm bằng một nụ cười, cho dù họ có khuynh hướng dẫn tiếp tục chịu đựng bên trong cho đến khi tự có ý thức giải tỏa những cảm xúc đó và sống lẹ làng hơn. Nói một cách dễ hiểu, những người có bốn số 1 thường tự làm mình khổ tâm. Số 1 mang đặc tính về “ cái tôi ” của mỗi người, vậy nên hãy tưởng tượng một người có đến bốn lần “ cái tôi ” như vậy sẽ như thế nào. Họ có “ cái tôi rất mạnh, nhưng rất khó diễn đạt những cảm giác sâu đậm như vậy về bản thân mình. Vì vậy, Thầy David khuyên: vì hạnh phúc của chính mình và của những người thân, những người có bốn số 1 phải học cách kiểm soát cảm xúc của mình. Khi họ thả lỏng hơn, bớt căng thẳng, bớt thiếu tự tin (đôi khi họ không nhận ra điều này, mà trái lại, họ có thể cảm thấy mình quá tự tin là đằng khác), họ sẽ cảm thấy ít bị cản trở hơn và diễn đạt cảm xúc của mình một cách thoải mái hơn, thay vì cứ đè nén những sầu muộn, rối rắm trong nội tâm của mình.',
-        },
-        5: {
-            title: BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.ZERO,
-            meaning: 'Với năm hay sáu số 1 trên Biểu đồ ngày sinh, “ cái tôi ” thường bị đè nén để giảm bớt các khó khăn trong việc diễn đạt cảm xúc cá nhân. Những người trẻ tuổi thuộc nhóm này thường cảm thấy buồn vì bị mọi người xung quanh hiểu lầm. Điều này dẫn đến sự tách rời, từ đó gây gia sự cô độc. Họ có thể phát triển theo hướng bị ám ảnh với ngoại hình và hành động của mình, cũng như thường gắn rất nhiều gương trong nhà nhưng lại có xu hướng giấu chúng đi để tránh người khác nghĩ họ quá tự tôn. Nhưng họ vẫn bí mật ngắm mình trong gương mỗi khi có dịp. Tính vị kỷ và “ tự lừa mình ” này có thể gây ra sự mất cân bằng về tâm thần, chúng ta có thể giúp trẻ thuộc nhóm có quá nhiều số 1 gia tăng nhận thức bằng cách cho chúng tham gia nhiều hoạt động nghệ thuật khác nhau, như viết lách, làm thơ, vẽ, làm đồ gốm,... Điều này có thể áp dụng được cho trẻ mọi lứa tuổi.'
-        }
-    },
+    }
 }
-
