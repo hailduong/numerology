@@ -1,5 +1,4 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit'
-import {debug} from "util";
 
 /* 1. Slice */
 
@@ -13,9 +12,11 @@ type TUserSlice = {
     birthDay: string,
     rulingNumber: number
     dateNumbers: number[]
+    dateNumbersIsolate: number[]
     peakNumbers: number[]
     peakYearOld: number[]
     peakYear: number[]
+    arrowBirthChart: number[]
 }
 
 const initialData: TUserSlice = {
@@ -23,9 +24,11 @@ const initialData: TUserSlice = {
     birthDay: '2022-03-13',
     rulingNumber: 10,
     dateNumbers: [],
+    dateNumbersIsolate: [],
     peakNumbers: [],
     peakYearOld: [],
-    peakYear: []
+    peakYear: [],
+    arrowBirthChart: []
 }
 
 export const userSlice = createSlice({
@@ -51,6 +54,40 @@ export const userSlice = createSlice({
             // Update birth chart numbers
             for (let i = 0; i < 10; i++) {
                 state.dateNumbers[i] = birthDay.match(new RegExp(i.toString(), 'g'))?.length || 0
+            }
+
+            // Check isolate number
+            let isUnavailableNumber = []
+            for (let i = 0; i < state.dateNumbers.length; i++) {
+                isUnavailableNumber[i] = state.dateNumbers[i] === 0
+            }
+            if (isUnavailableNumber[5] && isUnavailableNumber[2] && !isUnavailableNumber[1] && isUnavailableNumber[4]) {
+                state.dateNumbersIsolate[1] = state.dateNumbers[1]
+            }
+            if (isUnavailableNumber[5] && isUnavailableNumber[2] && !isUnavailableNumber[3] && isUnavailableNumber[6]) {
+                state.dateNumbersIsolate[3] = state.dateNumbers[3]
+            }
+            if (!isUnavailableNumber[7] && isUnavailableNumber[4] && isUnavailableNumber[5] && isUnavailableNumber[8]) {
+                state.dateNumbersIsolate[7] = state.dateNumbers[7]
+            }
+            if (isUnavailableNumber[5] && isUnavailableNumber[8] && !isUnavailableNumber[9] && isUnavailableNumber[6]) {
+                state.dateNumbersIsolate[9] = state.dateNumbers[9]
+            }
+
+            // Find arrows
+            const isArrow123 = (!isUnavailableNumber[1] && !isUnavailableNumber[2] && !isUnavailableNumber[3]) ? 123 : 0
+            const isArrow456 = (!isUnavailableNumber[4] && !isUnavailableNumber[5] && !isUnavailableNumber[6]) ? 456 : 0
+            const isArrow789 = (!isUnavailableNumber[7] && !isUnavailableNumber[8] && !isUnavailableNumber[9]) ? 789 : 0
+            const isArrow147 = (!isUnavailableNumber[1] && !isUnavailableNumber[4] && !isUnavailableNumber[7]) ? 147 : 0
+            const isArrow258 = (!isUnavailableNumber[2] && !isUnavailableNumber[5] && !isUnavailableNumber[8]) ? 258 : 0
+            const isArrow369 = (!isUnavailableNumber[6] && !isUnavailableNumber[9] && !isUnavailableNumber[3]) ? 369 : 0
+            const isArrow159 = (!isUnavailableNumber[1] && !isUnavailableNumber[5] && !isUnavailableNumber[9]) ? 159 : 0
+            const isArrow357 = (!isUnavailableNumber[3] && !isUnavailableNumber[5] && !isUnavailableNumber[7]) ? 357 : 0
+
+            const isArrow = [isArrow123, isArrow456, isArrow789, isArrow147, isArrow258, isArrow369, isArrow159, isArrow357]
+
+            for (let i = 0; i < isArrow.length; i++) {
+                state.arrowBirthChart[i] = isArrow[i]
             }
 
             // Update peak numbers: e.g.
@@ -112,7 +149,7 @@ const calculateSumOfDigitsPeak1And2 = (number: number | string): number => {
     while (stringNumber.length > 1) {
         let sum: number = 0
         for (let i = 0; i < stringNumber.length; i++) {
-           sum = sum + Number(stringNumber[i])
+            sum = sum + Number(stringNumber[i])
         }
         stringNumber = sum.toString()
     }

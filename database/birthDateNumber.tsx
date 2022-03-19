@@ -1,4 +1,5 @@
 import {ReactElement} from 'react'
+import s from '../component/BirthChart/BirthChart.module.scss'
 
 export enum BIRTH_DATE_NUMBER_VNM_SUBSECTION {
     ONE = 'MỘT',
@@ -27,6 +28,660 @@ type TBirthDateNumberMeaning = {
         [key: number]: {
             title: string
             meaning: string | ReactElement
+        }
+    }
+}
+
+export enum ARROW_NAME {
+    PLANNING = 'BẠN SỞ HỮU MŨI TÊN KẾ HOẠCH (ĐỦ 1 - 2- 3)',
+    WILL = 'BẠN SỞ HỮU MŨI TÊN Ý CHÍ (ĐỦ 4 - 5 - 6)',
+    ACTION = 'BẠN SỞ HỮU MŨI TÊN HOẠT ĐỘNG (ĐỦ 7 - 8 - 9)',
+    REALISTIC = 'BẠN SỞ HỮU MŨI TÊN THỰC TẾ (ĐỦ 1 - 4 - 7)',
+    EMOTIONAL_BALANCE = 'BẠN SỞ HỮU MŨI TÊN CÂN BẰNG CẢM XÚC (CÓ ĐỦ 2 - 5 - 8)',
+    INTELLIGENCE = 'BẠN SỞ HỮU MŨI TÊN SÁNG TRÍ (CÓ ĐỦ 3 - 6 - 9)',
+    DETERMINATION = 'BẠN SỞ HỮU MŨI TÊN QUYẾT TÂM (CÓ ĐỦ 1 - 5 - 9)',
+    RELIGIOUS = 'BẠN SỞ HỮU MŨI TÊN TÂM LINH (CÓ ĐỦ 3 - 5 - 7)'
+}
+
+export const ARROW_MEANING = [
+    {
+        key: 123,
+        style: s.arrow123,
+        title: ARROW_NAME.PLANNING,
+        meaning: <div>
+            <p>Mũi tên của trục dọc 1-2-3 là một trong những mũi tên thường gặp nhất đối với thế hệ 19xx và
+                2xXx. <strong><em>Thế hệ này rất dễ có cả ba con số trên hội tụ trong Biểu đồ ngày sinh, nên không khó
+                    đoán rằng giai đoạn này có nhiều người giỏi hoạch định. </em></strong>Và bạn có thấy cách chúng được
+                xếp cùng nhau không? Số 1 - đại diện cho sự biểu đạt cái tôi cá nhân - được liên kết với trực giác của
+                số 2, tiếp tới là trí nhớ và các khả năng phân tích dữ liệu của số 3. Cả ba yếu tố này hội tụ sẽ cho ra
+                rất nhiều kế hoạch tuyệt vời.</p>
+            <p><strong><em>Người có Mũi tên Kế hoạch rất thích trật tự đâu ra đó, có phương pháp thực hiện, có thấu hiểu
+                vấn đề. Nhưng họ thường đặt mình vào vị trí “ người tổ chức ” hơn là “ người thực hiện ” các chi
+                tiết</em></strong>, trừ khi họ có thêm Mũi tên Thực tế (1-4-7) , hoặc có Con số chủ đạo thuộc nhóm Thể
+                chất (4 , 7 , 10 hay 22/4) . Với khả năng hoạch định xuất sắc như vậy, người có mũi tên này cần lưu ý
+                tránh <em><strong>“ nổi máu lười ” .</strong></em> Nghe có vẻ phi lý nhưng thực tế là vậy, <strong><em>đặc
+                    biệt là khi họ liên tục giao kế hoạch cho người khác thực hiện mà không chú ý theo dõi, giám sát
+                    tiến độ thực hiện.</em></strong></p>
+            <p><em><strong>Họ cũng cần lưu tâm hơn vào các chi tiết nhỏ và đừng phó mặc với suy nghĩ tiểu tiết không
+                quan trọng . </strong></em>Trẻ con có Mũi tên Kế hoạch sẽ vui nhất khi được tự tay thiết kế, tổ chức
+                những kế hoạch nho nhỏ cho bạn bè hay gia đình. Nhưng nếu các kế hoạch này gặp trở ngại hoặc xung đột
+                với kế hoạch khác từ cha mẹ, trẻ có thể rất thất vọng. <strong><em>Chỉ khi nào cha mẹ thật kiên nhẫn và
+                    bày tỏ tình yêu thương thật nhẹ nhàng thì chúng mới “ bỏ qua ” nỗi thất vọng này.</em></strong></p>
+            <p><em><strong>Những đứa trẻ thuộc nhóm này thường tỏ ra khá tách biệt,</strong></em> coi nhiều điều đang
+                diễn ra là lẽ đương nhiên và thường chìm đắm trong những suy nghĩ hoặc kế hoạch riêng của chúng. Sự tách
+                biệt này thể hiện ra ngoài thành vẻ xa cách, từ từ có thể trở thành thói quen phớt lờ, không lưu tâm đến
+                nhu cầu của người khác. <em><strong>Các bậc phụ huynh và thầy cô cần áp dụng kỷ luật yêu thương nhưng
+                    nghiêm khắc, cứng rắn để yêu cầu trẻ phải hợp tác. </strong></em>Những đứa trẻ này cũng cần tránh bị
+                bắt nạt hoặc hù dọa, mà thay vào đó, chúng cần được dạy dỗ nhẹ nhàng để biết tôn trọng các ý kiến, thói
+                quen hay các đồ vật thuộc sở hữu của người khác. Trẻ có Mũi tên 1-2-3 thường nhẹ nhàng , đáng tin cậy và
+                chậm nhận ra sự bất công. <em><strong>Sự ngây thơ này có thể rất dễ thương, mặc dù đôi khi chính sự cả
+                    tin này khiến trẻ bị tổn thương khi chúng nhận ra những người xung quanh không dễ tin và dễ bị lừa
+                    như mình.</strong></em></p>
+            <p>Trong những năm đầu đời, trẻ có Mũi tên 1-2-3 thỉnh thoảng gặp phải cảm giác bồn chồn, lo lắng, vì dành
+                quả nhiều thời gian trong tâm trí mà không biết cách thể hiện năng lượng trí não này ra thực
+                tế. <strong><em>Lúc này, cha mẹ hoặc người lớn xung quanh có thể giúp trẻ bằng cách khuyến khích trẻ
+                    năng động hơn, thường xuyên vận động ngoài trời, hòa mình vào thiên nhiên</em></strong>. Cho trẻ đọc
+                sách du ký có tranh minh họa cũng rất hữu ích cho đến khi chúng đủ lớn để có điều kiện tự trải nghiệm du
+                lịch, giúp chúng thỏa mãn sự ham học hỏi và khám phá những điều chưa biết.</p>
+        </div>
+    },
+    {
+        key: 456,
+        style: s.arrow456,
+        title: ARROW_NAME.WILL,
+        meaning: <div>
+            <p>Nếu Mũi tên Quyết tâm 1-5-9 có thể bắt gặp ở Biểu đồ ngày sinh của rất nhiều người được sinh ra trong thế
+                kỷ 20, thì Mũi tên Ý chí - mũi tên kết nối cả ba <strong><em>Con số 4-5-6 của trục dọc ở giữa là mũi tên
+                    rất ít người có.</em></strong> Khi số 6 - đại diện cho sự sáng tạo - được gắn liền với sự tự do thể
+                hiện của số 5, rồi kết nối với số 4 của óc tổ chức thực tiễn, chúng ta có sự cân bằng đầy sức mạnh của
+                cả ba Con số trung tâm của cả ba trục: Thể chất - Trí não - Tình thần. <strong><em>Đây chính là Mũi tên
+                    Ý chí. Nó đại diện cho cột sống của con người và nguồn lực sự sống tuôn chảy trong đó.</em></strong>
+            </p>
+            <p>Trong giai đoạn từ 1889 đến 1999, bất kỳ ai có Mũi tên Ý chí đều được “ tặng ” thêm Mũi tên Quyết tâm,
+                làm cho họ trở thành những người hết sức năng động. Tuy nhiên, theo Thầy David, không có nhiều người nổi
+                tiếng có “ tổ hợp vàng ” này, có lẽ là do họ có xu hướng áp chế cảm xúc và mong muốn của người khác để
+                khẳng định và thể hiện sức mạnh của bản thân. <strong><em>Động lực của họ mạnh mẽ đến mức họ thường bỏ
+                    qua lời khuyên của người khác và hiếm khi lắng nghe trực giác của mình.</em></strong></p>
+            <p>Sức mạnh đặc biệt của Mũi tên Ý chí nằm ở sự kết hợp và cân bằng của ba ưu điểm ở mỗi Trục (Thể chất -
+                Trí não - Tình thần) . <strong><em>Khi người ta nhận ra sức mạnh của sự cân bằng đó và biết áp dụng vào
+                    công việc hằng ngày, cuộc sống của họ sẽ thay đổi, và họ sẽ đạt được thành công cao
+                    nhất.</em></strong> Họ đủ kiên cường và can đảm để phá bỏ mọi trở ngại khi hành động với sự khôn
+                ngoan và thông thái. Hai nhân vật đại diện cho những người thành công đặc biệt với mũi tên này là đại
+                văn hào người Anh <em><strong>William Shakespeare</strong></em>, và họa sĩ tài danh <em><strong>Leonardo
+                    da Vinci</strong></em>.</p>
+            <p><strong><em>Trẻ con có Mũi tên Ý chí có thể làm cha mẹ và thầy cô bận rộn</em></strong>. Trẻ có ý chí vô
+                cùng mạnh mẽ, nhưng cần được dạy dỗ để có thể hiểu quan điểm của người khác và tiếp nhận sự hướng dẫn
+                hợp lý. Một trong những điều mà nhóm trẻ này thích nhất chính là được làm những việc tử tế, nhưng chúng
+                cần được chỉ dạy để biết rằng không nên có suy nghĩ tư lợi khi thực hiện những việc này, vì như vậy sẽ
+                làm giảm bớt giá trị cao đẹp của việc chúng đang làm. Trẻ cũng sẽ trở nên đặc biệt cứng đầu và cực kỳ
+                khó chịu nếu không được dạy dỗ một cách nhẹ nhàng , yêu thương và kiên nhẫn. <strong><em>Chúng thích
+                    được khen khi làm tốt, nhưng sẽ lập tức nghi ngờ nếu được tặng những món vật chất như bánh kẹo hay
+                    tiền... Nếu trẻ chấp nhận những món quà này, chúng có thể phát triển tính ham mê vật chất, trở thành
+                    người sống về vật chất khi trưởng thành.</em></strong></p>
+        </div>
+    },
+    {
+        key: 789,
+        style: s.arrow789,
+        title: ARROW_NAME.ACTION,
+        meaning: <div>
+            <p><strong><em>Mũi tên hoạt động này nằm ở trục dọc ngoài cùng bên phải, </em></strong>kết nối số 7 - Con số
+                của trải nghiệm, với số 8 - Con số của trí tuệ và khả năng cảm thụ, và số 9 - Con số của hoài bão và
+                trách nhiệm. Sức mạnh của sự kết hợp này đôi khi bị quá đà, trở thành “ quá mức năng động ” , do con
+                người là những sinh vật giàu biểu cảm nhất, vượt xa bất kỳ giống loài nào khác. Những biểu cảm này còn
+                đặc biệt đa dạng và dễ nhìn thấy ở những người có Mũi tên 7-8-9.</p>
+            <p><em><strong>Tuy nhiên, xã hội hiện đại với rất nhiều quy tắc đã ít nhiều cản trở sự tự do biểu đạt của
+                họ, </strong></em>đến mức khiến họ dễ kích động bởi năng lượng bức bối ngày càng leo thang. Qua các
+                nghiên cứu của mình, Thầy David nhận thấy hậu quả của điều này là họ dễ bị chứng hồi hộp thái quá, dẫn
+                đến nhiều bệnh lý như hen suyễn, chứng ăn khó tiêu, nhức đầu hay đau nửa đầu, hoặc các vấn đề về tim
+                mạch hay hệ thống tuần hoàn máu. <strong><em>Người có Mũi tên Hoạt động rất cần sự bình an và hòa hợp
+                    với môi trường xung quanh.</em></strong> Các cuộc cãi vã, những chương trình truyền hình hoặc phát
+                thanh quá ồn ào sẽ khiến họ cực kỳ căng thẳng, thậm chí gây ra các chứng bệnh có liên quan đến áp lực
+                căng thẳng.</p>
+            <p><strong><em>Họ cần dành càng nhiều thời gian với thiên nhiên càng tốt, vì họ không phải là người phù hợp
+                với không khí của các thành phố lớn. </em></strong>Những hoạt động lý tưởng đối với họ là đi dạo trong
+                Công viên, làm vườn, trồng trọt hoặc tham gia các hoạt động thể thao ngoài trời. Nếu không được tận
+                hưởng những không gian tự do như vậy, họ sẽ dễ gặp vấn đề về hệ tiêu hóa. <em><strong>Thêm nữa, chế độ
+                    ăn uống lành mạnh, cuộc sống hòa mình với thiên nhiên, cùng với cái nhìn tích cực về cuộc sống và
+                    những người bạn vui vẻ sẽ có hiệu quả trong việc giúp những người Có Mũi tên 7-8-9 khỏe mạnh hơn bất
+                    kỳ loại thuốc nào.</strong></em></p>
+            <p>Trẻ em có mũi tên này đặc biệt ghét mọi loại tiếng ồn, đòi hỏi sự bình yên, yêu thương và hài hòa ở mọi
+                việc chúng làm, mọi nơi chúng đi. <strong><em>Chúng cũng dễ bị kích động và ám ảnh nên rất cần sự tự do
+                    trải nghiệm ngoài thiên nhiên, càng nhiều càng tốt. </em></strong>Chúng sẽ vui sướng nhất nếu được
+                phép ăn, ngủ và chơi đùa bên ngoài thiên nhiên, vì những lúc đó, những cảm xúc của chúng được dịp thả
+                lỏng. Những đứa trẻ này cũng cần ngủ nhiều, và một mái ấm không có căng thẳng hay cãi vã. <strong><em>Rất
+                    nhiều người lớn sống trong cảnh không an vui hiện giờ vì tuổi thơ của họ kém bình yên - và chúng ta
+                    cần rút kinh nghiệm về điều này, để thế hệ con cháu chúng ta không giẫm vào vết xe đổ.</em></strong>
+            </p>
+            <p>Sự ồn ào, căng thẳng hay nỗi bất an có thể ảnh hưởng rất nhiều đến chất lượng học tập của trẻ tại trường.
+                Các bậc phụ huynh không nên cho trẻ tiếp xúc tiếng ồn nào, bao gồm cả các chương trình quá mức kích động
+                trên tivi, radio hay các sự kiện trực tiếp diễn ra. Điều này cũng tác động đặc biệt đến trẻ sơ sinh Có
+                Mũi tên uất giận, nên cha mẹ cần thận trọng.</p>
+        </div>
+    },
+    {
+        key: 147,
+        style: s.arrow147,
+        title: ARROW_NAME.REALISTIC,
+        meaning: <div>
+            <p><em><strong>Những người Có Mũi tên 1-4-7 là những người hay nắm phần việc, nghĩa là giỏi giang, tháo vát
+                .</strong></em> Với cả ba số của Trục ngang Thể chất xuất hiện trên Biểu đồ ngày sinh, những người này
+                chỉ cảm thấy vui và vừa ý với cuộc sống khi họ được thả mình vào những khía cạnh thực tế của công
+                việc. <strong><em>Họ thường khá khéo tay, nhưng cần định hướng để sử dụng sự khéo léo này một cách khôn
+                    ngoan vì họ thường có kiểu “ thích thì làm ” chứ không suy nghĩ tới lui cho thấu đáo.</em></strong>
+            </p>
+            <p>Tuy vậy, vai trò của những người này cũng khá quan trọng trong cuộc sống, bởi họ thích trải
+                nghiệm. <strong><em>Họ là kiểu người phải trực tiếp trải nghiệm, có thấy mới tin .</em></strong> Đối
+                với những người có Mũi tên 1-4-7 mà còn có Con Số chủ đạo là một trong những con số 4 , 7, hay 10, tính
+                bị thu hút bởi vật chất sẽ được lộ rõ. <strong><em>Nếu Con số chủ đạo của họ nằm ở Trục ngang Tinh thần,
+                    tức là số 2 , 5 , 8 hoặc 1 (và trong vài trường hợp, có luôn cả số 22/4 nữa) , họ sẽ vươn xa khỏi
+                    những trói buộc của vật chất và có dễ dàng khả năng trở thành những nghệ sĩ hay nhạc công tài
+                    năng.</em></strong></p>
+            <p>Mặc dù nhìn chung họ thường có động lực là sự tử tế và mong muốn giúp đỡ người khác, nhưng việc có mũi
+                tên nằm ở Trục ngang Thể chất khiến khả năng đánh giá Con người của họ không mấy chính xác. Động lực
+                thúc đẩy những người có Mũi tên 1-4-7 thường đến từ những khát khao và hoài bão mang tính vật chất, trừ
+                khi họ tích cực và chủ động tham gia các hoạt động sáng tạo, nghệ thuật.</p>
+            <p><strong><em>Vì vậy, những người này cần lưu ý tránh lệ thuộc quá mức vào chủ nghĩa vật
+                chất,</em></strong> thay vào đó, họ nên thể hiện sức mạnh một cách tích cực và hiệu quả, chẳng hạn như
+                trở thành một nhà kinh doanh giỏi giang hoặc một nhà tổ chức có tư duy thực tế. <strong><em>Nếu lún quá
+                    sâu vào phương diện vật chất, họ có thể trở nên hà khắc và không bao giờ tin tưởng giao cho ai làm
+                    việc gì, bởi họ nghĩ chỉ có họ mới làm việc đó tốt nhất. </em></strong>Người Có Mũi tên 1-4-7 rất
+                cần được rèn luyện để có cái nhìn cân bằng về mọi việc từ rất sớm. <strong><em>Khi nhận thức được sự
+                    nhạy cảm của bản thân, cũng như hiểu được nhu cầu của người khác, họ sẽ có cơ hội sống vui vẻ, hạnh
+                    phúc và trọn vẹn hơn. </em></strong>Trẻ em có Mũi tên 1-4-7 thường thể hiện nhu cầu vật chất ngay từ
+                nhỏ.</p>
+            <p><strong><em>Tuy nhiên, trẻ sẽ vui vẻ hơn nhiều nếu được đắm mình trong thiên nhiên và được học cách trân
+                trọng biết ơn những giá trị cao hơn trong cuộc sống</em></strong>. Chúng cũng Có khuynh hướng coi mọi
+                thứ là đương nhiên. <strong><em>Vì thế, ngay từ khi trẻ bắt đầu biết nói, cha mẹ và thầy cô cần dạy
+                    chúng biết giá trị của lòng biết ơn và sự chia sẻ.</em></strong></p>
+            <p>Những đứa trẻ này biết bày tỏ chính kiến từ bé, chuyện gì “ thích ” hay “ không thích ” đều tuyên bố rõ
+                ràng, vì vậy Cha mẹ không nên ép con làm những việc mà chúng cực lực phản đối. <strong><em>Tình yêu
+                    thương và sự tử tế luôn khiến những đứa trẻ này ngoan ngoãn, nhưng đừng bao giờ mong “ thu phục được
+                    chúng bằng tiền hay những món quà.</em></strong></p>
+            <p><em><strong>Đây cũng là những đứa trẻ rất thích các hoạt động thể chất, vì thế chúng ít khi từ chối các
+                nhiệm vụ có liên quan đến phương diện thể chất,</strong></em> <em><strong>miễn là chúng được khen ngợi
+                khi làm các việc này. </strong></em>Nếu ép trẻ làm những việc mà chúng cực lực phản đối, chúng sẽ tức
+                giận và trở nên ương bướng. Điều này sẽ dẫn đến những trận phá phách, nổi loạn mà nếu không được nhìn
+                nhận và điều chỉnh thì sẽ ngày càng leo thang, gây ra nhiều mệt mỏi cho mọi người xung quanh lúc chúng
+                trưởng thành.</p>
+            <p>Để tránh điều này, tốt nhất là không cho trẻ có Mũi tên 1-4-7 tiếp xúc gần hay chơi với những đối tượng
+                có tính phá phách, nghịch ngợm. Cha mẹ nên tìm cho con những người bạn trầm tĩnh, nhạy cảm hơn, để giúp
+                trẻ cân bằng hơn. Trẻ em thuộc nhóm Mũi tên 1-4-7 cũng rất thích chia sẻ, vì vậy sẽ có&nbsp;ích nếu phụ
+                huynh cho chúng những món mà chúng có thể chia sẻ với bạn cùng lớp hay hàng xóm Xung quanh. <em><strong>Điều
+                    này rất hữu ích cho trẻ trong việc phát triển tính nhạy cảm, biết lắng nghe, quan tâm tới nhu cầu
+                    của người khác.</strong></em></p>
+        </div>
+    },
+    {
+        key: 258,
+        style: s.arrow258,
+        title: ARROW_NAME.EMOTIONAL_BALANCE,
+        meaning: <div>
+            <p><em><strong>Mũi tên này chỉ sự cân bằng về mặt cảm xúc</strong></em>.</p>
+            <p>Tuy nhiên, khi tìm hiểu sâu những nội dung mà Thầy David mô tả thông qua các ca nghiên cứu của Thầy, tôi
+                cho rằng những người có mũi tên này cũng phải để ý, vì lợi cũng có phần lợi, nhất là ở phần thiên hướng
+                nghề nghiệp, nhưng cảm xúc chưa chắc thật sự cân bằng ” mọi lúc mọi nơi. Theo quyển The Complete Book of
+                Numerology, Mũi tên Cân bằng cảm xúc được tạo thành từ sự có mặt của cả ba con số 2 , 5 và 8 trên Trục
+                ngang Tinh thần ở giữa Biểu đồ ngày sinh. Trong ba Trục ngang quan trọng của con người, Trục ngang Tinh
+                thần cho chúng ta thấy nhiều cách biểu đạt bản thân đa dạng phong phú nhất ở con người. Và nó cũng là
+                trục chỉ cảm xúc, nên người Có Mũi tên 2-5-8 này sẽ có nhiều phong thái khác nhau cho từng hoàn cảnh
+                khác nhau.</p>
+            <p>Nói về mặt bẩm sinh, những người có Mũi tên 2-5-8 sở hữu khả năng cân bằng tự nhiên trong đời sống cảm
+                xúc và một nhận thức khá sâu sắc về các giá trị tinh thần, thậm chí là tâm linh. Điều này đặc biệt giúp
+                ích cho họ khi thế giới bắt đầu đi vào Kỷ nguyên mới của Nhận thức, từ thiên niên kỷ 2000 trở
+                đi. <em><strong>Đối với những người này, cuộc sống là sự hòa hợp giữa đời sống vật chất và tâm linh, mà
+                    trong đó, phần vật chất là tạm thời, còn tâm linh và tinh thần mới là vĩnh cửu.</strong></em> Nhận
+                thức này tác động khá rõ lên thái độ của họ với cuộc sống, cũng như xu hướng nghiêm túc mọi lúc mọi nơi
+                của họ. <strong><em>Họ nên tìm kiếm những người bạn đồng hành vui vẻ, lạc quan, và thỉnh thoảng tìm đến
+                    những phương tiện giải trí nhẹ nhàng để tránh trở nên quá mức nghiêm túc và sống quá nội
+                    tâm.</em></strong></p>
+            <p><strong><em>Họ hiểu được thế nào là cân bằng ở khía cạnh cảm xúc và tinh thần, nhưng lại hay bỏ qua ý
+                nghĩa sâu rộng hơn của nó ở những khía cạnh khác trong cuộc sống, như mặt thể chất và trí não chẳng
+                hạn.</em></strong> Nhiều người trong số này thường tìm đến các lĩnh vực nghệ thuật hay giải trí để giải
+                tỏa nhu cầu diễn đạt cảm xúc bản thân một cách cân bằng, nhưng hãy nhớ rằng nghệ thuật và giải trí chỉ
+                là nghệ thuật giải trí, đừng để bản thân đắm chìm vào những hình ảnh hay hình tượng được thể hiện trong
+                đó.<strong><em> Để duy trì được sự cân bằng cảm xúc dài lâu, họ cần ý thức mình chính là người chịu
+                    trách nhiệm về những cảm xúc của mình, và không để cho cảm xúc khống chế bản thân, nếu không họ sẽ
+                    bị lạc lối và mất phương hướng.&nbsp;</em></strong>Với khả năng kiểm soát cảm xúc mạnh mẽ như vậy,
+                những người có Mũi tên 2-5-8 có thể trở thành những diễn viên xuất sắc. Sự nhạy cảm bẩm sinh cho phép họ
+                nhập tâm hoàn toàn vào những vai diễn mà không phải hy sinh các đặc điểm tính cách riêng. Nhưng cho dù
+                có làm diễn viên hay không thì những người này sẽ đóng nhiều vai trò cảm xúc khác nhau trong các hoạt
+                động thường ngày, tại chỗ làm, trong các mối quan hệ xã hội và ở nhà. Sự nhạy cảm được cân bằng của
+                những người có mũi tên này giúp họ ý thức được nhu cầu và thái độ của người khác một cách rõ ràng, tự
+                nhiên.</p>
+            <p>Khả năng này có thể được phát huy và giúp họ tỏa sáng trong lĩnh vực tư vấn hay chăm sóc sức khỏe, bởi họ
+                đã có sẵn thiện khiếu ở những lĩnh vực này. <strong><em>Tuy nhiên, để đạt được thành công, họ nên được
+                    đào tạo một cách bài bản về kỹ năng chăm sóc sức khỏe, để tránh rơi vào chủ nghĩa giáo điều vì trong
+                    lĩnh vực này, không có phương pháp của ai là phương pháp đúng duy nhất. </em></strong>Không chỉ
+                riêng những người có mũi tên này, mà tất cả những ai bước vào lĩnh vực y học và chăm sóc sức khỏe đều
+                nên chủ động cởi mở và tiếp thu những phương pháp điều trị khác nhau.</p>
+            <p><em><strong>Và trên hết, người có Mũi tên 2-5-8 cần nhận thức được rằng họ có bản chất nhạy cảm, giàu cảm
+                xúc và một trực giác rất phát triển. </strong></em>Trẻ em Có Mũi tên 2-5-8 trong Biểu đồ ngày sinh
+                thường vô cùng nhạy cảm, có thể có năng lực tâm linh mạnh mẽ, nên trẻ có thể bị chìm đắm trong thế giới
+                của mình và được xem như những kẻ mơ mộng ” . Chúng dễ bị cuốn vào những mâu thuẫn cảm xúc, nhưng có
+                khuynh hướng thu mình lại chứ không chủ động tham gia. <em><strong>Mong muốn tránh né những mối bất hòa
+                    có thể khiến trẻ bị tụt lại phía sau trong các hoạt động ở trường và làm tổn hại sức khỏe của trẻ,
+                    nếu chúng để cho sự nhạy cảm thường xuyên đẩy mình vào thế bị động, từ đó có những phản ứng tiêu cực
+                    trong nhiều tình huống.</strong></em></p>
+            <p><strong><em>Các bậc phụ huynh nên ý thức dạy Con cách giữ cân bằng về cảm xúc, điều mà chính cha mẹ cũng
+                cần học để dạy con hiệu quả.</em></strong> Những đứa trẻ thuộc nhóm này cũng cần tránh những chương
+                trình truyền hình hay phim ảnh quá ồn ào hoặc có nhiều yếu tố kích thích cảm xúc. Theo Thầy David, trẻ
+                còn nên được ưu tiên ăn thực phẩm nguyên hạt và tự nhiên, hơn là thức ăn đóng gói và chế biến sẵn có
+                nhiều hóa chất.</p>
+        </div>
+    },
+    {
+        key: 369,
+        style: s.arrow369,
+        title: ARROW_NAME.INTELLIGENCE,
+        meaning: <div>
+            <p><em><strong>Xin chúc mừng bạn! Bạn thuộc nhóm số ít những người có Mũi tên Trí tuệ -</strong></em> mũi
+                tên cho thấy người sở hữu nó có nhiều lợi thế về các hoạt động tư duy, mà một trong số đó chính là trí
+                nhớ vượt trội. <strong><em>Trí nhớ vượt trội lại mang đến rất nhiều ưu điểm khác, chẳng hạn như học lực
+                    khá giỏi, khả năng ghi nhớ dài hạn và chi tiết.</em></strong></p>
+            <p>Trên thực tế, sự có mặt của cả ba con số 3 , 6 , 9 trên Trục ngang Trí não đã chỉ ra tầm quan trọng của
+                trí thông minh và cách người có mũi tên này chọn thể hiện bản thân mình. Nó cho thấy một bộ não cực kỳ
+                năng động, thứ tạo điều kiện thuận lợi cho sự vượt trội của trí nhớ. <strong><em>Tuy nhiên, Thầy David
+                    lưu ý rằng một số người sở hữu mũi tên này nhưng vẫn có trí nhớ kém dưới mức trung bình. Điều này
+                    cho thấy họ đang lãng phí tài năng và trở nên lười tư duy.</em></strong> Nếu điều này không được
+                phát hiện và điều chỉnh kịp thời, ưu thế bẩm sinh của họ sẽ bị mai một vì không được sử dụng thường
+                xuyên, và cuối cùng, <em><strong>người này sẽ chịu cảnh cô độc bởi khó ai chịu nổi tỉnh gắt gỏng của họ
+                    - mặt trái của một trí tuệ không được mài giũa.</strong></em></p>
+            <p><strong><em>Nhìn chung, người có mũi tên này thường sáng dạ, sống khá tích cực và nhanh nhạy, thích những
+                gì mang tính học thuật hơn tính thẩm mỹ.</em></strong> Họ thường chìm đắm trong suy nghĩ hơn là lặn ngụp
+                giữa các cảm giác, mặc dù đôi khi họ cũng khá đa sầu đa cảm mà không nhận ra. Những người có mũi tên
+                vàng này cần có ý thức tránh thái độ trịch thượng, chỉ tìm những ai mà họ cho rằng có trí tuệ ngang họ
+                trở lên để chơi. <strong><em>Hãy phát triển lòng bao dung và tình yêu thương để hạn chế xu hướng tỏ thái
+                    độ khó chịu với những người kém may mắn hơn mình về mặt trí tuệ. Chúng ta có thể khắc phục mọi điểm
+                    yếu của mình, miễn là chúng ta biết phát huy năng lực bẩm sinh.</em></strong></p>
+            <p><em><strong>Những người này thường phải gánh vác không ít trách nhiệm, họ cũng gặp không ít nghịch cảnh
+                hay chướng ngại, nhưng họ thường giải quyết hoặc vượt qua các vấn đề này một cách tốt đẹp</strong></em>.
+                Họ cũng là những người quảng giao, có thể dễ dàng tìm ra các lời lý giải hợp tình hợp lý cho hầu hết mọi
+                tình huống nhưng hãy cẩn thận, bộ não tốt cỡ nào cũng cần được nghỉ ngơi. Nếu bộ não của họ không được
+                nghỉ ngơi đủ, những người này thường cáu bẳn mà không có lý do rõ ràng. “ Triệu chứng này chính là lời
+                cảnh báo họ phải nghiêm túc học cách cân bằng đời sống của mình giữa các khía cạnh tư duy, thể chất và
+                nghệ thuật để đạt được thành công cao nhất. Những người có Mũi tên Trí tuệ thường không có trực giác tốt
+                nếu trong ngày tháng năm sinh của họ không có số 2 - Con số chỉ trực giác, nằm ở Trục ngang Tinh thần.
+                Lý do rất đơn giản, trực giác thuộc Tinh thần, không phải Trí não. Do đó, đôi khi những người rất thông
+                minh, sáng trí này cũng bị... tắc nghẽn, không nắm bắt được một khái niệm đơn giản nào đó, chỉ vì họ
+                không biết sử dụng trực giác của mình.</p>
+            <p><em><strong>Trẻ Con Có Mũi tên Trí tuệ 3-6-9 thường nằm trong nhóm học sinh đứng đầu lớp, thậm chí là
+                toàn trường, đặc biệt ở các môn tự nhiên như Toán hoặc các môn cần có khả năng phân
+                tích.</strong></em> Các em nên được xếp vào các lớp năng khiếu để được bồi dưỡng kiến thức chuyên sâu,
+                bao gồm những dự án phát triển trí não như các bộ môn nghiên cứu, tìm hiểu về thiên văn học... Trẻ nhóm
+                này thường năng động và “ cứng đầu ” , đặc biệt là khi chúng cảm thấy những gì chúng đang được học chưa
+                đủ tính thách thức. Trẻ thường cảm thấy vui khi những người xung quanh cần đến sự giúp đỡ của mình và sẽ
+                rất nhiệt tình hợp tác. <strong><em>Trẻ cũng rất thích được khen ngợi về những nỗ lực của
+                    mình.</em></strong></p>
+            <p><strong><em>Đối với trẻ thuộc nhóm này, cha mẹ hoặc thầy cô cần lưu ý không đưa vào thực đơn của trẻ các
+                loại thức ăn giàu chất kích thích hay hóa chất nhân tạo.</em></strong> Khi tới tuổi thiếu niên, trẻ
+                thường dễ phấn khích, dễ bị kích động và tăng động nếu ăn đồ ăn linh tinh. Một vấn đề nữa mà phụ huynh
+                cần lưu ý là trẻ nhóm này thường có não bộ “ chạy ” nhanh hơn miệng, nên một số em dễ mắc chứng cà lăm
+                (nói lắp) , một tật cần được điều chỉnh càng sớm càng tốt. Làm thế nào để khắc phục? Hãy yêu cầu trẻ thư
+                giãn nhiều hơn một chút, chơi nhiều môn thể thao hoặc dành nhiều thời gian hơn cho thể thao, hòa nhập
+                với thiên nhiên càng nhiều càng tốt và “ thoát ra khỏi các hoạt động trí não ” nhiều một chút - như vậy
+                sẽ tốt hơn cho trẻ.</p>
+            <p><em><strong>Hãy luôn nhớ rằng trẻ có Mũi tên Trí tuệ gặp gì cũng phân tích, đánh giá, đo lường.</strong></em> Chúng
+                có thể dễ dàng phát hiện người khác không thành thật, cởi mở với chúng, hoặc họ đang muốn lừa dối chúng
+                một cách trắng trợn. Chúng sẽ phản ứng bằng cách rút lại toàn bộ niềm tin của mình đối với những người
+                này. Nếu sự lừa dối cứ lặp lại nhiều lần, những đứa trẻ này sẽ trở nên vô cùng tức giận. Vì vậy, việc có
+                một đứa con có Mũi tên Trí tuệ vừa là niềm vui, niềm hãnh diện, vừa là một nỗi lo lắng của các bậc phụ
+                huynh và thầy cô vì không biết chăm sóc sao cho đúng mực để phát huy tối đa năng lực trí tuệ của
+                con. <strong><em>Nhưng bạn đừng lo, trái tim của chúng ta rất giỏi. Hãy lắng nghe trái tim mình, bạn sẽ
+                    biết bạn nên làm gì và cần làm gì để cho Con bạn một tương lai tốt đẹp nhất.</em></strong></p>
+        </div>
+    },
+    {
+        key: 159,
+        style: s.arrow159,
+        title: ARROW_NAME.DETERMINATION,
+        meaning: <div>
+            <p><em><strong>Mũi tên Quyết tâm được tạo thành bởi sự có mặt của ba con số 1-5-9 theo đường chéo từ góc
+                trái lên góc phải của Biểu đồ ngày sinh.</strong></em>&nbsp;Bất kỳ người nào chào đời vào tháng Năm
+                (hoặc Có Số 5 trong ngày sinh) của những năm 19xx đều Có Mũi tên Quyết tâm trong Biểu đồ ngày sinh của
+                mình. Đặc biệt, tất cả những người được sinh ra trong những năm 1950 đều có mũi tên này.</p>
+            <p>Vì tất cả những người chào đời vào những năm 19xx đều có sẵn “ vốn liếng ” là số 1 và số 9, chỉ cần có
+                thêm số 5 là đủ để tạo thành mũi tên. Do đó, Mũi tên Quyết tâm trở thành mũi tên thường gặp nhất trong
+                thế kỷ 20. <strong><em>Có lẽ vì vậy nên không có gì đáng ngạc nhiên khi thế kỷ 20 có rất nhiều người có
+                    quyết tâm sắt đá và đạt được thành tựu nổi bật. </em></strong>Sang chặng đầu của thế kỷ 21 này, khi
+                những người của thế kỷ 20 đang trong lứa tuổi trưởng thành, họ vẫn tiếp tục có những đóng góp quan trọng
+                cho xã hội.</p>
+            <p>Nếu quan sát kỹ hơn, bạn sẽ thấy quả thật rất nhiều người được sinh ra trong khoảng thời gian 1950 - 1959
+                rất thành công cho đến tận bây giờ. Những người có Mũi tên Quyết tâm trong Biểu đồ ngày sinh thường rất
+                kiên trì thực hiện bất kỳ điều gì họ muốn làm, vượt qua mọi trở ngại, theo đuổi cho đến khi nào được thì
+                thôi. Thật mừng cho những ai có được mũi tên này, bởi nếu thiếu quyết tâm, chúng ta sẽ dễ bị những khó
+                khăn trên đường đời làm cho nhụt chí.</p>
+            <p><strong><em>Tuy nhiên, những người này cũng nên cẩn trọng vì đôi khi sự quyết tâm quá độ sẽ trở thành sự
+                cố chấp khiến họ cứ đâm đầu vào một vấn đề nào đó, dù biết nó không lối thoát hoặc không cần thiết, từ
+                đó lãng phí nhiều thời gian và năng lượng, hoặc họ sẽ kiên quyết...</em></strong> ngồi chờ cho đến khi
+                nào chướng ngại tan biến, sau đó... lao vào giải quyết tiếp.</p>
+            <p><em><strong>Một trong những bài học lớn nhất mà người có Mũi tên Quyết tâm nên thấu hiểu: Không phải vấn
+                đề nào cũng cần phải giải quyết. </strong></em>Cái gì cũng lao vào giải quyết thì sẽ rất mệt
+                mỏi. <strong><em>Thay vào đó, những người có mũi tên này nên chọn Con đường trung dung, nghĩa là không
+                    nên quá cố chấp mà hãy tập phát huy tối đa trực giác, trí tuệ và lòng trắc ẩn của mình, biết lúc nào
+                    nên tiếp tục dấn bước, lúc nào nên dừng và lúc nào nên buông. </em></strong>Như vậy họ sẽ giảm thiểu
+                được nhiều thời gian, tiết kiệm được nhiều năng lượng, cũng như có cơ hội học hỏi thêm nhiều điều.</p>
+            <p>Sự quyết đoán của những người mang Mũi tên 1-5-9 là một phẩm chất tuyệt vời, đồng thời cũng là một ưu
+                điểm mạnh mẽ. <strong><em>Nhưng những người có mũi tên này cần học cách sử dụng nó một cách khôn
+                    ngoan.</em></strong> Nếu bên cạnh mũi tên này, họ còn có tổ hợp nhiều số 1 trên Biểu đồ ngày sinh
+                (từ hai số 1 trở lên , ví dụ : 11 , 111 , 1111... ) thì họ càng phải lưu ý điều này hơn nữa, vì số 1
+                càng nhiều thì “ cái tôi ” càng được nhấn mạnh và họ càng dễ trở nên cố chấp đến mức ngang ngạnh.</p>
+        </div>
+    },
+    {
+        key: 357,
+        style: s.arrow357,
+        title: ARROW_NAME.RELIGIOUS,
+        meaning: <div>
+            <p><em><strong>Nếu trong ngày sinh dương lịch của bạn có đủ ba con số 3, 5, 7, chúng sẽ tạo thành một mũi
+                tên khá tốt đẹp, đó là Mũi tên chỉ sự nhạy bén về mặt tâm linh, gọi ngắn gọn là Mũi tên Tâm linh, những
+                người có mũi tên này khá “ nhạy ” về các vấn đề tâm linh, trội hơn hẳn một người bình
+                thường.</strong></em></p>
+            <p>Tuy nhiên, mức độ hiệu quả của mũi tên này khi áp dụng vào cuộc sống cá nhân còn phụ thuộc vào những con
+                số khác hoặc những mũi tên khác cùng có mặt trong biểu đồ, và cả Con số chủ đạo của họ nữa. Vậy xét ra,
+                những người thuộc nhóm mặc định có Mũi tên Tâm linh có được “ số vốn ” khá mạnh, mặc dù so với nhóm có
+                thể chịu nhiều thử thách hơn khi có đến hai số 7 trong ngày sinh - vốn là các “ tín hiệu ” của những bài
+                học lớn được học qua sự mất mát và hy sinh.</p>
+            <p>Xét về mặt ý nghĩa, Mũi tên 3-5-7 còn lợi hại ở chỗ nó kết nối ba con số mạnh nhất của từng trục: Số 3
+                của Trục ngang Trí não, số 5 của Trục ngang Tinh thần và số 7 của Trục ngang Thể chất. Đây còn là những
+                con số chủ đạo trong nhiều trường phái tâm linh, thần học hay triết học khác nhau từ Đông sang Tây. Do
+                đó, không có gì ngạc nhiên khi liên kết với nhau, chúng tạo ra tiềm năng phi thường để phát triển nhận
+                thức tâm linh sâu sắc.</p>
+            <p><strong><em>Khả năng nhận thức tâm linh này thường được rút tỉa từ trải nghiệm cá nhân, nên những người
+                mang mũi tên này ít khi chịu nghe lời khuyên của người khác. Trong nhiều tình huống, họ thích dấn thân,
+                tự trải nghiệm, cảm nhận và tự rút ra bài học cho mình.</em></strong></p>
+            <p><strong><em>Hệ quả của khuynh hướng này là họ phải vượt quá nhiều bài học buồn đau trong chặng đầu của
+                cuộc đời. Nhưng chính những bài học ấy lại là động lực giúp họ rèn ý chỉ kiên cường để lĩnh hội các
+                triết lý sâu sắc của cuộc đời, từ đó trưởng thành. </em></strong>Một khi vượt qua được những trải nghiệm
+                cam go đó, có ý thức sống tích cực và nhận ra sức mạnh của tình yêu thương, những người này sẽ hình
+                thành một nguồn sức mạnh nội tại khó ai bì được. <strong><em>Để rồi từ đó, họ đạt được sự tĩnh lặng và
+                    bình thản, thứ lan tỏa từ tâm hồn của họ ra đến bên ngoài, bộc lộ vẻ đẹp tinh thần của
+                    họ.</em></strong></p>
+        </div>
+    }
+]
+
+export const BIRTH_DATE_ISOLATE_MEANING: TBirthDateNumberMeaning = {
+    1: {
+        1: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.ONE + ' Cô Độc',
+            meaning: <div>
+                <p>Xung quanh con số 1 của bạn thiếu số 2, số 5, số 4, thì tự nhiên con số 1 của bạn trở thành một “ ốc
+                    đảo cô đơn ”.&nbsp;<strong><em>Điều này thể hiện rõ nét vì sao những người có Biểu đồ ngày sinh như
+                        thế thường cảm thấy cô độc và không ai hiểu mình.&nbsp;</em></strong>Những người này thường có
+                    nhiều con số ở hàng ngang trên cùng hơn (trục Trí não, tức số 3, 6 hoặc 9) , hoặc có hẳn một Mũi tên
+                    Hoạt động (7-8-9).</p>
+                <p><strong><em>Đối với những trường hợp này, họ rất dễ bị hiểu lầm trong những điều họ nói, những việc
+                    họ làm, hoặc thấy khó giải thích được cho rõ, cho đúng những lời nói hay hành động của
+                    mình.&nbsp;</em></strong>Nếu các con số còn lại trong biểu đồ của họ nhấn mạnh trục ngang trên cùng
+                    những người này có thể bị hiểu lầm là lười biếng hoặc không đáng tin cậy, vì rất nhiều ý tưởng của
+                    họ không được hiện thực hóa, hoặc họ hứa nhưng hiếm khi chịu làm. Điều này khiến họ không còn được
+                    tin cậy nữa.&nbsp;<strong><em>Nhưng khổ nỗi là trong cuộc sống hằng ngày, những người xung quanh họ
+                        đều thấy được điều này, chỉ có bản thân họ thì không! Đó là vì bản chất “ cái tôi ” trong họ quá
+                        mạnh mẽ, tạo ra một ốc đảo lẻ loi trong họ.</em></strong></p>
+            </div>
+        },
+        2: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.ONE + ' Cô Độc',
+            meaning: <div>
+                <p><strong>Lưu ý:</strong>&nbsp;Càng có nhiều số 1 thì càng trống nhiều số khác trên Biểu đồ ngày sinh.
+                    Điều này dễ tạo ra nhiều mũi tên trống (được tạo thành bởi ba số vắng mặt liền nhau trên một trục
+                    ngang, dọc hay chéo), và những mũi tên trong đó thường thể hiện một đặc điểm khá bất lợi trong cuộc
+                    sống. Những ai ý thức được điều này sẽ tập cho mình hay các con của mình những hoạt động giúp “ điền
+                    ” các “ con số ảo ” vào ô trống, để phá các mũi tên trống này, đồng thời tạo ra các mũi tên “ ảo ”
+                    để ít nhiều cải thiện cuộc sống của mình.</p>
+            </div>
+        },
+        3: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.ONE + ' Cô Độc',
+            meaning: <div>
+                <p><strong>Lưu ý:</strong>&nbsp;Càng có nhiều số 1 thì càng trống nhiều số khác trên Biểu đồ ngày sinh.
+                    Điều này dễ tạo ra nhiều mũi tên trống (được tạo thành bởi ba số vắng mặt liền nhau trên một trục
+                    ngang, dọc hay chéo), và những mũi tên trong đó thường thể hiện một đặc điểm khá bất lợi trong cuộc
+                    sống. Những ai ý thức được điều này sẽ tập cho mình hay các con của mình những hoạt động giúp “ điền
+                    ” các “ con số ảo ” vào ô trống, để phá các mũi tên trống này, đồng thời tạo ra các mũi tên “ ảo ”
+                    để ít nhiều cải thiện cuộc sống của mình.</p>
+            </div>
+        },
+        4: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.ONE + ' Cô Độc',
+            meaning: <div>
+                <p><strong>Lưu ý:</strong>&nbsp;Càng có nhiều số 1 thì càng trống nhiều số khác trên Biểu đồ ngày sinh.
+                    Điều này dễ tạo ra nhiều mũi tên trống (được tạo thành bởi ba số vắng mặt liền nhau trên một trục
+                    ngang, dọc hay chéo), và những mũi tên trong đó thường thể hiện một đặc điểm khá bất lợi trong cuộc
+                    sống. Những ai ý thức được điều này sẽ tập cho mình hay các con của mình những hoạt động giúp “ điền
+                    ” các “ con số ảo ” vào ô trống, để phá các mũi tên trống này, đồng thời tạo ra các mũi tên “ ảo ”
+                    để ít nhiều cải thiện cuộc sống của mình.</p>
+            </div>
+        },
+        5: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.ONE + ' Cô Độc',
+            meaning: <div>
+                <p><strong>Lưu ý:</strong>&nbsp;Càng có nhiều số 1 thì càng trống nhiều số khác trên Biểu đồ ngày sinh.
+                    Điều này dễ tạo ra nhiều mũi tên trống (được tạo thành bởi ba số vắng mặt liền nhau trên một trục
+                    ngang, dọc hay chéo), và những mũi tên trong đó thường thể hiện một đặc điểm khá bất lợi trong cuộc
+                    sống. Những ai ý thức được điều này sẽ tập cho mình hay các con của mình những hoạt động giúp “ điền
+                    ” các “ con số ảo ” vào ô trống, để phá các mũi tên trống này, đồng thời tạo ra các mũi tên “ ảo ”
+                    để ít nhiều cải thiện cuộc sống của mình.</p>
+            </div>
+        },
+    },
+    3: {
+        1: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.THREE + ' Cô Độc',
+            meaning: <div>
+                <p><strong><em>Được ví như mỏ neo của trí nhớ, số 3 duy nhất trên Biểu đồ ngày sinh cho thấy người sở
+                    hữu nó có trí nhớ rất tốt và lâu dài, miễn là nó được sử dụng thường xuyên </em></strong>(bất kỳ khả
+                    năng nào không được mài giũa thường xuyên sẽ dần dần mất đi độ sắc bén). Người có một số 3 trong
+                    ngày sinh thường giữ được sự nhanh nhạy trong hoạt động trí não. <strong><em>Những bạn trẻ có một số
+                        3 sẽ rất có lợi thế trong việc học tập, cả trong trường học lẫn trường đời.</em></strong> Họ sẽ
+                    chủ động quan tâm tới cuộc sống và môi trường xung quanh. Người có một số 3 cũng rất linh hoạt và
+                    thường sống khá tích cực. Họ mang năng lượng tích cực này vào hầu hết những công việc mà họ làm. Họ
+                    cũng có sự tự tin trên mức trung bình, thứ góp phần không nhỏ vào thành công của họ trong cuộc sống.
+                </p>
+            </div>
+        },
+        2: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.THREE + ' Cô Độc',
+            meaning: <div>
+                <p><strong><em>- Vị trí số 3 năm ở một góc (góc trái, trên cùng)</em></strong>, nên nếu trong ngày sinh
+                    của một người có một hay nhiều số 3 và thiếu cùng lúc các số 2 , 5 , 6 trên biểu đồ thì cụm số 3 này
+                    sẽ nằm có lập trên một “ ốc đảo ” . Đây được gọi là <strong><em>“ Số 3 bị cô lập ”</em></strong> ,
+                    thể hiện tiềm năng mạnh mẽ về trí não của người có ngày sinh này bị tản mác vì không được nối với
+                    Trục ngang Thể chất (trục số 1-4-7) và sức mạnh trí não không được áp dụng vào thực tế. Càng có
+                    nhiều số 3 bị “ nhốt ” trong ốc đảo thì đặc điểm này càng thể hiện rõ. <strong><em>Khi trí tưởng
+                        tượng của họ bùng phát theo hướng tiêu cực, những người này hoặc sẽ sa vào thế giới riêng của
+                        họ, hoặc sẽ trở thành anh hùng trong trí tưởng tượng riêng của họ.</em></strong></p>
+            </div>
+        },
+        3: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.THREE + ' Cô Độc',
+            meaning: <div>
+                <p><strong><em>- Vị trí số 3 năm ở một góc (góc trái, trên cùng)</em></strong>, nên nếu trong ngày sinh
+                    của một người có một hay nhiều số 3 và thiếu cùng lúc các số 2 , 5 , 6 trên biểu đồ thì cụm số 3 này
+                    sẽ nằm có lập trên một “ ốc đảo ” . Đây được gọi là <strong><em>“ Số 3 bị cô lập ”</em></strong> ,
+                    thể hiện tiềm năng mạnh mẽ về trí não của người có ngày sinh này bị tản mác vì không được nối với
+                    Trục ngang Thể chất (trục số 1-4-7) và sức mạnh trí não không được áp dụng vào thực tế. Càng có
+                    nhiều số 3 bị “ nhốt ” trong ốc đảo thì đặc điểm này càng thể hiện rõ. <strong><em>Khi trí tưởng
+                        tượng của họ bùng phát theo hướng tiêu cực, những người này hoặc sẽ sa vào thế giới riêng của
+                        họ, hoặc sẽ trở thành anh hùng trong trí tưởng tượng riêng của họ.</em></strong></p>
+            </div>
+        },
+        4: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.THREE + ' Cô Độc',
+            meaning: <div>
+                <p><strong><em>- Vị trí số 3 năm ở một góc (góc trái, trên cùng)</em></strong>, nên nếu trong ngày sinh
+                    của một người có một hay nhiều số 3 và thiếu cùng lúc các số 2 , 5 , 6 trên biểu đồ thì cụm số 3 này
+                    sẽ nằm có lập trên một “ ốc đảo ” . Đây được gọi là <strong><em>“ Số 3 bị cô lập ”</em></strong> ,
+                    thể hiện tiềm năng mạnh mẽ về trí não của người có ngày sinh này bị tản mác vì không được nối với
+                    Trục ngang Thể chất (trục số 1-4-7) và sức mạnh trí não không được áp dụng vào thực tế. Càng có
+                    nhiều số 3 bị “ nhốt ” trong ốc đảo thì đặc điểm này càng thể hiện rõ. <strong><em>Khi trí tưởng
+                        tượng của họ bùng phát theo hướng tiêu cực, những người này hoặc sẽ sa vào thế giới riêng của
+                        họ, hoặc sẽ trở thành anh hùng trong trí tưởng tượng riêng của họ.</em></strong></p>
+            </div>
+        },
+        5: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.THREE + ' Cô Độc',
+            meaning: <div>
+                <p><strong><em>- Vị trí số 3 năm ở một góc (góc trái, trên cùng)</em></strong>, nên nếu trong ngày sinh
+                    của một người có một hay nhiều số 3 và thiếu cùng lúc các số 2 , 5 , 6 trên biểu đồ thì cụm số 3 này
+                    sẽ nằm có lập trên một “ ốc đảo ” . Đây được gọi là <strong><em>“ Số 3 bị cô lập ”</em></strong> ,
+                    thể hiện tiềm năng mạnh mẽ về trí não của người có ngày sinh này bị tản mác vì không được nối với
+                    Trục ngang Thể chất (trục số 1-4-7) và sức mạnh trí não không được áp dụng vào thực tế. Càng có
+                    nhiều số 3 bị “ nhốt ” trong ốc đảo thì đặc điểm này càng thể hiện rõ. <strong><em>Khi trí tưởng
+                        tượng của họ bùng phát theo hướng tiêu cực, những người này hoặc sẽ sa vào thế giới riêng của
+                        họ, hoặc sẽ trở thành anh hùng trong trí tưởng tượng riêng của họ.</em></strong></p>
+            </div>
+        }
+    },
+    7: {
+        1: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN + ' Cô Độc',
+            meaning: <div>
+                <p>Sự hy sinh của bạn sẽ thuộc một trong ba lĩnh vực sau đây : sức khỏe, tiền tài hoặc tình yêu. Sự hy
+                    sinh này đã hoặc sẽ xuất hiện trong cuộc đời bạn như một phần thiết yếu trong tiến trình học hỏi ở
+                    vòng đời này. <strong><em>Những đau thương, hy sinh này là một phần để tâm hồn bạn chịu “ hé mở ” .
+                        Nhưng thông thường, những người chịu tổn thất, hy sinh này lại than vãn mà không nhận ra bản
+                        chất của bài học này chính là “ buông bỏ để đạt được ”.</em></strong></p>
+                <p>Khi không đánh đồng bản thân với giá trị của những của cải vật chất mà mình sở hữu, chúng ta học được
+                    sự khác biệt giữa “ sở thích ” và “ nỗi ám ảnh sở hữu ”. Về mặt sức khỏe và tình yêu, bất kỳ sự mất
+                    mát nào về mặt này đều giúp chúng ta trui rèn và thanh lọc thái độ cũng như các thói quen trong cuộc
+                    sống. Nếu muốn hoàn thành mục đích sống của mình khi đến với Trái đất này, chúng ta phải đảm bảo
+                    chăm sóc tốt sức khỏe của mình. Trong tình yêu, ta thường hay nhầm lẫn sự thèm muốn (có được tình
+                    yêu) với tình yêu vô điều kiện.<strong><em> Hãy nhớ rằng, nếu thực hành yêu thương vô điều kiện,
+                        chúng ta không bao giờ mất mát gì cả, bởi vốn dĩ ta không có mong cầu gì. Tuy nhiên, thực tế là
+                        nhiều người trong chúng ta hiếm khi duy trì được tình yêu dài lâu vì cứ gắn kèm “ tình yêu ” với
+                        biết bao đòi hỏi và kỳ vọng về cảm xúc.</em></strong></p>
+            </div>
+        },
+        2: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN + ' Cô Độc',
+            meaning: <div>
+                <p>Sự hy sinh của bạn sẽ thuộc một trong ba lĩnh vực sau đây : sức khỏe, tiền tài hoặc tình yêu. Sự hy
+                    sinh này đã hoặc sẽ xuất hiện trong cuộc đời bạn như một phần thiết yếu trong tiến trình học hỏi ở
+                    vòng đời này. <strong><em>Những đau thương, hy sinh này là một phần để tâm hồn bạn chịu “ hé mở ” .
+                        Nhưng thông thường, những người chịu tổn thất, hy sinh này lại than vãn mà không nhận ra bản
+                        chất của bài học này chính là “ buông bỏ để đạt được ”.</em></strong></p>
+                <p>Khi không đánh đồng bản thân với giá trị của những của cải vật chất mà mình sở hữu, chúng ta học được
+                    sự khác biệt giữa “ sở thích ” và “ nỗi ám ảnh sở hữu ”. Về mặt sức khỏe và tình yêu, bất kỳ sự mất
+                    mát nào về mặt này đều giúp chúng ta trui rèn và thanh lọc thái độ cũng như các thói quen trong cuộc
+                    sống. Nếu muốn hoàn thành mục đích sống của mình khi đến với Trái đất này, chúng ta phải đảm bảo
+                    chăm sóc tốt sức khỏe của mình. Trong tình yêu, ta thường hay nhầm lẫn sự thèm muốn (có được tình
+                    yêu) với tình yêu vô điều kiện.<strong><em> Hãy nhớ rằng, nếu thực hành yêu thương vô điều kiện,
+                        chúng ta không bao giờ mất mát gì cả, bởi vốn dĩ ta không có mong cầu gì. Tuy nhiên, thực tế là
+                        nhiều người trong chúng ta hiếm khi duy trì được tình yêu dài lâu vì cứ gắn kèm “ tình yêu ” với
+                        biết bao đòi hỏi và kỳ vọng về cảm xúc.</em></strong></p>
+            </div>
+        },
+        3: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN + ' Cô Độc',
+            meaning: <div>
+                <p>Sự hy sinh của bạn sẽ thuộc một trong ba lĩnh vực sau đây : sức khỏe, tiền tài hoặc tình yêu. Sự hy
+                    sinh này đã hoặc sẽ xuất hiện trong cuộc đời bạn như một phần thiết yếu trong tiến trình học hỏi ở
+                    vòng đời này. <strong><em>Những đau thương, hy sinh này là một phần để tâm hồn bạn chịu “ hé mở ” .
+                        Nhưng thông thường, những người chịu tổn thất, hy sinh này lại than vãn mà không nhận ra bản
+                        chất của bài học này chính là “ buông bỏ để đạt được ”.</em></strong></p>
+                <p>Khi không đánh đồng bản thân với giá trị của những của cải vật chất mà mình sở hữu, chúng ta học được
+                    sự khác biệt giữa “ sở thích ” và “ nỗi ám ảnh sở hữu ”. Về mặt sức khỏe và tình yêu, bất kỳ sự mất
+                    mát nào về mặt này đều giúp chúng ta trui rèn và thanh lọc thái độ cũng như các thói quen trong cuộc
+                    sống. Nếu muốn hoàn thành mục đích sống của mình khi đến với Trái đất này, chúng ta phải đảm bảo
+                    chăm sóc tốt sức khỏe của mình. Trong tình yêu, ta thường hay nhầm lẫn sự thèm muốn (có được tình
+                    yêu) với tình yêu vô điều kiện.<strong><em> Hãy nhớ rằng, nếu thực hành yêu thương vô điều kiện,
+                        chúng ta không bao giờ mất mát gì cả, bởi vốn dĩ ta không có mong cầu gì. Tuy nhiên, thực tế là
+                        nhiều người trong chúng ta hiếm khi duy trì được tình yêu dài lâu vì cứ gắn kèm “ tình yêu ” với
+                        biết bao đòi hỏi và kỳ vọng về cảm xúc.</em></strong></p>
+            </div>
+        },
+        4: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN + ' Cô Độc',
+            meaning: <div>
+                <p>Sự hy sinh của bạn sẽ thuộc một trong ba lĩnh vực sau đây : sức khỏe, tiền tài hoặc tình yêu. Sự hy
+                    sinh này đã hoặc sẽ xuất hiện trong cuộc đời bạn như một phần thiết yếu trong tiến trình học hỏi ở
+                    vòng đời này. <strong><em>Những đau thương, hy sinh này là một phần để tâm hồn bạn chịu “ hé mở ” .
+                        Nhưng thông thường, những người chịu tổn thất, hy sinh này lại than vãn mà không nhận ra bản
+                        chất của bài học này chính là “ buông bỏ để đạt được ”.</em></strong></p>
+                <p>Khi không đánh đồng bản thân với giá trị của những của cải vật chất mà mình sở hữu, chúng ta học được
+                    sự khác biệt giữa “ sở thích ” và “ nỗi ám ảnh sở hữu ”. Về mặt sức khỏe và tình yêu, bất kỳ sự mất
+                    mát nào về mặt này đều giúp chúng ta trui rèn và thanh lọc thái độ cũng như các thói quen trong cuộc
+                    sống. Nếu muốn hoàn thành mục đích sống của mình khi đến với Trái đất này, chúng ta phải đảm bảo
+                    chăm sóc tốt sức khỏe của mình. Trong tình yêu, ta thường hay nhầm lẫn sự thèm muốn (có được tình
+                    yêu) với tình yêu vô điều kiện.<strong><em> Hãy nhớ rằng, nếu thực hành yêu thương vô điều kiện,
+                        chúng ta không bao giờ mất mát gì cả, bởi vốn dĩ ta không có mong cầu gì. Tuy nhiên, thực tế là
+                        nhiều người trong chúng ta hiếm khi duy trì được tình yêu dài lâu vì cứ gắn kèm “ tình yêu ” với
+                        biết bao đòi hỏi và kỳ vọng về cảm xúc.</em></strong></p>
+            </div>
+        },
+        5: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FIVE + BIRTH_DATE_NUMBER_SUBSECTION.SEVEN + ' Cô Độc',
+            meaning: <div>
+                <p>Sự hy sinh của bạn sẽ thuộc một trong ba lĩnh vực sau đây : sức khỏe, tiền tài hoặc tình yêu. Sự hy
+                    sinh này đã hoặc sẽ xuất hiện trong cuộc đời bạn như một phần thiết yếu trong tiến trình học hỏi ở
+                    vòng đời này. <strong><em>Những đau thương, hy sinh này là một phần để tâm hồn bạn chịu “ hé mở ” .
+                        Nhưng thông thường, những người chịu tổn thất, hy sinh này lại than vãn mà không nhận ra bản
+                        chất của bài học này chính là “ buông bỏ để đạt được ”.</em></strong></p>
+                <p>Khi không đánh đồng bản thân với giá trị của những của cải vật chất mà mình sở hữu, chúng ta học được
+                    sự khác biệt giữa “ sở thích ” và “ nỗi ám ảnh sở hữu ”. Về mặt sức khỏe và tình yêu, bất kỳ sự mất
+                    mát nào về mặt này đều giúp chúng ta trui rèn và thanh lọc thái độ cũng như các thói quen trong cuộc
+                    sống. Nếu muốn hoàn thành mục đích sống của mình khi đến với Trái đất này, chúng ta phải đảm bảo
+                    chăm sóc tốt sức khỏe của mình. Trong tình yêu, ta thường hay nhầm lẫn sự thèm muốn (có được tình
+                    yêu) với tình yêu vô điều kiện.<strong><em> Hãy nhớ rằng, nếu thực hành yêu thương vô điều kiện,
+                        chúng ta không bao giờ mất mát gì cả, bởi vốn dĩ ta không có mong cầu gì. Tuy nhiên, thực tế là
+                        nhiều người trong chúng ta hiếm khi duy trì được tình yêu dài lâu vì cứ gắn kèm “ tình yêu ” với
+                        biết bao đòi hỏi và kỳ vọng về cảm xúc.</em></strong></p>
+            </div>
+        }
+    },
+    9: {
+        1: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.ONE + BIRTH_DATE_NUMBER_SUBSECTION.NINE + ' Cô Độc',
+            meaning: <div>
+                <p>Khi số 9 xuất hiện nhiều trong Biểu đồ ngày sinh có nghĩa là nhiều con số khác sẽ vắng mặt. Và nếu
+                    quanh số 9 thiếu những số 5 , 6 và 8, thì người sở hữu biểu đồ này hoặc sẽ có tính lý tưởng thiếu
+                    thực tế, hoặc có tham vọng không thể thực hiện, hoặc cả hai yếu tố này cùng lúc. <strong><em>Nếu chỉ
+                        có một số 9 bị cô lập, đó là tín hiệu cho thấy tham vọng hoặc hoài bão không được thực
+                        hiện.</em></strong></p>
+            </div>
+        },
+        2: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.TWO + BIRTH_DATE_NUMBER_SUBSECTION.NINE + ' Cô Độc',
+            meaning: <div>
+                <p>Khi số 9 xuất hiện nhiều trong Biểu đồ ngày sinh có nghĩa là nhiều con số khác sẽ vắng mặt. Và nếu
+                    quanh số 9 thiếu những số 5 , 6 và 8, thì người sở hữu biểu đồ này hoặc sẽ có tính lý tưởng thiếu
+                    thực tế, hoặc có tham vọng không thể thực hiện, hoặc cả hai yếu tố này cùng lúc. <strong><em>Hai
+                        số 9 bị cô lập cho thấy lý tưởng thiếu thực tế .</em></strong></p>
+            </div>
+        },
+        3: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.THREE + BIRTH_DATE_NUMBER_SUBSECTION.NINE + ' Cô Độc',
+            meaning: <div>
+                <p>Trường hợp có ba số 9 bị cô lập thì có thể cho thấy cả hai yếu tố trên. Với những gì chúng ta
+                    đã biết từ cách khắc phục những con số cô lập khác (như số 1, 3, 7), ta có thể “ điền ” các con số
+                    ảo vào các ô trống trên biểu đồ bằng cách thực hiện các hoạt động mang yếu tố đặc trưng của các số
+                    5, 6 và 8. Trong đó, các hoạt động làm tăng đặc trưng của số 5 là quan trọng nhất nếu Biểu đồ ngày
+                    sinh không có số 7, vì số 5 này sẽ nối số 9 với đặc điểm biểu đạt thông qua “ cái tôi ” của số 1,
+                    tạo thành trục chéo đầy đặn 1-5-9. Nếu biểu đồ có sẵn số 7, sức mạnh của cả 5 và 8 đều cần được phát
+                    triển để kích hoạt tối đa sự liên kết giữa tính lý tưởng và tham vọng của số 9 với Trục ngang Thể
+                    chất, vốn gắn liền với tính thực tế. Không có Số 9 Trong Ngày Sinh Điều này không có nghĩa là người
+                    này không có trách nhiệm, hoài bão hay lý tưởng. Nó chỉ là sự nhắc nhở rằng các cá nhân đó cần nỗ
+                    lực hơn nữa để thể hiện những giá trị này rõ nét hơn, để tạo nên một xã hội hài hòa, luôn tiến về
+                    phía trước với sự cân bằng và ổn định.</p>
+            </div>
+        },
+        4: {
+            title: 'Bạn Sở Hữu ' + BIRTH_DATE_NUMBER_VNM_SUBSECTION.FOUR + BIRTH_DATE_NUMBER_SUBSECTION.NINE + ' Cô Độc',
+            meaning: <div>
+                <p>Trường hợp có bốn số 9 bị cô lập thì có thể cho thấy cả hai yếu tố trên. Với những gì chúng ta
+                    đã biết từ cách khắc phục những con số cô lập khác (như số 1, 3, 7), ta có thể “ điền ” các con số
+                    ảo vào các ô trống trên biểu đồ bằng cách thực hiện các hoạt động mang yếu tố đặc trưng của các số
+                    5, 6 và 8. Trong đó, các hoạt động làm tăng đặc trưng của số 5 là quan trọng nhất nếu Biểu đồ ngày
+                    sinh không có số 7, vì số 5 này sẽ nối số 9 với đặc điểm biểu đạt thông qua “ cái tôi ” của số 1,
+                    tạo thành trục chéo đầy đặn 1-5-9. Nếu biểu đồ có sẵn số 7, sức mạnh của cả 5 và 8 đều cần được phát
+                    triển để kích hoạt tối đa sự liên kết giữa tính lý tưởng và tham vọng của số 9 với Trục ngang Thể
+                    chất, vốn gắn liền với tính thực tế. Không có Số 9 Trong Ngày Sinh Điều này không có nghĩa là người
+                    này không có trách nhiệm, hoài bão hay lý tưởng. Nó chỉ là sự nhắc nhở rằng các cá nhân đó cần nỗ
+                    lực hơn nữa để thể hiện những giá trị này rõ nét hơn, để tạo nên một xã hội hài hòa, luôn tiến về
+                    phía trước với sự cân bằng và ổn định.</p>
+            </div>
         }
     }
 }
