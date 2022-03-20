@@ -17,6 +17,7 @@ type TUserSlice = {
     peakYearOld: number[]
     peakYear: number[]
     arrowBirthChart: number[]
+    nonArrowBirthChart: number[]
 }
 
 const initialData: TUserSlice = {
@@ -28,7 +29,8 @@ const initialData: TUserSlice = {
     peakNumbers: [],
     peakYearOld: [],
     peakYear: [],
-    arrowBirthChart: []
+    arrowBirthChart: [],
+    nonArrowBirthChart: []
 }
 
 export const userSlice = createSlice({
@@ -88,6 +90,21 @@ export const userSlice = createSlice({
 
             for (let i = 0; i < isArrow.length; i++) {
                 state.arrowBirthChart[i] = isArrow[i]
+            }
+
+            const isNonArrow123 = (isUnavailableNumber[1] && isUnavailableNumber[2] && isUnavailableNumber[3]) ? 123 : 0
+            const isNonArrow456 = (isUnavailableNumber[4] && isUnavailableNumber[5] && isUnavailableNumber[6]) ? 456 : 0
+            const isNonArrow789 = (isUnavailableNumber[7] && isUnavailableNumber[8] && isUnavailableNumber[9]) ? 789 : 0
+            const isNonArrow147 = (isUnavailableNumber[1] && isUnavailableNumber[4] && isUnavailableNumber[7]) ? 147 : 0
+            const isNonArrow258 = (isUnavailableNumber[2] && isUnavailableNumber[5] && isUnavailableNumber[8]) ? 258 : 0
+            const isNonArrow369 = (isUnavailableNumber[6] && isUnavailableNumber[9] && isUnavailableNumber[3]) ? 369 : 0
+            const isNonArrow159 = (isUnavailableNumber[1] && isUnavailableNumber[5] && isUnavailableNumber[9]) ? 159 : 0
+            const isNonArrow357 = (isUnavailableNumber[3] && isUnavailableNumber[5] && isUnavailableNumber[7]) ? 357 : 0
+
+            const isNonArrow = [isNonArrow123, isNonArrow456, isNonArrow789, isNonArrow147, isNonArrow258, isNonArrow369, isNonArrow159, isNonArrow357]
+
+            for (let i = 0; i < isArrow.length; i++) {
+                state.nonArrowBirthChart[i] = isNonArrow[i]
             }
 
             // Update peak numbers: e.g.

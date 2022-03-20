@@ -6,7 +6,8 @@ import {useAppSelector} from '../../store/hooks'
 import {ReactElement} from "react";
 import {BIRTH_DATE_ISOLATE_MEANING} from "../../database/birthDateNumber";
 import {Image} from "react-bootstrap";
-import {ARROW_MEANING} from "../../database/birthDateNumber";
+import {ARROW_MEANING} from "../../database/arrowMeaning";
+import {NON_ARROW_MEANING} from "../../database/arrowMeaning";
 
 const BirthChartComponent = () => {
 
@@ -14,6 +15,7 @@ const BirthChartComponent = () => {
     const dateNumbers = useAppSelector(state => state.user.dateNumbers)
     const dateNumbersIsolate = useAppSelector(state => state.user.dateNumbersIsolate)
     const arrowBirthChart = useAppSelector(state => state.user.arrowBirthChart)
+    const nonArrowBirthChart = useAppSelector(state => state.user.nonArrowBirthChart)
 
     const numberForUI = []
     for (let i = 1; i < 10; i++) {
@@ -30,14 +32,24 @@ const BirthChartComponent = () => {
     ]
 
     let arrowSearch = []
+    let nonArrowSearch = []
 
     for (let i = 0; i < arrowBirthChart.length; i++) {
         arrowSearch[i] = ARROW_MEANING.find(value => value.key === arrowBirthChart[i]) || null
     }
 
+    for (let i = 0; i < nonArrowBirthChart.length; i++) {
+        nonArrowSearch[i] = NON_ARROW_MEANING.find(value => value.key === nonArrowBirthChart[i]) || null
+    }
+
     const arrowForUI = arrowSearch.filter(value => value !== null)
+    const nonArrowForUI = nonArrowSearch.filter(value => value !== null)
 
     const drawArrow = arrowForUI.map(value => {
+        return <Image className={value?.style} key={value?.key} src="/arrow.svg" alt={''}/>
+    })
+
+    const drawNonArrow = nonArrowForUI.map(value => {
         return <Image className={value?.style} key={value?.key} src="/arrow.svg" alt={''}/>
     })
 
@@ -47,6 +59,13 @@ const BirthChartComponent = () => {
             <div>{value?.meaning}</div>
         </div>
     })
+
+     const explanationNonArrow = nonArrowSearch.map(value => {
+         return <div key={value?.key}>
+             <h2>{value?.title}</h2>
+             <div>{value?.meaning}</div>
+         </div>
+     })
 
     for (let i = 0; i < 10; i++) {
         const numberOfNumber = dateNumbers[i]
@@ -99,6 +118,7 @@ const BirthChartComponent = () => {
                 {/* Birth Chart */}
                 <div className={s.birthChart}>
                     {drawArrow}
+                    {drawNonArrow}
                     <div className={s.three}>{numberForUI[3]}</div>
                     <div className={s.six}>{numberForUI[6]}</div>
                     <div className={s.nine}>{numberForUI[9]}</div>
@@ -115,6 +135,7 @@ const BirthChartComponent = () => {
                     {explanationNumber}
                     {explanationIsolationNumbers}
                     {explanationArrow}
+                    {explanationNonArrow}
                 </div>
             </div>
             <nav className={a.rulNavigation}>
