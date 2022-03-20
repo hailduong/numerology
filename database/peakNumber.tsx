@@ -195,5 +195,22 @@ export const PEAK_NUMBER_EXPLANATION = [
                     hoặc nhận thức tâm linh.</p>
             </div>
         )
+    },
+    {
+        peakNumber: 4,
+        meaning: (
+            <div>
+                <p><em><strong>Con số này cho thấy đây là giai đoạn rất có sức bật, với nguồn lực chủ đạo là sức mạnh
+                    của sự độc lập. </strong></em>&nbsp;Tùy theo Con số chủ đạo của mỗi người mà sức mạnh độc lập này
+                    sẽ được phát triển thông qua lĩnh vực nghệ thuật hoặc thương mại. Nếu Có Con số chủ đạo là số chẵn
+                    (2, 4, 6, 8, 10, 22/4), bạn có khuynh hướng thành công về mặt tài chính khi hoạt động độc lập. Nếu
+                    Có Con số chủ đạo là số lẻ (3, 5, 7, 9, 11), bạn sẽ có khả năng thành công về mặt nghệ thuật hay
+                    nhân văn trong khi hoạt động độc lập.</p>
+                <p><em><strong>Tuy nhiên, hãy có ý thức sử dụng sức mạnh của sóng rung số 8 một cách tích cực, đừng để
+                    sự đấu đá cá nhân hoặc quan điểm hạn hẹp cản trở sự lan tỏa của sóng rung này</strong></em>. Nếu để
+                    cho các tác nhân ấy ảnh hưởng, bạn sẽ rơi vào tình trạng xa cách với môi trường xung quanh, một nỗ
+                    lực “giãy giụa” để tỏ ra độc lập.</p>
+            </div>
+        )
     }
 ]
