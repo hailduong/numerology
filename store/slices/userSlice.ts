@@ -18,6 +18,7 @@ type TUserSlice = {
     peakYear: number[]
     arrowBirthChart: number[]
     nonArrowBirthChart: number[]
+    personalYearNumber: number
 }
 
 const initialData: TUserSlice = {
@@ -30,7 +31,8 @@ const initialData: TUserSlice = {
     peakYearOld: [],
     peakYear: [],
     arrowBirthChart: [],
-    nonArrowBirthChart: []
+    nonArrowBirthChart: [],
+    personalYearNumber: 0
 }
 
 export const userSlice = createSlice({
@@ -148,6 +150,16 @@ export const userSlice = createSlice({
             state.peakYear[1] = state.peakYear[0] + 9
             state.peakYear[2] = state.peakYear[1] + 9
             state.peakYear[3] = state.peakYear[2] + 9
+
+            const thisYear = new Date().getFullYear().toString()
+            let yearNumber: number = 0
+            for (let i = 0; i < thisYear.length; i++) {
+                yearNumber = yearNumber + Number(thisYear[i])
+            }
+            state.personalYearNumber = yearNumber + state.peakNumbers[EPeakNumbers.MONTH] + state.peakNumbers[EPeakNumbers.DAY]
+            while (state.personalYearNumber > 9) {
+                state.personalYearNumber = Number(state.personalYearNumber.toString()[0]) + Number(state.personalYearNumber.toString()[1])
+            }
         }
     },
 })

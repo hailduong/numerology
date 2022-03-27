@@ -5,6 +5,8 @@ import a from './Peaks.module.scss'
 import {useAppSelector} from "../../store/hooks";
 import {PEAK_NUMBER_EXPLANATION} from "../../database/peakNumber";
 import {ReactElement} from "react";
+import YearChart from "../YearChart";
+import {PERSONAL_YEAR_EXPLANATION} from "../../database/personalYearExplanation";
 
 const PeaksComponent = () => {
     const router = useRouter()
@@ -12,6 +14,18 @@ const PeaksComponent = () => {
     const peakNumber = useAppSelector(state => state.user.peakNumbers)
     const peakYearOld = useAppSelector(state => state.user.peakYearOld)
     const peakYear = useAppSelector(state => state.user.peakYear)
+    const personalYear = useAppSelector(state => state.user.personalYearNumber)
+
+    const personalYearDisplay = PERSONAL_YEAR_EXPLANATION.find(value => value.yearNumber === personalYear)
+
+    const personalYearExplanation = () => {
+        return (
+            <div>
+                <h2>{personalYearDisplay?.thisYear} - {personalYearDisplay?.title}</h2>
+                <div>{personalYearDisplay?.meaning}</div>
+            </div>
+        )
+    }
 
     const peakNo = peakNumber.slice(3,7)
 
@@ -78,6 +92,9 @@ const PeaksComponent = () => {
                 </div>
                 <div className={a.peakExplain}>
                     {peakMeaningComponent}
+                    <h2>BIỂU ĐỒ CHU KÌ 9 NĂM</h2>
+                    <YearChart/>
+                    {personalYearExplanation()}
                 </div>
             </div>
             <nav className={s.rulNavigation}>
