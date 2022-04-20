@@ -11,7 +11,7 @@ export default function Document() {
                       content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
                 <meta name="description" content="Description"/>
                 <meta name="keywords" content="Keywords"/>
-                <title>Thần Số Học</title>
+                <title>Nhân Số Học</title>
 
                 <link rel="manifest" href="/manifest.json"/>
                 <link href="/ic_launcher.png" rel="icon" type="image/png" sizes="48x48"/>
