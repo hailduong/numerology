@@ -57,7 +57,7 @@ const HomePage = () => {
                         {isBirthDateError ?
                             <div className="invalid-feedback">Please provide a valid birthday</div> : null}
                     </div>
-                    <div className="input-group mb-3">
+                    <div className="input-group mb-3 d-none">
                         <input type="text" value={nameUser}
                                className={`form-control ${isNameUserError ? 'is-invalid' : 'is-valid'}`}
                                placeholder="Nguyen Van A"
