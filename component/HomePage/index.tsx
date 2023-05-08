@@ -18,13 +18,19 @@ const HomePage = () => {
 
     let isValid = true
 
-    let checkBirthDate: RegExp = /^(19|20)\d{2}[\-\.\/](0[1-9]|1[0-2])[\-\.\/](0[1-9]|[12]\d|3[0-1])/g
+    let checkBirthDate: RegExp = /^(0[1-9]|[12]\d|3[0-1])[\-\.\/](0[1-9]|1[0-2])[\-\.\/](19|20)\d{2}/g
     let checkName: RegExp = /([A-Z]*[a-z]*)\s?/g
 
     const handleClick = () => {
+        const dateSplits = birthDate.split('/')
+        const year = dateSplits[2] || 0
+        const month = dateSplits[1] || 0
+        const day = dateSplits[0] || 0
+
+        const newBirthDateString = `${year}/${month}/${day}`
         dispatch(setUserInfo({
             name: nameUser,
-            birthDay: birthDate,
+            birthDay: newBirthDateString,
         }))
         router.push('/ruling-number')
     }
@@ -52,7 +58,7 @@ const HomePage = () => {
                 <form className={s.inputForm}>
                     <div className="input-group mb-3">
                         <input type="text" className={`form-control ${isBirthDateError ? 'is-invalid' : 'is-valid'}`}
-                               placeholder="yyyy-mm-dd"
+                               placeholder="dd/mm/yyyy"
                                onChange={(e) => setBirthDate(e.target.value)}/>
                         {isBirthDateError ?
                             <div className="invalid-feedback">Please provide a valid birthday</div> : null}
@@ -62,7 +68,8 @@ const HomePage = () => {
                                className={`form-control ${isNameUserError ? 'is-invalid' : 'is-valid'}`}
                                placeholder="Nguyen Van A"
                                onChange={(e) => setNameUser(e.target.value)}/>
-                        {isNameUserError ? <div className='invalid-feedback'>Please provide valid full name</div> : null}
+                        {isNameUserError ?
+                            <div className="invalid-feedback">Please provide valid full name</div> : null}
                     </div>
                     <a className={`btn ${s.btnSubmit}`} href="#" role="button" onClick={handleValidClick}>Xem Kết
                         Quả</a>
