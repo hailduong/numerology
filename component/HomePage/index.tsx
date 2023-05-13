@@ -21,6 +21,7 @@ const HomePage = () => {
     let checkBirthDate: RegExp = /^(19|20)\d{2}[\-\.\/](0[1-9]|1[0-2])[\-\.\/](0[1-9]|[12]\d|3[0-1])/g
     let checkName: RegExp = /([A-Z]*[a-z]*)\s?/g
 
+
     const handleClick = () => {
         dispatch(setUserInfo({
             name: nameUser,

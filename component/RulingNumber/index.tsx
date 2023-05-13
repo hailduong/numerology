@@ -7,6 +7,7 @@ import Image from 'next/image'
 const RulingNumberComponent = () => {
     const rulingNumber = useAppSelector((state) => state.user.rulingNumber)
     const rulingNumberMeaning = RULING_NUMBER_MEANING.find(({number}) => number === rulingNumber)?.meaning
+    const nameUser = useAppSelector((state)=>state.user.name)
 
     const router = useRouter()
 
@@ -19,7 +20,7 @@ const RulingNumberComponent = () => {
                 }}>
                     <div className={s.rulBack}/>
                 </a>
-                <div>CON SỐ CHỦ ĐẠO</div>
+                <div>CON SỐ CHỦ ĐẠO CỦA {nameUser}</div>
             </header>
             <div className={s.pageWrapper}>
                 <div className={s.rulWrapper}>
