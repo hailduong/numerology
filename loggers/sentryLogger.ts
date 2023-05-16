@@ -2,11 +2,10 @@ import * as Sentry from '@sentry/nextjs'
 
 class SentryLogger {
     submitBirthDay(date: string) {
-        Sentry.addBreadcrumb({
-            category: 'home',
+        Sentry.captureEvent({
             message: `SUBMIT_BIRTHDAY`,
             level: 'info',
-            data: {date}
+            extra: {date}
         })
     }
 }
