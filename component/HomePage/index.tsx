@@ -4,6 +4,7 @@ import {useState} from 'react'
 import {setUserInfo} from '../../store/slices/userSlice'
 import {useRouter} from 'next/router'
 import Image from 'next/image'
+import sentryLogger from '../../loggers/sentryLogger'
 
 const HomePage = () => {
 
@@ -23,6 +24,7 @@ const HomePage = () => {
 
     const handleClick = () => {
         const dateSplits = birthDate.split('/')
+        sentryLogger.submitBirthDay(birthDate)
         const year = dateSplits[2] || 0
         const month = dateSplits[1] || 0
         const day = dateSplits[0] || 0
